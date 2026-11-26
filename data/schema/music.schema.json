@@ -1,0 +1,137 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "dor/music.schema.json",
+  "title": "Fichas de artistas e faixas — Lyrics Lab",
+  "type": "object",
+  "required": ["meta", "artists"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": { "type": "string" },
+    "meta": {
+      "type": "object",
+      "required": ["id", "title", "version"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9_]+$" },
+        "title": { "type": "string" },
+        "version": { "type": "integer", "minimum": 1 },
+        "description": { "type": "string" },
+        "copyright_note": { "type": "string" }
+      }
+    },
+    "artists": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "genre", "why_pt"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string", "pattern": "^mu\\.[a-z0-9_]+$" },
+          "name": { "type": "string" },
+          "genre": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "enum": ["trap", "hip-hop", "drill", "folclor", "doina", "lautar",
+                       "manele", "rock", "pop", "fusion", "colinde"]
+            }
+          },
+          "era": { "type": "string", "description": "ex.: '1995–hoje'" },
+          "region": { "type": "string" },
+          "why_pt": {
+            "type": "string",
+            "description": "Por que este artista interessa a quem estuda romeno"
+          },
+          "difficulty": {
+            "enum": ["facil", "medio", "dificil"],
+            "description": "Dicção + densidade de gíria, do ponto de vista do aprendiz"
+          },
+          "dominant_register": {
+            "enum": ["formal", "neutru", "colocvial", "argou", "vulgar"]
+          },
+          "links": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "youtube": { "type": "string" },
+              "spotify": { "type": "string" },
+              "wikipedia": { "type": "string" }
+            }
+          },
+          "tracks": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["id", "title", "why_pt"],
+              "additionalProperties": false,
+              "properties": {
+                "id": { "type": "string", "pattern": "^tr\\.[a-z0-9_]+$" },
+                "title": { "type": "string" },
+                "year": { "type": "integer" },
+                "why_pt": { "type": "string" },
+                "theme": { "type": "array", "items": { "type": "string" } },
+                "links": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "youtube": { "type": "string" },
+                    "spotify": { "type": "string" }
+                  }
+                },
+                "excerpt": {
+                  "type": "object",
+                  "description": "CITAÇÃO CURTA apenas (máx. 4 versos). O app nunca guarda letra integral nem áudio de obra protegida.",
+                  "required": ["lines"],
+                  "additionalProperties": false,
+                  "properties": {
+                    "lines": {
+                      "type": "array",
+                      "maxItems": 4,
+                      "items": {
+                        "type": "object",
+                        "required": ["ro", "pt"],
+                        "additionalProperties": false,
+                        "properties": {
+                          "ro": { "type": "string" },
+                          "pt": { "type": "string" },
+                          "cloze": {
+                            "type": "string",
+                            "description": "Palavra a ocultar no exercício"
+                          }
+                        }
+                      }
+                    },
+                    "public_domain": { "type": "boolean", "default": false }
+                  }
+                },
+                "glossary": {
+                  "type": "array",
+                  "description": "Gíria da faixa — IDs de data/culture/slang/ ou entradas inline",
+                  "items": {
+                    "type": "object",
+                    "required": ["ro", "pt"],
+                    "additionalProperties": false,
+                    "properties": {
+                      "ro": { "type": "string" },
+                      "pt": { "type": "string" },
+                      "register": {
+                        "enum": ["formal", "neutru", "colocvial", "argou", "vulgar"]
+                      },
+                      "slang_id": { "type": "string" }
+                    }
+                  }
+                },
+                "folk_elements": {
+                  "type": "array",
+                  "description": "Para faixas de fusão: qual elemento tradicional aparece",
+                  "items": { "type": "string" }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

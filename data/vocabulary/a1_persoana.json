@@ -1,0 +1,514 @@
+{
+  "$schema": "../schema/vocabulary.schema.json",
+  "meta": {
+    "id": "a1_persoana",
+    "title": "Pessoas, família e corpo",
+    "level": "A1",
+    "version": 2,
+    "description": "Quem você é, quem está com você e o que está doendo. Alimenta a cena da farmácia e os drills de gênero."
+  },
+  "items": [
+    {
+      "id": "ro.femeie",
+      "ro": "femeie",
+      "pt": [
+        "mulher"
+      ],
+      "pos": "noun",
+      "level": "A1",
+      "gender": "f",
+      "ipa": "feˈme.je",
+      "forms": {
+        "def_sg": "femeia",
+        "indef_pl": "femei",
+        "def_pl": "femeile",
+        "gen_dat_sg": "femeii"
+      },
+      "tags": [
+        "pessoa",
+        "essencial"
+      ],
+      "etymology": "latin",
+      "cognate_pt": {
+        "word": "fêmea",
+        "confidence": "alto",
+        "note": "← lat. femina"
+      }
+    },
+    {
+      "id": "ro.barbat",
+      "ro": "bărbat",
+      "pt": [
+        "homem",
+        "marido"
+      ],
+      "accepts_pt": ["esposo"],
+      "pos": "noun",
+      "level": "A1",
+      "gender": "m",
+      "ipa": "bərˈbat",
+      "forms": {
+        "def_sg": "bărbatul",
+        "indef_pl": "bărbați",
+        "def_pl": "bărbații",
+        "gen_dat_sg": "bărbatului"
+      },
+      "tags": [
+        "pessoa",
+        "essencial"
+      ],
+      "etymology": "latin",
+      "cognate_pt": {
+        "word": "barbado",
+        "confidence": "medio",
+        "note": "← lat. barbatus, 'o barbado'"
+      },
+      "note_pt": "Serve para 'homem' e para 'marido' — o contexto separa. 'Om' é o ser humano em geral."
+    },
+    {
+      "id": "ro.copil",
+      "ro": "copil",
+      "pt": [
+        "criança",
+        "filho"
+      ],
+      "accepts_pt": ["filha", "criancinha"],
+      "pos": "noun",
+      "level": "A1",
+      "gender": "m",
+      "ipa": "koˈpil",
+      "forms": {
+        "def_sg": "copilul",
+        "indef_pl": "copii",
+        "def_pl": "copiii",
+        "gen_dat_sg": "copilului"
+      },
+      "tags": [
+        "pessoa",
+        "família",
+        "essencial"
+      ],
+      "etymology": "necunoscut",
+      "note_pt": "Palavra do substrato dácio — sem cognato latino. E o plural definido tem três 'i' seguidos: 'copiii'."
+    },
+    {
+      "id": "ro.mama",
+      "ro": "mamă",
+      "pt": [
+        "mãe"
+      ],
+      "pos": "noun",
+      "level": "A1",
+      "gender": "f",
+      "ipa": "ˈma.mə",
+      "forms": {
+        "def_sg": "mama",
+        "indef_pl": "mame",
+        "def_pl": "mamele",
+        "gen_dat_sg": "mamei"
+      },
+      "tags": [
+        "família",
+        "essencial"
+      ],
+      "etymology": "latin",
+      "cognate_pt": {
+        "word": "mamãe",
+        "confidence": "alto"
+      }
+    },
+    {
+      "id": "ro.tata",
+      "ro": "tată",
+      "pt": [
+        "pai"
+      ],
+      "pos": "noun",
+      "level": "A1",
+      "gender": "m",
+      "ipa": "ˈta.tə",
+      "forms": {
+        "def_sg": "tatăl",
+        "indef_pl": "tați",
+        "def_pl": "tații",
+        "gen_dat_sg": "tatălui"
+      },
+      "tags": [
+        "família",
+        "essencial"
+      ],
+      "etymology": "latin",
+      "note_pt": "Termina em -ă como um feminino, mas é masculino: 'tatăl meu'. É a exceção que todo iniciante erra."
+    },
+    {
+      "id": "ro.frate",
+      "ro": "frate",
+      "pt": [
+        "irmão"
+      ],
+      "pos": "noun",
+      "level": "A1",
+      "gender": "m",
+      "ipa": "ˈfra.te",
+      "forms": {
+        "def_sg": "fratele",
+        "indef_pl": "frați",
+        "def_pl": "frații",
+        "gen_dat_sg": "fratelui"
+      },
+      "tags": [
+        "família",
+        "essencial"
+      ],
+      "etymology": "latin",
+      "cognate_pt": {
+        "word": "frade / fraterno",
+        "confidence": "alto",
+        "note": "← lat. frater"
+      },
+      "note_pt": "'Frate!' entre amigos é 'mano!'. Você vai ouvir isso o dia inteiro."
+    },
+    {
+      "id": "ro.sora",
+      "ro": "soră",
+      "pt": [
+        "irmã"
+      ],
+      "pos": "noun",
+      "level": "A1",
+      "gender": "f",
+      "ipa": "ˈso.rə",
+      "forms": {
+        "def_sg": "sora",
+        "indef_pl": "surori",
+        "def_pl": "surorile",
+        "gen_dat_sg": "surorii"
+      },
+      "tags": [
+        "família"
+      ],
+      "etymology": "latin",
+      "cognate_pt": {
+        "word": "sóror / sororidade",
+        "confidence": "alto",
+        "note": "← lat. soror"
+      },
+      "note_pt": "O plural muda a raiz: soră → surori. Também significa 'enfermeira'."
+    },
+    {
+      "id": "ro.prieten",
+      "ro": "prieten",
+      "pt": [
+        "amigo"
+      ],
+      "pos": "noun",
+      "level": "A1",
+      "gender": "m",
+      "ipa": "priˈe.ten",
+      "forms": {
+        "def_sg": "prietenul",
+        "indef_pl": "prieteni",
+        "def_pl": "prietenii",
+        "gen_dat_sg": "prietenului"
+      },
+      "tags": [
+        "pessoa",
+        "essencial"
+      ],
+      "etymology": "slav",
+      "note_pt": "Eslavo, sem atalho pelo português. 'Prietena mea' pode ser 'minha amiga' ou 'minha namorada' — o contexto decide."
+    },
+    {
+      "id": "ro.nume",
+      "ro": "nume",
+      "pt": [
+        "nome"
+      ],
+      "pos": "noun",
+      "level": "A1",
+      "gender": "n",
+      "ipa": "ˈnu.me",
+      "forms": {
+        "def_sg": "numele",
+        "indef_pl": "nume",
+        "def_pl": "numele"
+      },
+      "tags": [
+        "pessoa",
+        "essencial"
+      ],
+      "etymology": "latin",
+      "cognate_pt": {
+        "word": "nome",
+        "confidence": "alto",
+        "note": "← lat. nomen"
+      },
+      "note_pt": "'Mă numesc Ana' ou 'Numele meu este Ana'. O primeiro é mais comum."
+    },
+    {
+      "id": "ro.cap",
+      "ro": "cap",
+      "pt": [
+        "cabeça"
+      ],
+      "pos": "noun",
+      "level": "A1",
+      "gender": "n",
+      "ipa": "kap",
+      "forms": {
+        "def_sg": "capul",
+        "indef_pl": "capete",
+        "def_pl": "capetele"
+      },
+      "tags": [
+        "corpo",
+        "essencial"
+      ],
+      "etymology": "latin",
+      "cognate_pt": {
+        "word": "cabeça",
+        "confidence": "alto",
+        "note": "← lat. caput"
+      },
+      "note_pt": "'Mă doare capul' = estou com dor de cabeça. Literalmente: me dói a cabeça."
+    },
+    {
+      "id": "ro.mana",
+      "ro": "mână",
+      "pt": [
+        "mão"
+      ],
+      "pos": "noun",
+      "level": "A1",
+      "gender": "f",
+      "ipa": "ˈmɨ.nə",
+      "forms": {
+        "def_sg": "mâna",
+        "indef_pl": "mâini",
+        "def_pl": "mâinile",
+        "gen_dat_sg": "mâinii"
+      },
+      "tags": [
+        "corpo",
+        "essencial"
+      ],
+      "etymology": "latin",
+      "cognate_pt": {
+        "word": "mão",
+        "confidence": "alto",
+        "note": "← lat. manus"
+      }
+    },
+    {
+      "id": "ro.picior",
+      "ro": "picior",
+      "pt": [
+        "perna",
+        "pé"
+      ],
+      "pos": "noun",
+      "level": "A1",
+      "gender": "n",
+      "ipa": "piˈt͡ʃor",
+      "forms": {
+        "def_sg": "piciorul",
+        "indef_pl": "picioare",
+        "def_pl": "picioarele"
+      },
+      "tags": [
+        "corpo"
+      ],
+      "etymology": "latin",
+      "note_pt": "Cobre perna e pé numa palavra só. 'Pe jos' é 'a pé'."
+    },
+    {
+      "id": "ro.ochi",
+      "ro": "ochi",
+      "pt": [
+        "olho"
+      ],
+      "pos": "noun",
+      "level": "A1",
+      "gender": "m",
+      "ipa": "okʲ",
+      "forms": {
+        "def_sg": "ochiul",
+        "indef_pl": "ochi",
+        "def_pl": "ochii"
+      },
+      "tags": [
+        "corpo",
+        "essencial"
+      ],
+      "etymology": "latin",
+      "cognate_pt": {
+        "word": "olho",
+        "confidence": "alto",
+        "note": "← lat. oculus; o -cl- virou -chi"
+      }
+    },
+    {
+      "id": "ro.inima",
+      "ro": "inimă",
+      "pt": [
+        "coração"
+      ],
+      "pos": "noun",
+      "level": "A1",
+      "gender": "f",
+      "ipa": "ˈi.ni.mə",
+      "forms": {
+        "def_sg": "inima",
+        "indef_pl": "inimi",
+        "def_pl": "inimile",
+        "gen_dat_sg": "inimii"
+      },
+      "tags": [
+        "corpo",
+        "afeto"
+      ],
+      "etymology": "latin",
+      "cognate_pt": {
+        "word": "ânimo",
+        "confidence": "medio",
+        "note": "← lat. anima, 'alma'"
+      },
+      "note_pt": "O coração romeno vem de 'alma', não de 'cor'. Está na letra da Hora Unirii: 'cei cu inima română'."
+    },
+    {
+      "id": "ro.stomac",
+      "ro": "stomac",
+      "pt": [
+        "estômago",
+        "barriga"
+      ],
+      "accepts_pt": ["pança", "abdômen"],
+      "pos": "noun",
+      "level": "A2",
+      "gender": "n",
+      "ipa": "stoˈmak",
+      "forms": {
+        "def_sg": "stomacul",
+        "indef_pl": "stomacuri",
+        "def_pl": "stomacurile"
+      },
+      "tags": [
+        "corpo",
+        "saúde"
+      ],
+      "etymology": "grec",
+      "cognate_pt": {
+        "word": "estômago",
+        "confidence": "alto"
+      }
+    },
+    {
+      "id": "ro.doctor",
+      "ro": "doctor",
+      "pt": [
+        "médico",
+        "doutor"
+      ],
+      "accepts_pt": ["médica", "doutora"],
+      "pos": "noun",
+      "level": "A2",
+      "gender": "m",
+      "ipa": "ˈdok.tor",
+      "forms": {
+        "def_sg": "doctorul",
+        "indef_pl": "doctori",
+        "def_pl": "doctorii",
+        "gen_dat_sg": "doctorului"
+      },
+      "tags": [
+        "pessoa",
+        "saúde",
+        "profissão"
+      ],
+      "etymology": "latin",
+      "cognate_pt": {
+        "word": "doutor",
+        "confidence": "alto"
+      },
+      "note_pt": "'Medic' também se usa, e soa mais técnico. Na conversa, 'doctor'."
+    },
+    {
+      "id": "ro.a_durea",
+      "ro": "a durea",
+      "pt": [
+        "doer"
+      ],
+      "accepts_pt": ["estar doendo", "dar dor"],
+      "pos": "verb",
+      "level": "A2",
+      "conjugation": "II",
+      "ipa": "a duˈre̯a",
+      "forms": {
+        "prezent": [
+          "dor",
+          "dori",
+          "doare",
+          "durem",
+          "dureți",
+          "dor"
+        ],
+        "participiu": "durut",
+        "perfect_compus": "a durut",
+        "conjunctiv": "să doară",
+        "gerunziu": "durând",
+        "conditional": "aș durea",
+        "mai_mult_ca_perfect": "durusem"
+      },
+      "tags": [
+        "saúde",
+        "essencial"
+      ],
+      "etymology": "latin",
+      "cognate_pt": {
+        "word": "doer",
+        "confidence": "alto",
+        "note": "← lat. dolere"
+      },
+      "note_pt": "Funciona ao contrário do português: quem sente vai no dativo. 'Mă doare' = me dói. Na prática só se usa na 3ª pessoa."
+    },
+    {
+      "id": "ro.a_se_simti",
+      "ro": "a se simți",
+      "pt": [
+        "sentir-se"
+      ],
+      "accepts_pt": ["se sentir", "estar se sentindo"],
+      "pos": "verb",
+      "level": "A2",
+      "conjugation": "IV",
+      "ipa": "a se simˈtsi",
+      "forms": {
+        "prezent": [
+          "mă simt",
+          "te simți",
+          "se simte",
+          "ne simțim",
+          "vă simțiți",
+          "se simt"
+        ],
+        "participiu": "simțit",
+        "perfect_compus": "m-am simțit",
+        "conjunctiv": "să se simtă",
+        "gerunziu": "simțindu-se",
+        "conditional": "m-aș simți",
+        "mai_mult_ca_perfect": "mă simțisem"
+      },
+      "tags": [
+        "saúde",
+        "estado"
+      ],
+      "etymology": "latin",
+      "cognate_pt": {
+        "word": "sentir",
+        "confidence": "alto",
+        "note": "← lat. sentire"
+      },
+      "note_pt": "'Cum te simți?' = como você se sente? A resposta padrão é 'bine' ou 'nu prea bine'."
+    }
+  ]
+}

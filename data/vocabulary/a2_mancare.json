@@ -1,0 +1,514 @@
+{
+  "$schema": "../schema/vocabulary.schema.json",
+  "meta": {
+    "id": "a2_mancare",
+    "title": "Comida e mesa",
+    "level": "A2",
+    "version": 2,
+    "description": "O que se pede no restaurante e o que se compra na feira. Inclui os pratos que definem a cozinha romena."
+  },
+  "items": [
+    {
+      "id": "ro.carne",
+      "ro": "carne",
+      "pt": [
+        "carne"
+      ],
+      "pos": "noun",
+      "level": "A2",
+      "gender": "f",
+      "ipa": "ˈkar.ne",
+      "forms": {
+        "def_sg": "carnea",
+        "indef_pl": "cărnuri",
+        "gen_dat_sg": "cărnii"
+      },
+      "tags": [
+        "comida",
+        "essencial"
+      ],
+      "etymology": "latin",
+      "cognate_pt": {
+        "word": "carne",
+        "confidence": "alto",
+        "note": "← lat. caro, carnem"
+      }
+    },
+    {
+      "id": "ro.peste_pescado",
+      "ro": "pește",
+      "pt": [
+        "peixe"
+      ],
+      "pos": "noun",
+      "level": "A2",
+      "gender": "m",
+      "ipa": "ˈpeʃ.te",
+      "forms": {
+        "def_sg": "peștele",
+        "indef_pl": "pești",
+        "def_pl": "peștii"
+      },
+      "tags": [
+        "comida"
+      ],
+      "etymology": "latin",
+      "cognate_pt": {
+        "word": "peixe",
+        "confidence": "alto",
+        "note": "← lat. piscis"
+      },
+      "note_pt": "Cuidado com 'peste' (sem diacrítico), que significa 'sobre'. É um dos pares mínimos do app."
+    },
+    {
+      "id": "ro.branza",
+      "ro": "brânză",
+      "pt": [
+        "queijo"
+      ],
+      "pos": "noun",
+      "level": "A2",
+      "gender": "f",
+      "ipa": "ˈbrɨn.zə",
+      "forms": {
+        "def_sg": "brânza",
+        "indef_pl": "brânzeturi",
+        "gen_dat_sg": "brânzei"
+      },
+      "tags": [
+        "comida"
+      ],
+      "etymology": "necunoscut",
+      "note_pt": "A palavra mais famosa do substrato dácio: não tem parente em nenhuma outra língua latina."
+    },
+    {
+      "id": "ro.ou",
+      "ro": "ou",
+      "pt": [
+        "ovo"
+      ],
+      "pos": "noun",
+      "level": "A2",
+      "gender": "n",
+      "ipa": "ow",
+      "forms": {
+        "def_sg": "oul",
+        "indef_pl": "ouă",
+        "def_pl": "ouăle"
+      },
+      "tags": [
+        "comida"
+      ],
+      "etymology": "latin",
+      "cognate_pt": {
+        "word": "ovo",
+        "confidence": "alto",
+        "note": "← lat. ovum"
+      }
+    },
+    {
+      "id": "ro.fruct",
+      "ro": "fruct",
+      "pt": [
+        "fruta"
+      ],
+      "pos": "noun",
+      "level": "A2",
+      "gender": "n",
+      "ipa": "frukt",
+      "forms": {
+        "def_sg": "fructul",
+        "indef_pl": "fructe",
+        "def_pl": "fructele"
+      },
+      "tags": [
+        "comida"
+      ],
+      "etymology": "latin",
+      "cognate_pt": {
+        "word": "fruto",
+        "confidence": "alto"
+      }
+    },
+    {
+      "id": "ro.legume",
+      "ro": "legumă",
+      "pt": [
+        "verdura",
+        "legume"
+      ],
+      "accepts_pt": ["hortaliça", "vegetal"],
+      "pos": "noun",
+      "level": "A2",
+      "gender": "f",
+      "ipa": "leˈɡu.mə",
+      "forms": {
+        "def_sg": "leguma",
+        "indef_pl": "legume",
+        "def_pl": "legumele"
+      },
+      "tags": [
+        "comida"
+      ],
+      "etymology": "latin",
+      "cognate_pt": {
+        "word": "legume",
+        "confidence": "alto"
+      }
+    },
+    {
+      "id": "ro.mar",
+      "ro": "măr",
+      "pt": [
+        "maçã"
+      ],
+      "pos": "noun",
+      "level": "A2",
+      "gender": "n",
+      "ipa": "mər",
+      "forms": {
+        "def_sg": "mărul",
+        "indef_pl": "mere",
+        "def_pl": "merele"
+      },
+      "tags": [
+        "comida"
+      ],
+      "etymology": "latin",
+      "note_pt": "← lat. melum. O plural muda a vogal: măr → mere."
+    },
+    {
+      "id": "ro.cartof",
+      "ro": "cartof",
+      "pt": [
+        "batata"
+      ],
+      "pos": "noun",
+      "level": "A2",
+      "gender": "m",
+      "ipa": "karˈtof",
+      "forms": {
+        "def_sg": "cartoful",
+        "indef_pl": "cartofi",
+        "def_pl": "cartofii"
+      },
+      "tags": [
+        "comida"
+      ],
+      "etymology": "german",
+      "note_pt": "Do alemão 'Kartoffel'. 'Cartofi prăjiți' é batata frita."
+    },
+    {
+      "id": "ro.rosie",
+      "ro": "roșie",
+      "pt": [
+        "tomate"
+      ],
+      "pos": "noun",
+      "level": "A2",
+      "gender": "f",
+      "ipa": "ˈro.ʃi.e",
+      "forms": {
+        "def_sg": "roșia",
+        "indef_pl": "roșii",
+        "def_pl": "roșiile"
+      },
+      "tags": [
+        "comida"
+      ],
+      "etymology": "latin",
+      "note_pt": "Literalmente 'a vermelha' — o adjetivo virou substantivo, como o nosso 'a verdura'."
+    },
+    {
+      "id": "ro.sare_sal",
+      "ro": "sare",
+      "pt": [
+        "sal"
+      ],
+      "pos": "noun",
+      "level": "A2",
+      "gender": "f",
+      "ipa": "ˈsa.re",
+      "forms": {
+        "def_sg": "sarea",
+        "gen_dat_sg": "sării"
+      },
+      "tags": [
+        "comida"
+      ],
+      "etymology": "latin",
+      "cognate_pt": {
+        "word": "sal",
+        "confidence": "alto",
+        "note": "← lat. salem; o L virou R, como em cer/céu"
+      }
+    },
+    {
+      "id": "ro.zahar",
+      "ro": "zahăr",
+      "pt": [
+        "açúcar"
+      ],
+      "pos": "noun",
+      "level": "A2",
+      "gender": "n",
+      "ipa": "ˈza.hər",
+      "forms": {
+        "def_sg": "zahărul"
+      },
+      "tags": [
+        "comida"
+      ],
+      "etymology": "grec",
+      "cognate_pt": {
+        "word": "açúcar",
+        "confidence": "medio",
+        "note": "mesma raiz árabe/grega"
+      }
+    },
+    {
+      "id": "ro.ciorba",
+      "ro": "ciorbă",
+      "pt": [
+        "sopa azeda"
+      ],
+      "accepts_pt": ["sopa", "caldo azedo"],
+      "pos": "noun",
+      "level": "A2",
+      "gender": "f",
+      "ipa": "ˈt͡ʃor.bə",
+      "forms": {
+        "def_sg": "ciorba",
+        "indef_pl": "ciorbe",
+        "def_pl": "ciorbele",
+        "gen_dat_sg": "ciorbei"
+      },
+      "tags": [
+        "comida",
+        "prato nacional"
+      ],
+      "etymology": "turc",
+      "note_pt": "O prato mais romeno que existe. O azedo vem do 'borș'. Não confunda com 'supă', que é sopa comum."
+    },
+    {
+      "id": "ro.sarmale",
+      "ro": "sarmale",
+      "pt": [
+        "charutinhos de repolho"
+      ],
+      "accepts_pt": ["charuto de repolho", "rolinho de repolho", "repolho recheado"],
+      "pos": "noun",
+      "level": "A2",
+      "gender": "f",
+      "ipa": "sarˈma.le",
+      "forms": {
+        "def_pl": "sarmalele"
+      },
+      "tags": [
+        "comida",
+        "prato nacional"
+      ],
+      "etymology": "turc",
+      "note_pt": "Sempre no plural. É o prato de festa: Natal, Páscoa e casamento não existem sem sarmale."
+    },
+    {
+      "id": "ro.mamaliga",
+      "ro": "mămăligă",
+      "pt": [
+        "polenta"
+      ],
+      "accepts_pt": ["angu", "fubá cozido"],
+      "pos": "noun",
+      "level": "A2",
+      "gender": "f",
+      "ipa": "mə.məˈli.ɡə",
+      "forms": {
+        "def_sg": "mămăliga",
+        "gen_dat_sg": "mămăligii"
+      },
+      "tags": [
+        "comida",
+        "prato nacional"
+      ],
+      "etymology": "necunoscut",
+      "note_pt": "A polenta romena, acompanhamento de quase tudo. 'Mămăligar' é um apelido autodepreciativo para romeno — cuidado ao usar."
+    },
+    {
+      "id": "ro.mic_dejun",
+      "ro": "mic dejun",
+      "pt": [
+        "café da manhã"
+      ],
+      "accepts_pt": ["desjejum", "primeira refeição"],
+      "pos": "expr",
+      "level": "A2",
+      "ipa": "mik deˈʒun",
+      "tags": [
+        "comida",
+        "rotina"
+      ],
+      "etymology": "francez",
+      "note_pt": "Literalmente 'pequeno desjejum', do francês 'déjeuner'. Almoço é 'prânz' e jantar é 'cină'."
+    },
+    {
+      "id": "ro.a_gati",
+      "ro": "a găti",
+      "pt": [
+        "cozinhar"
+      ],
+      "accepts_pt": ["fazer comida", "preparar comida"],
+      "pos": "verb",
+      "level": "A2",
+      "conjugation": "IV",
+      "ipa": "a ɡəˈti",
+      "forms": {
+        "prezent": [
+          "gătesc",
+          "gătești",
+          "gătește",
+          "gătim",
+          "gătiți",
+          "gătesc"
+        ],
+        "participiu": "gătit",
+        "perfect_compus": "am gătit",
+        "viitor_popular": "o să gătesc",
+        "conjunctiv": "să gătească",
+        "imperfect": [
+          "găteam",
+          "găteai",
+          "gătea",
+          "găteam",
+          "găteați",
+          "găteau"
+        ],
+        "gerunziu": "gătind",
+        "imperativ": "gătește!",
+        "conditional": "aș găti",
+        "mai_mult_ca_perfect": "gătisem"
+      },
+      "tags": [
+        "comida",
+        "rotina"
+      ],
+      "etymology": "slav",
+      "note_pt": "'A găti' também significa 'arrumar-se, enfeitar-se'. O contexto separa."
+    },
+    {
+      "id": "ro.a_comanda",
+      "ro": "a comanda",
+      "pt": [
+        "pedir",
+        "encomendar"
+      ],
+      "accepts_pt": ["fazer o pedido"],
+      "pos": "verb",
+      "level": "A2",
+      "conjugation": "I",
+      "ipa": "a ko.manˈda",
+      "forms": {
+        "prezent": [
+          "comand",
+          "comanzi",
+          "comandă",
+          "comandăm",
+          "comandați",
+          "comandă"
+        ],
+        "participiu": "comandat",
+        "perfect_compus": "am comandat",
+        "viitor_popular": "o să comand",
+        "conjunctiv": "să comande",
+        "gerunziu": "comandând",
+        "conditional": "aș comanda",
+        "mai_mult_ca_perfect": "comandasem"
+      },
+      "tags": [
+        "comida",
+        "restaurante"
+      ],
+      "etymology": "francez",
+      "cognate_pt": {
+        "word": "comandar / encomendar",
+        "confidence": "alto"
+      },
+      "note_pt": "É o verbo do restaurante. Pedir um favor é 'a ruga' — não confunda."
+    },
+    {
+      "id": "ro.delicios",
+      "ro": "delicios",
+      "pt": [
+        "delicioso"
+      ],
+      "accepts_pt": ["gostoso", "saboroso", "uma delícia"],
+      "pos": "adj",
+      "level": "A2",
+      "ipa": "de.liˈt͡ʃos",
+      "forms": {
+        "f_sg": "delicioasă",
+        "m_pl": "delicioși",
+        "f_pl": "delicioase"
+      },
+      "tags": [
+        "comida",
+        "qualidade"
+      ],
+      "etymology": "latin",
+      "cognate_pt": {
+        "word": "delicioso",
+        "confidence": "alto",
+        "note": "-oso vira -os, como faimos"
+      }
+    },
+    {
+      "id": "ro.foame",
+      "ro": "foame",
+      "pt": [
+        "fome"
+      ],
+      "pos": "noun",
+      "level": "A2",
+      "gender": "f",
+      "ipa": "ˈfo̯a.me",
+      "forms": {
+        "def_sg": "foamea"
+      },
+      "tags": [
+        "comida",
+        "estado"
+      ],
+      "etymology": "latin",
+      "cognate_pt": {
+        "word": "fome",
+        "confidence": "alto",
+        "note": "← lat. fames"
+      },
+      "note_pt": "Diz-se 'mi-e foame' (a mim é fome), não 'am foame'. Mesma construção de 'mi-e sete' (sede) e 'mi-e frig' (frio)."
+    },
+    {
+      "id": "ro.sete",
+      "ro": "sete",
+      "pt": [
+        "sede"
+      ],
+      "pos": "noun",
+      "level": "A2",
+      "gender": "f",
+      "ipa": "ˈse.te",
+      "forms": {
+        "def_sg": "setea"
+      },
+      "tags": [
+        "comida",
+        "estado"
+      ],
+      "etymology": "latin",
+      "cognate_pt": {
+        "word": "sede",
+        "confidence": "alto",
+        "note": "← lat. sitis"
+      },
+      "note_pt": "'Mi-e sete' = estou com sede. O 'mi-e' é dativo: literalmente 'a mim é sede'."
+    }
+  ]
+}

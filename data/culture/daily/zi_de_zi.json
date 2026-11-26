@@ -1,0 +1,329 @@
+{
+  "$schema": "../../schema/situations.schema.json",
+  "meta": {
+    "id": "zi_de_zi",
+    "title": "Cenas do dia a dia",
+    "version": 1,
+    "description": "Cada cena traz o diálogo, as fórmulas que valem decorar, o que se fala na rua em vez do que o livro ensina, e a etiqueta — que é o que realmente te entrega como estrangeiro."
+  },
+  "items": [
+    {
+      "id": "si.cafenea",
+      "title": "No café",
+      "title_ro": "La cafenea",
+      "place": "cafenea",
+      "level": "A1",
+      "register": "neutru",
+      "goal_pt": "Pedir café, perguntar o preço e pagar sem precisar apontar para o cardápio.",
+      "turns": [
+        { "who": "ei", "ro": "Bună ziua! Ce doriți?", "pt": "Bom dia! O que deseja?" },
+        { "who": "tu", "ro": "Bună ziua. Un espresso, vă rog.", "pt": "Bom dia. Um espresso, por favor." },
+        { "who": "ei", "ro": "Ceva de mâncare?", "pt": "Algo para comer?" },
+        { "who": "tu", "ro": "Nu, mulțumesc. Cât costă?", "pt": "Não, obrigado. Quanto custa?" },
+        { "who": "ei", "ro": "Zece lei.", "pt": "Dez léus.", "note_pt": "A moeda é o leu (plural: lei). Um café custa entre 8 e 15 lei." },
+        { "who": "tu", "ro": "Pot să plătesc cu cardul?", "pt": "Posso pagar com cartão?", "note_pt": "Conjuntivo em ação: 'pot să plătesc', nunca 'pot plăti' na fala." },
+        { "who": "ei", "ro": "Sigur. Poftiți.", "pt": "Claro. Aqui está." }
+      ],
+      "phrases": [
+        { "ro": "Un espresso, vă rog.", "pt": "Um espresso, por favor.", "when_pt": "pedindo qualquer coisa" },
+        { "ro": "Cât costă?", "pt": "Quanto custa?", "when_pt": "a pergunta mais útil da viagem" },
+        { "ro": "Pot să plătesc cu cardul?", "pt": "Posso pagar com cartão?" },
+        { "ro": "Nota, vă rog.", "pt": "A conta, por favor.", "when_pt": "no café ou restaurante" },
+        { "ro": "Păstrați restul.", "pt": "Fique com o troco.", "when_pt": "gorjeta" }
+      ],
+      "street": [
+        {
+          "textbook": "Aș dori o cafea.",
+          "street": "O cafea, vă rog.",
+          "note_pt": "O condicional 'aș dori' existe e é correto, mas soa cerimonioso. Ninguém pede café assim."
+        },
+        {
+          "textbook": "Mulțumesc foarte mult.",
+          "street": "Mersi!",
+          "note_pt": "'Mersi' é do francês e é o agradecimento normal do dia a dia. 'Mulțumesc' é o neutro seguro; 'mersi' é o que você vai ouvir."
+        }
+      ],
+      "etiquette_pt": [
+        "Gorjeta de 10% é o costume em café e restaurante — não é obrigatória, mas é esperada.",
+        "Cumprimente ao entrar, mesmo numa loja pequena. Entrar em silêncio é considerado seco.",
+        "'Poftiți' e 'poftim' aparecem o tempo todo: servem para 'aqui está', 'entre', 'pois não?' e 'como disse?'."
+      ],
+      "tags": ["viagem", "essencial"]
+    },
+    {
+      "id": "si.strada",
+      "title": "Perdido na rua",
+      "title_ro": "Pe stradă",
+      "place": "strada",
+      "level": "A1",
+      "register": "formal",
+      "goal_pt": "Pedir informação, avisar que não entendeu e pedir para falarem mais devagar — as três coisas que salvam qualquer conversa.",
+      "turns": [
+        { "who": "tu", "ro": "Mă scuzați, unde este metroul?", "pt": "Com licença, onde fica o metrô?" },
+        { "who": "ei", "ro": "Mergeți drept înainte și apoi la stânga.", "pt": "Vá em frente e depois à esquerda." },
+        { "who": "tu", "ro": "Mai rar, vă rog. Nu am înțeles.", "pt": "Mais devagar, por favor. Não entendi.", "note_pt": "'Mai rar' é literalmente 'mais raro' — em romeno, mais espaçado no tempo." },
+        { "who": "ei", "ro": "Drept... înainte... apoi... la stânga.", "pt": "Em frente... depois... à esquerda." },
+        { "who": "tu", "ro": "Am înțeles. Mulțumesc frumos!", "pt": "Entendi. Muito obrigado!" }
+      ],
+      "phrases": [
+        { "ro": "Mă scuzați!", "pt": "Com licença!", "when_pt": "abordando alguém" },
+        { "ro": "Unde este...?", "pt": "Onde fica...?" },
+        { "ro": "Nu înțeleg.", "pt": "Não entendo." },
+        { "ro": "Mai rar, vă rog.", "pt": "Mais devagar, por favor.", "when_pt": "a frase mais útil do idioma" },
+        { "ro": "Vorbiți engleză?", "pt": "Você fala inglês?" },
+        { "ro": "Sunt brazilian.", "pt": "Sou brasileiro.", "when_pt": "mulher: sunt braziliancă" }
+      ],
+      "street": [
+        {
+          "textbook": "Nu vorbesc limba română.",
+          "street": "Nu vorbesc bine românește.",
+          "note_pt": "'Românește' é o advérbio — mais natural que 'limba română' na conversa."
+        }
+      ],
+      "etiquette_pt": [
+        "Trate desconhecido por 'dumneavoastră' (verbo na 2ª do plural). Usar 'tu' com quem você não conhece soa atrevido.",
+        "Dizer que é brasileiro costuma abrir portas: futebol e novela são referências reais lá.",
+        "Romeno da geração mais jovem fala inglês com desenvoltura; acima dos 50, francês é mais provável."
+      ],
+      "tags": ["viagem", "socorro", "essencial"]
+    },
+    {
+      "id": "si.taxi",
+      "title": "Táxi e transporte",
+      "title_ro": "Cu taxiul",
+      "place": "transport",
+      "level": "A2",
+      "register": "neutru",
+      "goal_pt": "Chegar aonde quer sem pagar a mais — inclusive sabendo pedir para ligar o taxímetro.",
+      "turns": [
+        { "who": "tu", "ro": "Bună ziua! Mă duceți în Piața Unirii?", "pt": "Boa tarde! Me leva à Praça Unirii?" },
+        { "who": "ei", "ro": "Sigur, urcați.", "pt": "Claro, suba." },
+        { "who": "tu", "ro": "Porniți aparatul, vă rog.", "pt": "Ligue o taxímetro, por favor.", "note_pt": "Frase de defesa. Táxi de rua sem taxímetro ligado é onde o turista paga cinco vezes mais." },
+        { "who": "ei", "ro": "L-am pornit. Cam douăzeci de minute.", "pt": "Já liguei. Uns vinte minutos." },
+        { "who": "tu", "ro": "Opriți aici, vă rog. Cât fac?", "pt": "Pare aqui, por favor. Quanto deu?" }
+      ],
+      "phrases": [
+        { "ro": "Mă duceți la...?", "pt": "Me leva a...?" },
+        { "ro": "Porniți aparatul, vă rog.", "pt": "Ligue o taxímetro, por favor." },
+        { "ro": "Opriți aici, vă rog.", "pt": "Pare aqui, por favor." },
+        { "ro": "Cât fac?", "pt": "Quanto deu?", "when_pt": "no fim da corrida" },
+        { "ro": "Un bilet, vă rog.", "pt": "Uma passagem, por favor.", "when_pt": "metrô e ônibus" }
+      ],
+      "street": [
+        {
+          "textbook": "Doresc să merg la aeroport.",
+          "street": "Mă duceți la aeroport?",
+          "note_pt": "A pergunta direta é o padrão. 'Doresc' soa a formulário."
+        }
+      ],
+      "etiquette_pt": [
+        "Use Bolt ou Uber sempre que possível: o preço aparece antes e some a discussão.",
+        "O preço por quilômetro é obrigatório na porta do táxi. Se estiver muito acima da média, não entre.",
+        "No metrô de Bucareste o bilhete é por viagem ou por dia, e a validação é na catraca."
+      ],
+      "tags": ["viagem", "defesa"]
+    },
+    {
+      "id": "si.piata",
+      "title": "Na feira",
+      "title_ro": "La piață",
+      "place": "piata",
+      "level": "A2",
+      "register": "colocvial",
+      "goal_pt": "Comprar por quilo, perguntar preço e negociar sem ofender ninguém.",
+      "turns": [
+        { "who": "ei", "ro": "Poftiți, ce doriți?", "pt": "Pois não, o que deseja?" },
+        { "who": "tu", "ro": "Cât costă kilogramul de roșii?", "pt": "Quanto custa o quilo de tomate?" },
+        { "who": "ei", "ro": "Opt lei kilogramul.", "pt": "Oito lei o quilo." },
+        { "who": "tu", "ro": "Îmi dați două kilograme, vă rog?", "pt": "Me dá dois quilos, por favor?" },
+        { "who": "ei", "ro": "Sigur. Mai doriți ceva?", "pt": "Claro. Deseja mais alguma coisa?" },
+        { "who": "tu", "ro": "Atât, mulțumesc.", "pt": "Só isso, obrigado." }
+      ],
+      "phrases": [
+        { "ro": "Cât costă kilogramul?", "pt": "Quanto custa o quilo?" },
+        { "ro": "Îmi dați...?", "pt": "Me dá...?", "when_pt": "dativo em uso: îmi = a mim" },
+        { "ro": "E cam scump.", "pt": "Está meio caro.", "when_pt": "início educado de negociação" },
+        { "ro": "Mai ieftin nu se poate?", "pt": "Não sai mais barato?" },
+        { "ro": "Atât, mulțumesc.", "pt": "Só isso, obrigado." }
+      ],
+      "street": [
+        {
+          "textbook": "Aș dori să cumpăr roșii.",
+          "street": "Îmi dați niște roșii?",
+          "note_pt": "'Niște' é o 'uns/umas' que resolve quantidade indefinida — palavra de altíssima frequência."
+        }
+      ],
+      "etiquette_pt": [
+        "Negociar é aceitável na feira, jamais na loja ou no supermercado.",
+        "Produtor local ('producător local') vende mais caro e tem orgulho disso — pechinchar demais ali soa ofensivo.",
+        "Leve dinheiro vivo: muitas bancas ainda não aceitam cartão."
+      ],
+      "tags": ["compras", "número"]
+    },
+    {
+      "id": "si.restaurant",
+      "title": "No restaurante",
+      "title_ro": "La restaurant",
+      "place": "restaurant",
+      "level": "A2",
+      "register": "neutru",
+      "goal_pt": "Sentar, pedir, pedir recomendação e fechar a conta — e saber o que pedir.",
+      "turns": [
+        { "who": "tu", "ro": "Bună seara! O masă pentru două persoane, vă rog.", "pt": "Boa noite! Uma mesa para duas pessoas, por favor." },
+        { "who": "ei", "ro": "Desigur. Poftiți meniul.", "pt": "Claro. Aqui está o cardápio." },
+        { "who": "tu", "ro": "Ce ne recomandați?", "pt": "O que você nos recomenda?" },
+        { "who": "ei", "ro": "Ciorba de burtă e foarte bună azi.", "pt": "A sopa de bucho está muito boa hoje.", "note_pt": "Ciorbă é sopa AZEDA — o azedo vem do borș. É o prato mais nacional que existe." },
+        { "who": "tu", "ro": "Atunci o ciorbă și niște sarmale.", "pt": "Então uma sopa e uns charutinhos de repolho." },
+        { "who": "ei", "ro": "Poftă bună!", "pt": "Bom apetite!" },
+        { "who": "tu", "ro": "Nota, vă rog.", "pt": "A conta, por favor." }
+      ],
+      "phrases": [
+        { "ro": "O masă pentru două persoane.", "pt": "Uma mesa para duas pessoas." },
+        { "ro": "Ce ne recomandați?", "pt": "O que nos recomenda?" },
+        { "ro": "Sunt vegetarian.", "pt": "Sou vegetariano.", "when_pt": "mulher: sunt vegetariană" },
+        { "ro": "Fără carne, vă rog.", "pt": "Sem carne, por favor." },
+        { "ro": "Poftă bună!", "pt": "Bom apetite!", "when_pt": "diz-se sempre, inclusive a estranhos" },
+        { "ro": "A fost delicios.", "pt": "Estava delicioso." }
+      ],
+      "street": [
+        {
+          "textbook": "Nota de plată, vă rog.",
+          "street": "Nota, vă rog.",
+          "note_pt": "Ninguém diz 'nota de plată' inteiro."
+        }
+      ],
+      "etiquette_pt": [
+        "'Poftă bună!' se diz para quem está comendo, mesmo desconhecido. Não responder é falta de educação — responda 'mulțumesc, asemenea'.",
+        "Pratos para conhecer: ciorbă (sopa azeda), sarmale (charutinho de repolho), mici (rolinhos de carne grelhada), mămăligă (a polenta local), papanași (a sobremesa nacional).",
+        "Vegetariano é ideia recente fora das cidades grandes. 'De post' (de jejum ortodoxo) é um atalho útil: significa sem carne nem laticínio."
+      ],
+      "tags": ["comida", "viagem"]
+    },
+    {
+      "id": "si.acasa",
+      "title": "Visitando a casa de alguém",
+      "title_ro": "În vizită",
+      "place": "acasa",
+      "level": "B1",
+      "register": "neutru",
+      "goal_pt": "Ser convidado e não cometer nenhuma das três gafes clássicas do estrangeiro.",
+      "turns": [
+        { "who": "ei", "ro": "Bine ai venit! Intră, te rog.", "pt": "Bem-vindo! Entra, por favor." },
+        { "who": "tu", "ro": "Mulțumesc! Am adus ceva de la mine din țară.", "pt": "Obrigado! Trouxe algo do meu país." },
+        { "who": "ei", "ro": "Nu trebuia! Ia niște papuci.", "pt": "Não precisava! Pega uns chinelos.", "note_pt": "Sapato sai na porta. A casa oferece chinelos — aceite." },
+        { "who": "ei", "ro": "Serviți! Mai luați!", "pt": "Sirva-se! Pega mais!" },
+        { "who": "tu", "ro": "Mulțumesc, sunt sătul. A fost foarte bun.", "pt": "Obrigado, estou satisfeito. Estava ótimo." }
+      ],
+      "phrases": [
+        { "ro": "Bine te-am găsit!", "pt": "Bem-encontrado!", "when_pt": "resposta obrigatória a 'bine ai venit' — par fixo, sem tradução literal" },
+        { "ro": "Nu trebuia!", "pt": "Não precisava!", "when_pt": "recebendo presente" },
+        { "ro": "Sunt sătul.", "pt": "Estou satisfeito (de comida).", "when_pt": "mulher: sunt sătulă" },
+        { "ro": "Mai luați!", "pt": "Pegue mais!" },
+        { "ro": "La mulți ani!", "pt": "Felicidades!", "when_pt": "aniversário, ano novo, dia do santo" }
+      ],
+      "street": [
+        {
+          "textbook": "Vă mulțumesc pentru invitație.",
+          "street": "Mersi de invitație!",
+          "note_pt": "Entre amigos, 'mersi de...' resolve tudo."
+        }
+      ],
+      "etiquette_pt": [
+        "FLORES EM NÚMERO ÍMPAR. Buquê par é para enterro — é a gafe número um do estrangeiro.",
+        "Tire os sapatos ao entrar. Vão te oferecer chinelos ('papuci'); recusar é estranho.",
+        "Você vai ser obrigado a comer. Recusar duas vezes é ritual; recusar de verdade exige insistência educada.",
+        "'Bine ai venit' pede a resposta 'bine te-am găsit'. É par fixo, como 'bom apetite / obrigado'."
+      ],
+      "tags": ["etiqueta", "social", "crítico"]
+    },
+    {
+      "id": "si.telefon",
+      "title": "Telefone e mensagens",
+      "title_ro": "La telefon și pe mesaje",
+      "place": "telefon",
+      "level": "B1",
+      "register": "colocvial",
+      "goal_pt": "Atender, desligar sem grosseria e entender as abreviações do WhatsApp romeno.",
+      "turns": [
+        { "who": "tu", "ro": "Alo?", "pt": "Alô?" },
+        { "who": "ei", "ro": "Salut! Ce faci?", "pt": "Oi! Como vai?" },
+        { "who": "tu", "ro": "Bine, tu? Sunt cam ocupat acum.", "pt": "Bem, e você? Estou meio ocupado agora." },
+        { "who": "ei", "ro": "Nicio problemă, te sun mai târziu.", "pt": "Sem problema, te ligo mais tarde." },
+        { "who": "tu", "ro": "Perfect. Pa!", "pt": "Perfeito. Tchau!" }
+      ],
+      "phrases": [
+        { "ro": "Alo?", "pt": "Alô?" },
+        { "ro": "Te sun mai târziu.", "pt": "Te ligo mais tarde." },
+        { "ro": "Nu am semnal.", "pt": "Estou sem sinal." },
+        { "ro": "Îmi dai un mesaj?", "pt": "Me manda uma mensagem?" },
+        { "ro": "Ne auzim!", "pt": "A gente se fala!", "when_pt": "despedida ao telefone — literalmente 'nos ouvimos'" }
+      ],
+      "street": [
+        {
+          "textbook": "Mulțumesc",
+          "street": "ms",
+          "note_pt": "Abreviação padrão em mensagem."
+        },
+        {
+          "textbook": "Te pup / pupici",
+          "street": "pup",
+          "note_pt": "'Beijo' no fim da mensagem, entre amigos e família — sem conotação romântica."
+        },
+        {
+          "textbook": "Ha ha ha",
+          "street": ":))))",
+          "note_pt": "O romeno ri com parênteses múltiplos, não com 'kkk' nem 'lol'. Quanto mais parênteses, mais engraçado."
+        },
+        {
+          "textbook": "Salut",
+          "street": "sal",
+          "note_pt": "Só em mensagem, nunca falado."
+        }
+      ],
+      "etiquette_pt": [
+        "'Pa' é o tchau normal; 'pa-pa' é carinhoso e comum entre mulheres e com crianças.",
+        "Ligar sem avisar é normal — a cultura de mensagem antes ainda não pegou como no Brasil.",
+        "Em ambiente de trabalho, comece com 'Bună ziua' e o sobrenome, nunca com 'salut'."
+      ],
+      "tags": ["mensagem", "gíria", "dia a dia"]
+    },
+    {
+      "id": "si.farmacie",
+      "title": "Na farmácia",
+      "title_ro": "La farmacie",
+      "place": "farmacie",
+      "level": "B1",
+      "register": "formal",
+      "goal_pt": "Dizer o que está doendo e sair com o remédio certo.",
+      "turns": [
+        { "who": "ei", "ro": "Bună ziua, cu ce vă pot ajuta?", "pt": "Bom dia, em que posso ajudar?" },
+        { "who": "tu", "ro": "Mă doare capul de ieri.", "pt": "Minha cabeça dói desde ontem.", "note_pt": "Literalmente 'me dói a cabeça' — a dor é o sujeito, e você vai no dativo." },
+        { "who": "ei", "ro": "Aveți febră?", "pt": "Está com febre?" },
+        { "who": "tu", "ro": "Nu cred. Aveți ceva fără rețetă?", "pt": "Acho que não. Tem algo sem receita?" },
+        { "who": "ei", "ro": "Da. Luați o pastilă la șase ore.", "pt": "Sim. Tome um comprimido a cada seis horas." },
+        { "who": "tu", "ro": "Mulțumesc mult. Cât costă?", "pt": "Muito obrigado. Quanto custa?" }
+      ],
+      "phrases": [
+        { "ro": "Mă doare capul.", "pt": "Estou com dor de cabeça." },
+        { "ro": "Mă doare stomacul.", "pt": "Estou com dor de barriga." },
+        { "ro": "Aveți ceva pentru...?", "pt": "Tem algo para...?" },
+        { "ro": "Fără rețetă", "pt": "sem receita" },
+        { "ro": "Sunt alergic la...", "pt": "Sou alérgico a...", "when_pt": "mulher: sunt alergică" },
+        { "ro": "Cheamă o ambulanță!", "pt": "Chame uma ambulância!", "when_pt": "emergência — o número é 112" }
+      ],
+      "street": [
+        {
+          "textbook": "Am o durere de cap.",
+          "street": "Mă doare capul.",
+          "note_pt": "A construção com 'a durea' + dativo é a normal. 'Am o durere' soa a relatório médico."
+        }
+      ],
+      "etiquette_pt": [
+        "O farmacêutico romeno aconselha muito e é levado a sério — é a primeira parada antes do médico.",
+        "Muitos remédios que no Brasil exigem receita são vendidos livremente, e vice-versa.",
+        "112 é o número único de emergência, e funciona em inglês."
+      ],
+      "tags": ["saúde", "emergência", "dativo"]
+    }
+  ]
+}

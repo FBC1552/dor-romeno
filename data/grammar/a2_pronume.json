@@ -1,0 +1,100 @@
+{
+  "$schema": "../schema/grammar.schema.json",
+  "meta": {
+    "id": "a2_pronume",
+    "title": "Pronomes átonos e reflexivos",
+    "level": "A2",
+    "version": 1,
+    "description": "Regras de teoria: os pronomes não saem do vocabulário por transformação, então aqui não há drill gerado — há tabela, contraste e a armadilha específica do brasileiro."
+  },
+  "items": [
+    {
+      "id": "g.pron.acuzativ",
+      "title": "Pronomes átonos de acusativo — mă, te, îl, o, ne, vă, îi, le",
+      "level": "A2",
+      "tags": ["pronome", "acusativo", "estrutural"],
+      "explanation_pt": "O objeto direto vira uma partícula ANTES do verbo: 'îl văd' (eu o vejo), 'o cunosc' (eu a conheço), 'mă ajuți?' (você me ajuda?). No passado composto ela entra entre o auxiliar e o particípio: 'l-am văzut'.",
+      "contrast_pt": "O português brasileiro falado sumiu com isso: dizemos 'eu vi ele', não 'eu o vi'. O romeno não te dá essa opção — o pronome átono é obrigatório, e a forma tônica ('pe el') só se acrescenta a ele, nunca o substitui.",
+      "examples": [
+        { "ro": "Îl văd pe Ion.", "pt": "Vejo o Ion." },
+        { "ro": "L-am văzut ieri.", "pt": "Eu o vi ontem." },
+        { "ro": "Mă ajuți, te rog?", "pt": "Você me ajuda, por favor?" }
+      ],
+      "table": {
+        "headers": ["pessoa", "átono", "exemplo"],
+        "rows": [
+          ["me", "mă", "mă vezi"],
+          ["te", "te", "te văd"],
+          ["o (ele)", "îl", "îl văd"],
+          ["a (ela)", "o", "o văd"],
+          ["nos", "ne", "ne vezi"],
+          ["vos", "vă", "vă văd"],
+          ["os (eles)", "îi", "îi văd"],
+          ["as (elas)", "le", "le văd"]
+        ]
+      },
+      "pitfall_pt": "No perfeito composto o pronome se cola no auxiliar com hífen: 'l-am văzut', 'am văzut-o' (para o feminino, vai depois!). O feminino 'o' é a exceção que se pendura no fim."
+    },
+    {
+      "id": "g.pron.dativ",
+      "title": "Pronomes átonos de dativo — îmi, îți, îi, ne, vă, le",
+      "level": "A2",
+      "tags": ["pronome", "dativo", "estrutural"],
+      "explanation_pt": "O destinatário também vira partícula: 'îmi place' (me agrada), 'îți dau' (te dou), 'îi spun' (digo a ele/ela). Repare que 'îi' serve tanto para 'a ele' quanto para 'a ela'.",
+      "contrast_pt": "É o nosso 'me/te/lhe' — que o brasileiro ainda usa em 'me dá'. A diferença é que aqui não há escapatória informal: 'dou para ele' pede 'îi dau lui'.",
+      "examples": [
+        { "ro": "Îmi place muzica.", "pt": "Eu gosto de música. (lit.: me agrada)" },
+        { "ro": "Îți mulțumesc.", "pt": "Eu te agradeço." },
+        { "ro": "Le-am spus tot.", "pt": "Contei tudo a eles." }
+      ],
+      "table": {
+        "headers": ["pessoa", "átono", "exemplo"],
+        "rows": [
+          ["a mim", "îmi", "îmi place"],
+          ["a ti", "îți", "îți dau"],
+          ["a ele / a ela", "îi", "îi spun"],
+          ["a nós", "ne", "ne place"],
+          ["a vós", "vă", "vă dau"],
+          ["a eles / a elas", "le", "le spun"]
+        ]
+      },
+      "pitfall_pt": "'A place' funciona ao contrário do nosso 'gostar': quem gosta vai no dativo e a coisa é o sujeito. 'Îmi place cafeaua' = 'o café me agrada'. Se o objeto for plural, o verbo vai para o plural: 'îmi plac cărțile'."
+    },
+    {
+      "id": "g.pron.reflexiv",
+      "title": "Verbos reflexivos — mă, te, se",
+      "level": "A2",
+      "tags": ["pronome", "reflexivo"],
+      "explanation_pt": "O infinitivo traz o 'se': a se descurca, a se trezi. Conjugando, o pronome vem antes e muda com a pessoa: mă trezesc, te trezești, se trezește.",
+      "contrast_pt": "Igual ao português ('me levanto, se levanta'), com uma vantagem: o romeno sempre põe o pronome ANTES do verbo, então some a dúvida entre 'me levanto' e 'levanto-me'.",
+      "examples": [
+        { "ro": "Mă descurc.", "pt": "Eu me viro." },
+        { "ro": "Cum te simți?", "pt": "Como você se sente?" },
+        { "ro": "Se numește Ana.", "pt": "Ela se chama Ana." }
+      ],
+      "pitfall_pt": "Nem sempre os reflexivos coincidem entre as duas línguas. 'A se naște' (nascer) é reflexivo em romeno e não em português: 'm-am născut în Brazilia'."
+    },
+    {
+      "id": "g.pron.politete",
+      "title": "Dumneavoastră — o 'você' formal",
+      "level": "A2",
+      "tags": ["pronome", "registro", "cultura"],
+      "explanation_pt": "'Tu' é para família e amigos. Com desconhecidos, mais velhos, chefes e balconistas usa-se 'dumneavoastră' (abreviado dvs.), que leva o verbo na 2ª do plural: 'Ce faceți?'. Existe ainda 'dumneata', um meio-termo hoje meio antiquado.",
+      "contrast_pt": "O 'você' brasileiro é neutro e serve para quase tudo; o 'tu' romeno não serve. Tratar por 'tu' quem espera 'dumneavoastră' soa atrevido — é um erro social, não gramatical.",
+      "examples": [
+        { "ro": "Ce faceți, domnule Popescu?", "pt": "Como vai, senhor Popescu?" },
+        { "ro": "Ce faci, Ana?", "pt": "Como vai, Ana?" },
+        { "ro": "Vă rog.", "pt": "Por favor. (formal)" }
+      ],
+      "table": {
+        "headers": ["situação", "pronome", "verbo"],
+        "rows": [
+          ["amigo, família, criança", "tu", "2ª singular — ce faci?"],
+          ["desconhecido, mais velho, chefe", "dumneavoastră", "2ª plural — ce faceți?"],
+          ["grupo (qualquer)", "voi", "2ª plural — ce faceți?"]
+        ]
+      },
+      "pitfall_pt": "A regra prática: comece sempre no 'dumneavoastră'. O romeno mais velho vai te oferecer o 'tu' quando achar a hora ('putem să ne tutuim'). Descer de nível é fácil; subir depois de errar é constrangedor."
+    }
+  ]
+}

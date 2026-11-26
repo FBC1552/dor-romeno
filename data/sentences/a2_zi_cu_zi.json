@@ -1,0 +1,330 @@
+{
+  "$schema": "../schema/sentences.schema.json",
+  "meta": {
+    "id": "a2_zi_cu_zi",
+    "title": "Frases do dia a dia",
+    "level": "A2",
+    "version": 1,
+    "description": "Cada frase aponta para o vocabulário que ela usa e marca uma palavra para virar lacuna. É daqui que sai o modo `lacuna` e boa parte do podcast."
+  },
+  "items": [
+    {
+      "id": "s.a2.timp.01",
+      "ro": "Astăzi este luni și mâine este marți.",
+      "pt": "Hoje é segunda e amanhã é terça.",
+      "level": "A1",
+      "vocab": ["ro.azi", "ro.maine", "ro.luni", "ro.marti", "ro.a_fi"],
+      "cloze_target": "mâine"
+    },
+    {
+      "id": "s.a2.timp.02",
+      "ro": "Ne vedem vineri seara.",
+      "pt": "A gente se vê sexta à noite.",
+      "level": "A2",
+      "register": "colocvial",
+      "vocab": ["ro.a_vedea", "ro.vineri"],
+      "cloze_target": "vineri"
+    },
+    {
+      "id": "s.a2.timp.03",
+      "ro": "Ieri am lucrat opt ore.",
+      "pt": "Ontem trabalhei oito horas.",
+      "level": "A2",
+      "vocab": ["ro.ieri", "ro.a_lucra", "ro.opt", "ro.ora"],
+      "grammar": ["g.verb.perfect.compus"],
+      "cloze_target": "lucrat"
+    },
+    {
+      "id": "s.a2.timp.04",
+      "ro": "Mă trezesc la șapte în fiecare zi.",
+      "pt": "Eu acordo às sete todos os dias.",
+      "level": "A2",
+      "vocab": ["ro.a_se_trezi", "ro.sapte", "ro.zi"],
+      "cloze_target": "trezesc"
+    },
+    {
+      "id": "s.a2.timp.05",
+      "ro": "Anul acesta învăț limba română.",
+      "pt": "Este ano estou aprendendo romeno.",
+      "level": "A2",
+      "vocab": ["ro.an", "ro.a_invata"],
+      "cloze_target": "învăț",
+      "note_pt": "Sem gerúndio: 'învăț' cobre 'aprendo' e 'estou aprendendo'."
+    },
+    {
+      "id": "s.a2.oras.01",
+      "ro": "Unde este gara, vă rog?",
+      "pt": "Onde fica a estação, por favor?",
+      "level": "A1",
+      "register": "formal",
+      "vocab": ["ro.gara", "ro.a_fi"],
+      "cloze_target": "gara"
+    },
+    {
+      "id": "s.a2.oras.02",
+      "ro": "Merg pe jos până în piață.",
+      "pt": "Vou a pé até a praça.",
+      "level": "A2",
+      "vocab": ["ro.a_merge", "ro.a_merge_pe_jos", "ro.piata"],
+      "cloze_target": "piață"
+    },
+    {
+      "id": "s.a2.oras.03",
+      "ro": "Cât costă un bilet de tren?",
+      "pt": "Quanto custa uma passagem de trem?",
+      "level": "A2",
+      "vocab": ["ro.a_costa", "ro.bilet", "ro.tren"],
+      "cloze_target": "costă"
+    },
+    {
+      "id": "s.a2.oras.04",
+      "ro": "Nu am bani la mine.",
+      "pt": "Não estou com dinheiro comigo.",
+      "level": "A2",
+      "register": "colocvial",
+      "vocab": ["ro.a_avea", "ro.bani"],
+      "cloze_target": "bani"
+    },
+    {
+      "id": "s.a2.oras.05",
+      "ro": "Mașina este pe stradă.",
+      "pt": "O carro está na rua.",
+      "level": "A1",
+      "vocab": ["ro.masina", "ro.strada", "ro.a_fi"],
+      "cloze_target": "stradă"
+    },
+    {
+      "id": "s.a2.oras.06",
+      "ro": "Orașul este mare și frumos.",
+      "pt": "A cidade é grande e bonita.",
+      "level": "A2",
+      "vocab": ["ro.oras", "ro.mare", "ro.frumos"],
+      "grammar": ["g.adj.pozitie"],
+      "cloze_target": "frumos"
+    },
+    {
+      "id": "s.a2.oras.07",
+      "ro": "Pot să plătesc cu cardul?",
+      "pt": "Posso pagar com cartão?",
+      "level": "A2",
+      "vocab": ["ro.a_putea", "ro.a_plati"],
+      "grammar": ["g.verb.conjunctiv"],
+      "cloze_target": "plătesc",
+      "note_pt": "Dois verbos seguidos pedem 'să' no meio — a regra estrutural nº 1."
+    },
+    {
+      "id": "s.a2.mancare.01",
+      "ro": "Mi-e foame și mi-e sete.",
+      "pt": "Estou com fome e com sede.",
+      "level": "A2",
+      "vocab": ["ro.foame", "ro.sete"],
+      "cloze_target": "foame",
+      "note_pt": "'Mi-e' + substantivo: literalmente 'a mim é fome'. Não se diz 'am foame'."
+    },
+    {
+      "id": "s.a2.mancare.02",
+      "ro": "Ciorba este foarte bună astăzi.",
+      "pt": "A sopa está muito boa hoje.",
+      "level": "A2",
+      "vocab": ["ro.ciorba", "ro.bun", "ro.azi", "ro.a_fi"],
+      "cloze_target": "bună"
+    },
+    {
+      "id": "s.a2.mancare.03",
+      "ro": "Vreau să comand sarmale și mămăligă.",
+      "pt": "Quero pedir sarmale e polenta.",
+      "level": "A2",
+      "vocab": ["ro.a_vrea", "ro.a_comanda", "ro.sarmale", "ro.mamaliga"],
+      "grammar": ["g.verb.conjunctiv"],
+      "cloze_target": "comand"
+    },
+    {
+      "id": "s.a2.mancare.04",
+      "ro": "Mama gătește carne cu cartofi.",
+      "pt": "Minha mãe cozinha carne com batata.",
+      "level": "A2",
+      "vocab": ["ro.mama", "ro.a_gati", "ro.carne", "ro.cartof"],
+      "cloze_target": "gătește"
+    },
+    {
+      "id": "s.a2.mancare.05",
+      "ro": "Am mâncat pește la restaurant.",
+      "pt": "Comi peixe no restaurante.",
+      "level": "A2",
+      "vocab": ["ro.a_manca", "ro.peste_pescado"],
+      "grammar": ["g.verb.perfect.compus"],
+      "cloze_target": "mâncat"
+    },
+    {
+      "id": "s.a2.mancare.06",
+      "ro": "Brânza aceasta este delicioasă.",
+      "pt": "Este queijo está delicioso.",
+      "level": "A2",
+      "vocab": ["ro.branza", "ro.delicios", "ro.a_fi"],
+      "grammar": ["g.adj.acord.fem"],
+      "cloze_target": "delicioasă"
+    },
+    {
+      "id": "s.a2.persoana.01",
+      "ro": "Fratele meu are doi copii.",
+      "pt": "Meu irmão tem dois filhos.",
+      "level": "A2",
+      "vocab": ["ro.frate", "ro.a_avea", "ro.doi", "ro.copil"],
+      "cloze_target": "copii"
+    },
+    {
+      "id": "s.a2.persoana.02",
+      "ro": "Sora mea locuiește în alt oraș.",
+      "pt": "Minha irmã mora em outra cidade.",
+      "level": "A2",
+      "vocab": ["ro.sora", "ro.a_locui", "ro.oras"],
+      "cloze_target": "locuiește"
+    },
+    {
+      "id": "s.a2.persoana.03",
+      "ro": "Prietenii mei vin mâine.",
+      "pt": "Meus amigos vêm amanhã.",
+      "level": "A2",
+      "vocab": ["ro.prieten", "ro.a_veni", "ro.maine"],
+      "cloze_target": "vin"
+    },
+    {
+      "id": "s.a2.persoana.04",
+      "ro": "Cum te simți astăzi?",
+      "pt": "Como você se sente hoje?",
+      "level": "A2",
+      "register": "colocvial",
+      "vocab": ["ro.a_se_simti", "ro.azi"],
+      "cloze_target": "simți"
+    },
+    {
+      "id": "s.a2.persoana.05",
+      "ro": "Mă doare capul de ieri.",
+      "pt": "Minha cabeça dói desde ontem.",
+      "level": "A2",
+      "vocab": ["ro.a_durea", "ro.cap", "ro.ieri"],
+      "cloze_target": "doare",
+      "note_pt": "A dor é o sujeito e você vai no dativo: 'mă doare' = me dói."
+    },
+    {
+      "id": "s.a2.persoana.06",
+      "ro": "Doctorul spune că trebuie să dorm mai mult.",
+      "pt": "O médico diz que preciso dormir mais.",
+      "level": "B1",
+      "vocab": ["ro.doctor", "ro.a_spune", "ro.a_trebui", "ro.a_dormi"],
+      "grammar": ["g.verb.conjunctiv"],
+      "cloze_target": "trebuie"
+    },
+    {
+      "id": "s.a2.rotina.01",
+      "ro": "Îmi dai un pahar cu apă, te rog?",
+      "pt": "Você me dá um copo d'água, por favor?",
+      "level": "A2",
+      "register": "colocvial",
+      "vocab": ["ro.a_da", "ro.apa"],
+      "grammar": ["g.pron.dativ"],
+      "cloze_target": "dai"
+    },
+    {
+      "id": "s.a2.rotina.02",
+      "ro": "Nu știu ce să spun.",
+      "pt": "Não sei o que dizer.",
+      "level": "A2",
+      "vocab": ["ro.a_sti", "ro.a_spune"],
+      "grammar": ["g.verb.conjunctiv"],
+      "cloze_target": "spun"
+    },
+    {
+      "id": "s.a2.rotina.03",
+      "ro": "Te ajut cu plăcere.",
+      "pt": "Ajudo você com prazer.",
+      "level": "A2",
+      "vocab": ["ro.a_ajuta"],
+      "grammar": ["g.pron.acuzativ"],
+      "cloze_target": "ajut"
+    },
+    {
+      "id": "s.a2.rotina.04",
+      "ro": "Cred că ai dreptate.",
+      "pt": "Acho que você tem razão.",
+      "level": "A2",
+      "register": "colocvial",
+      "vocab": ["ro.a_crede", "ro.a_avea"],
+      "cloze_target": "Cred"
+    },
+    {
+      "id": "s.a2.rotina.05",
+      "ro": "Trebuie să plec acum.",
+      "pt": "Preciso ir embora agora.",
+      "level": "A2",
+      "vocab": ["ro.a_trebui", "ro.a_pleca", "ro.acum"],
+      "grammar": ["g.verb.conjunctiv"],
+      "cloze_target": "plec"
+    },
+    {
+      "id": "s.a2.rotina.06",
+      "ro": "Te aștept la ora șase.",
+      "pt": "Te espero às seis horas.",
+      "level": "A2",
+      "vocab": ["ro.a_astepta", "ro.ora", "ro.sase"],
+      "cloze_target": "aștept"
+    },
+    {
+      "id": "s.a2.rotina.07",
+      "ro": "Ascult muzică românească în fiecare seară.",
+      "pt": "Escuto música romena toda noite.",
+      "level": "A2",
+      "vocab": ["ro.a_asculta"],
+      "cloze_target": "Ascult"
+    },
+    {
+      "id": "s.a2.rotina.08",
+      "ro": "Am scris o scrisoare pentru mama.",
+      "pt": "Escrevi uma carta para minha mãe.",
+      "level": "A2",
+      "vocab": ["ro.a_scrie", "ro.mama"],
+      "grammar": ["g.verb.perfect.compus"],
+      "cloze_target": "scris"
+    },
+    {
+      "id": "s.a2.rotina.09",
+      "ro": "Când eram mic, citeam mult.",
+      "pt": "Quando eu era pequeno, lia muito.",
+      "level": "B1",
+      "vocab": ["ro.a_fi", "ro.mic", "ro.a_citi"],
+      "grammar": ["g.verb.imperfect"],
+      "cloze_target": "citeam",
+      "note_pt": "Imperfeito nos dois verbos — o passado que ainda estava acontecendo."
+    },
+    {
+      "id": "s.a2.rotina.10",
+      "ro": "O să te sun mâine dimineață.",
+      "pt": "Vou te ligar amanhã de manhã.",
+      "level": "B1",
+      "register": "colocvial",
+      "vocab": ["ro.maine"],
+      "grammar": ["g.verb.viitor.popular"],
+      "cloze_target": "sun",
+      "note_pt": "O futuro que se fala: 'o să' + conjuntivo. 'Voi suna' é para texto formal."
+    },
+    {
+      "id": "s.a2.rotina.11",
+      "ro": "Întreabă-l pe Ion unde este cheia.",
+      "pt": "Pergunte ao Ion onde está a chave.",
+      "level": "B1",
+      "vocab": ["ro.a_intreba", "ro.a_fi"],
+      "grammar": ["g.prep.pe.acuzativ"],
+      "cloze_target": "Întreabă"
+    },
+    {
+      "id": "s.a2.rotina.12",
+      "ro": "Nu am înțeles, mai rar vă rog.",
+      "pt": "Não entendi, mais devagar por favor.",
+      "level": "A1",
+      "register": "formal",
+      "vocab": ["ro.a_intelege"],
+      "cloze_target": "înțeles",
+      "note_pt": "A frase que salva qualquer conversa. Decore inteira."
+    }
+  ]
+}

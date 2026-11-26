@@ -1,0 +1,635 @@
+{
+  "$schema": "../schema/vocabulary.schema.json",
+  "meta": {
+    "id": "a2_oras",
+    "title": "Cidade, lugares e deslocamento",
+    "level": "A2",
+    "version": 2,
+    "description": "O vocabulário de quem sai de casa. Sustenta as cenas da rua, do táxi e da loja."
+  },
+  "items": [
+    {
+      "id": "ro.oras",
+      "ro": "oraș",
+      "pt": [
+        "cidade"
+      ],
+      "pos": "noun",
+      "level": "A1",
+      "gender": "n",
+      "ipa": "oˈraʃ",
+      "forms": {
+        "def_sg": "orașul",
+        "indef_pl": "orașe",
+        "def_pl": "orașele"
+      },
+      "tags": [
+        "cidade",
+        "essencial"
+      ],
+      "etymology": "maghiar",
+      "false_friend": {
+        "looks_like": "oração",
+        "actually_means": "cidade",
+        "note": "Vem do húngaro 'város'. Não tem nada de latino — a ponte '-dade → -tate' falha aqui."
+      }
+    },
+    {
+      "id": "ro.strada",
+      "ro": "stradă",
+      "pt": [
+        "rua"
+      ],
+      "pos": "noun",
+      "level": "A1",
+      "gender": "f",
+      "ipa": "ˈstra.də",
+      "forms": {
+        "def_sg": "strada",
+        "indef_pl": "străzi",
+        "def_pl": "străzile",
+        "gen_dat_sg": "străzii"
+      },
+      "tags": [
+        "cidade",
+        "essencial"
+      ],
+      "etymology": "latin",
+      "cognate_pt": {
+        "word": "estrada",
+        "confidence": "alto",
+        "note": "← lat. strata"
+      },
+      "note_pt": "No plural o 'd' vira 'z': stradă → străzi. Mesma alternância de 'cald → calzi'."
+    },
+    {
+      "id": "ro.piata",
+      "ro": "piață",
+      "pt": [
+        "praça",
+        "feira",
+        "mercado"
+      ],
+      "pos": "noun",
+      "level": "A1",
+      "gender": "f",
+      "ipa": "ˈpja.t͡sə",
+      "forms": {
+        "def_sg": "piața",
+        "indef_pl": "piețe",
+        "def_pl": "piețele",
+        "gen_dat_sg": "pieței"
+      },
+      "tags": [
+        "cidade",
+        "compras"
+      ],
+      "etymology": "latin",
+      "cognate_pt": {
+        "word": "praça",
+        "confidence": "alto",
+        "note": "← lat. platea"
+      },
+      "note_pt": "Cobre praça E feira livre. 'Piața Unirii' é praça; 'merg la piață' é ir à feira."
+    },
+    {
+      "id": "ro.magazin",
+      "ro": "magazin",
+      "pt": [
+        "loja"
+      ],
+      "pos": "noun",
+      "level": "A2",
+      "gender": "n",
+      "ipa": "ma.ɡaˈzin",
+      "forms": {
+        "def_sg": "magazinul",
+        "indef_pl": "magazine",
+        "def_pl": "magazinele"
+      },
+      "tags": [
+        "cidade",
+        "compras"
+      ],
+      "etymology": "francez",
+      "false_friend": {
+        "looks_like": "magazine (revista)",
+        "actually_means": "loja",
+        "note": "Do francês 'magasin', que também é loja. A revista é 'revistă'."
+      }
+    },
+    {
+      "id": "ro.gara",
+      "ro": "gară",
+      "pt": [
+        "estação de trem"
+      ],
+      "accepts_pt": ["estação", "estação ferroviária"],
+      "pos": "noun",
+      "level": "A2",
+      "gender": "f",
+      "ipa": "ˈɡa.rə",
+      "forms": {
+        "def_sg": "gara",
+        "indef_pl": "gări",
+        "def_pl": "gările",
+        "gen_dat_sg": "gării"
+      },
+      "tags": [
+        "cidade",
+        "viagem"
+      ],
+      "etymology": "francez",
+      "note_pt": "Do francês 'gare'. A principal de Bucareste é a Gara de Nord."
+    },
+    {
+      "id": "ro.aeroport",
+      "ro": "aeroport",
+      "pt": [
+        "aeroporto"
+      ],
+      "pos": "noun",
+      "level": "A2",
+      "gender": "n",
+      "ipa": "a.e.roˈport",
+      "forms": {
+        "def_sg": "aeroportul",
+        "indef_pl": "aeroporturi",
+        "def_pl": "aeroporturile"
+      },
+      "tags": [
+        "viagem"
+      ],
+      "etymology": "francez",
+      "cognate_pt": {
+        "word": "aeroporto",
+        "confidence": "alto"
+      }
+    },
+    {
+      "id": "ro.banca",
+      "ro": "bancă",
+      "pt": [
+        "banco"
+      ],
+      "pos": "noun",
+      "level": "A2",
+      "gender": "f",
+      "ipa": "ˈban.kə",
+      "forms": {
+        "def_sg": "banca",
+        "indef_pl": "bănci",
+        "def_pl": "băncile",
+        "gen_dat_sg": "băncii"
+      },
+      "tags": [
+        "cidade",
+        "dinheiro"
+      ],
+      "etymology": "german",
+      "note_pt": "Serve para o banco de dinheiro E para o banco de sentar, como em português."
+    },
+    {
+      "id": "ro.drum",
+      "ro": "drum",
+      "pt": [
+        "caminho",
+        "estrada"
+      ],
+      "pos": "noun",
+      "level": "A2",
+      "gender": "n",
+      "ipa": "drum",
+      "forms": {
+        "def_sg": "drumul",
+        "indef_pl": "drumuri",
+        "def_pl": "drumurile"
+      },
+      "tags": [
+        "viagem"
+      ],
+      "etymology": "slav",
+      "note_pt": "'Drum bun!' é o 'boa viagem' romeno. Está no título 'Lung îi drumul Gorjului'."
+    },
+    {
+      "id": "ro.masina",
+      "ro": "mașină",
+      "pt": [
+        "carro",
+        "máquina"
+      ],
+      "pos": "noun",
+      "level": "A1",
+      "gender": "f",
+      "ipa": "maˈʃi.nə",
+      "forms": {
+        "def_sg": "mașina",
+        "indef_pl": "mașini",
+        "def_pl": "mașinile",
+        "gen_dat_sg": "mașinii"
+      },
+      "tags": [
+        "viagem",
+        "essencial"
+      ],
+      "etymology": "francez",
+      "cognate_pt": {
+        "word": "máquina",
+        "confidence": "alto"
+      },
+      "note_pt": "A palavra normal para carro é 'mașină' — a mesma de 'máquina'. 'Mașina de spălat' é a de lavar."
+    },
+    {
+      "id": "ro.tren",
+      "ro": "tren",
+      "pt": [
+        "trem"
+      ],
+      "pos": "noun",
+      "level": "A2",
+      "gender": "n",
+      "ipa": "tren",
+      "forms": {
+        "def_sg": "trenul",
+        "indef_pl": "trenuri",
+        "def_pl": "trenurile"
+      },
+      "tags": [
+        "viagem"
+      ],
+      "etymology": "francez",
+      "cognate_pt": {
+        "word": "trem",
+        "confidence": "alto"
+      }
+    },
+    {
+      "id": "ro.bilet",
+      "ro": "bilet",
+      "pt": [
+        "bilhete",
+        "passagem",
+        "ingresso"
+      ],
+      "accepts_pt": ["tíquete", "entrada"],
+      "pos": "noun",
+      "level": "A2",
+      "gender": "n",
+      "ipa": "biˈlet",
+      "forms": {
+        "def_sg": "biletul",
+        "indef_pl": "bilete",
+        "def_pl": "biletele"
+      },
+      "tags": [
+        "viagem",
+        "essencial"
+      ],
+      "etymology": "francez",
+      "cognate_pt": {
+        "word": "bilhete",
+        "confidence": "alto"
+      }
+    },
+    {
+      "id": "ro.bani",
+      "ro": "bani",
+      "pt": [
+        "dinheiro"
+      ],
+      "accepts_pt": ["grana"],
+      "pos": "noun",
+      "level": "A1",
+      "gender": "m",
+      "ipa": "banʲ",
+      "forms": {
+        "def_sg": "banul",
+        "indef_pl": "bani",
+        "def_pl": "banii"
+      },
+      "tags": [
+        "dinheiro",
+        "essencial"
+      ],
+      "etymology": "necunoscut",
+      "note_pt": "Usa-se sempre no plural para 'dinheiro'. O singular 'ban' é a moedinha: 100 bani = 1 leu."
+    },
+    {
+      "id": "ro.pret",
+      "ro": "preț",
+      "pt": [
+        "preço"
+      ],
+      "pos": "noun",
+      "level": "A2",
+      "gender": "n",
+      "ipa": "prets",
+      "forms": {
+        "def_sg": "prețul",
+        "indef_pl": "prețuri",
+        "def_pl": "prețurile"
+      },
+      "tags": [
+        "dinheiro",
+        "compras"
+      ],
+      "etymology": "latin",
+      "cognate_pt": {
+        "word": "preço",
+        "confidence": "alto",
+        "note": "← lat. pretium"
+      }
+    },
+    {
+      "id": "ro.a_merge_pe_jos",
+      "ro": "a merge pe jos",
+      "pt": [
+        "ir a pé",
+        "caminhar"
+      ],
+      "pos": "expr",
+      "level": "A2",
+      "ipa": "a ˈmer.d͡ʒe pe ʒos",
+      "tags": [
+        "viagem",
+        "expressão"
+      ],
+      "etymology": "latin",
+      "note_pt": "Literalmente 'ir por baixo'. É assim que se diz 'a pé' — não existe 'pe picior'."
+    },
+    {
+      "id": "ro.a_astepta",
+      "ro": "a aștepta",
+      "pt": [
+        "esperar",
+        "aguardar"
+      ],
+      "pos": "verb",
+      "level": "A2",
+      "conjugation": "I",
+      "ipa": "a aʃtepˈta",
+      "forms": {
+        "prezent": [
+          "aștept",
+          "aștepți",
+          "așteaptă",
+          "așteptăm",
+          "așteptați",
+          "așteaptă"
+        ],
+        "participiu": "așteptat",
+        "perfect_compus": "am așteptat",
+        "viitor_popular": "o să aștept",
+        "conjunctiv": "să aștepte",
+        "imperfect": [
+          "așteptam",
+          "așteptai",
+          "aștepta",
+          "așteptam",
+          "așteptați",
+          "așteptau"
+        ],
+        "gerunziu": "așteptând",
+        "imperativ": "așteaptă!",
+        "conditional": "aș aștepta",
+        "mai_mult_ca_perfect": "așteptasem"
+      },
+      "tags": [
+        "essencial",
+        "rotina"
+      ],
+      "etymology": "latin",
+      "cognate_pt": {
+        "word": "esperar",
+        "confidence": "medio",
+        "note": "← lat. exspectare"
+      },
+      "note_pt": "Cuidado: 'a spera' existe e significa esperar no sentido de ter esperança. Aguardar é 'a aștepta'."
+    },
+    {
+      "id": "ro.a_pleca",
+      "ro": "a pleca",
+      "pt": [
+        "partir",
+        "ir embora"
+      ],
+      "accepts_pt": ["sair", "ir-se"],
+      "pos": "verb",
+      "level": "A2",
+      "conjugation": "I",
+      "ipa": "a pleˈka",
+      "forms": {
+        "prezent": [
+          "plec",
+          "pleci",
+          "pleacă",
+          "plecăm",
+          "plecați",
+          "pleacă"
+        ],
+        "participiu": "plecat",
+        "perfect_compus": "am plecat",
+        "viitor_popular": "o să plec",
+        "conjunctiv": "să plece",
+        "imperfect": [
+          "plecam",
+          "plecai",
+          "pleca",
+          "plecam",
+          "plecați",
+          "plecau"
+        ],
+        "gerunziu": "plecând",
+        "imperativ": "pleacă!",
+        "conditional": "aș pleca",
+        "mai_mult_ca_perfect": "plecasem"
+      },
+      "tags": [
+        "essencial",
+        "movimento"
+      ],
+      "etymology": "latin",
+      "cognate_pt": {
+        "word": "plicar / dobrar",
+        "confidence": "baixo",
+        "note": "← lat. plicare, 'dobrar' — em romeno virou 'dobrar a tenda e partir'"
+      }
+    },
+    {
+      "id": "ro.a_veni",
+      "ro": "a veni",
+      "pt": [
+        "vir"
+      ],
+      "pos": "verb",
+      "level": "A1",
+      "conjugation": "IV",
+      "ipa": "a veˈni",
+      "forms": {
+        "prezent": [
+          "vin",
+          "vii",
+          "vine",
+          "venim",
+          "veniți",
+          "vin"
+        ],
+        "participiu": "venit",
+        "perfect_compus": "am venit",
+        "viitor": "voi veni",
+        "viitor_popular": "o să vin",
+        "conjunctiv": "să vină",
+        "imperfect": [
+          "veneam",
+          "veneai",
+          "venea",
+          "veneam",
+          "veneați",
+          "veneau"
+        ],
+        "gerunziu": "venind",
+        "imperativ": "vino!",
+        "conditional": "aș veni",
+        "mai_mult_ca_perfect": "venisem"
+      },
+      "tags": [
+        "essencial",
+        "movimento"
+      ],
+      "etymology": "latin",
+      "cognate_pt": {
+        "word": "vir",
+        "confidence": "alto",
+        "note": "← lat. venire"
+      },
+      "note_pt": "'Vin' é ao mesmo tempo 'eu venho' e 'vinho'. O imperativo é irregular: 'vino!'."
+    },
+    {
+      "id": "ro.a_cauta",
+      "ro": "a căuta",
+      "pt": [
+        "procurar",
+        "buscar"
+      ],
+      "pos": "verb",
+      "level": "A2",
+      "conjugation": "I",
+      "ipa": "a kə.uˈta",
+      "forms": {
+        "prezent": [
+          "caut",
+          "cauți",
+          "caută",
+          "căutăm",
+          "căutați",
+          "caută"
+        ],
+        "participiu": "căutat",
+        "perfect_compus": "am căutat",
+        "viitor_popular": "o să caut",
+        "conjunctiv": "să caute",
+        "imperfect": [
+          "căutam",
+          "căutai",
+          "căuta",
+          "căutam",
+          "căutați",
+          "căutau"
+        ],
+        "gerunziu": "căutând",
+        "imperativ": "caută!",
+        "conditional": "aș căuta",
+        "mai_mult_ca_perfect": "căutasem"
+      },
+      "tags": [
+        "essencial"
+      ],
+      "etymology": "latin",
+      "cognate_pt": {
+        "word": "cautela",
+        "confidence": "medio",
+        "note": "← lat. cautare"
+      }
+    },
+    {
+      "id": "ro.a_costa",
+      "ro": "a costa",
+      "pt": [
+        "custar"
+      ],
+      "pos": "verb",
+      "level": "A1",
+      "conjugation": "I",
+      "ipa": "a kosˈta",
+      "forms": {
+        "prezent": [
+          "cost",
+          "coști",
+          "costă",
+          "costăm",
+          "costați",
+          "costă"
+        ],
+        "participiu": "costat",
+        "perfect_compus": "a costat",
+        "conjunctiv": "să coste",
+        "gerunziu": "costând",
+        "conditional": "aș costa",
+        "mai_mult_ca_perfect": "costasem"
+      },
+      "tags": [
+        "dinheiro",
+        "essencial"
+      ],
+      "etymology": "latin",
+      "cognate_pt": {
+        "word": "custar",
+        "confidence": "alto"
+      },
+      "note_pt": "Na prática só se usa na 3ª pessoa: 'cât costă?' — quanto custa?"
+    },
+    {
+      "id": "ro.a_plati",
+      "ro": "a plăti",
+      "pt": [
+        "pagar"
+      ],
+      "pos": "verb",
+      "level": "A2",
+      "conjugation": "IV",
+      "ipa": "a pləˈti",
+      "forms": {
+        "prezent": [
+          "plătesc",
+          "plătești",
+          "plătește",
+          "plătim",
+          "plătiți",
+          "plătesc"
+        ],
+        "participiu": "plătit",
+        "perfect_compus": "am plătit",
+        "viitor_popular": "o să plătesc",
+        "conjunctiv": "să plătească",
+        "imperfect": [
+          "plăteam",
+          "plăteai",
+          "plătea",
+          "plăteam",
+          "plăteați",
+          "plăteau"
+        ],
+        "gerunziu": "plătind",
+        "imperativ": "plătește!",
+        "conditional": "aș plăti",
+        "mai_mult_ca_perfect": "plătisem"
+      },
+      "tags": [
+        "dinheiro",
+        "essencial"
+      ],
+      "etymology": "slav",
+      "note_pt": "Eslavo — nada de 'a paga'. 'Pot să plătesc cu cardul?' é a frase que salva a viagem."
+    }
+  ]
+}

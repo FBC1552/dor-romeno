@@ -1,0 +1,3 @@
+# Migrations SQLite do próprio app (esquema do dor), revisadas à mão. Um caminho por linha.
+dor/storage/migrations/001_initial.sql
+dor/storage/migrations/002_gamification.sql

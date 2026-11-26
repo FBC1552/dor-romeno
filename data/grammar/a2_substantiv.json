@@ -1,0 +1,114 @@
+{
+  "$schema": "../schema/grammar.schema.json",
+  "meta": {
+    "id": "a2_substantiv",
+    "title": "Substantivo: plural definido, genitivo e dativo",
+    "level": "A2",
+    "version": 1,
+    "description": "O romeno é a única língua latina viva que manteve declinação. Estas regras cobrem o caso que o português resolve com preposição."
+  },
+  "items": [
+    {
+      "id": "g.articol.hotarat.pl",
+      "title": "Artigo definido no plural",
+      "level": "A2",
+      "tags": ["substantivo", "artigo", "plural"],
+      "explanation_pt": "Mesmo princípio do singular: o artigo cola no fim. Femininos e neutros ganham -le sobre o plural (case → casele, scaune → scaunele); masculinos ganham -i, que na escrita vira -ii (băieți → băieții).",
+      "contrast_pt": "Em português trocamos 'casas' por 'as casas' — duas palavras. Aqui continua sendo uma só, e o plural indefinido é a base sobre a qual o artigo se apoia.",
+      "examples": [
+        { "ro": "case → casele", "pt": "casas → as casas" },
+        { "ro": "scaune → scaunele", "pt": "cadeiras → as cadeiras" },
+        { "ro": "băieți → băieții", "pt": "meninos → os meninos" }
+      ],
+      "pitfall_pt": "O -ii do masculino soa como um -i só, um pouco mais longo. A diferença entre 'băieți' e 'băieții' quase não se ouve — é o contexto que resolve.",
+      "drill": {
+        "type": "transform",
+        "query": { "pos": "noun", "has_form": "forms.def_pl" },
+        "from": "ro",
+        "to": "forms.def_pl",
+        "prompt_pt": "Passe para o plural definido (os/as ...):"
+      }
+    },
+    {
+      "id": "g.caz.genitiv.dativ",
+      "title": "Genitivo e dativo — o caso que o português perdeu",
+      "level": "A2",
+      "tags": ["substantivo", "caso", "estrutural"],
+      "explanation_pt": "O romeno muda a PALAVRA em vez de usar preposição. 'Da casa' é 'casei'; 'para a menina' é 'fetei'. Genitivo (posse) e dativo (destinatário) usam a mesma forma — por isso o campo se chama gen_dat.",
+      "contrast_pt": "Aqui não há atalho latino que ajude: o português trocou os casos por 'de' e 'para' e nunca mais olhou para trás. Esta é a parte do romeno que se parece mais com alemão do que com espanhol.",
+      "examples": [
+        { "ro": "ușa casei", "pt": "a porta da casa" },
+        { "ro": "i-am dat fetei o carte", "pt": "dei um livro à menina" },
+        { "ro": "mașina băiatului", "pt": "o carro do menino" }
+      ],
+      "table": {
+        "headers": ["gênero", "nominativo", "genitivo/dativo"],
+        "rows": [
+          ["feminino", "casa", "casei"],
+          ["feminino", "fata", "fetei"],
+          ["masculino", "băiatul", "băiatului"],
+          ["neutro", "scaunul", "scaunului"]
+        ]
+      },
+      "pitfall_pt": "A forma do genitivo parte do ARTICULADO, não do nome nu: casa → casei, não casă → casei. Masculinos e neutros são fáceis (-ului); os femininos é que exigem decorar.",
+      "drill": {
+        "type": "transform",
+        "query": { "pos": "noun", "has_form": "forms.gen_dat_sg" },
+        "from": "ro",
+        "to": "forms.gen_dat_sg",
+        "prompt_pt": "Genitivo/dativo singular (da ... / para a ...):"
+      }
+    },
+    {
+      "id": "g.articol.posesiv",
+      "title": "Al, a, ai, ale — o artigo possessivo",
+      "level": "A2",
+      "tags": ["substantivo", "caso", "posse"],
+      "explanation_pt": "Quando o possuidor não vem colado ao possuído, entra uma partícula que concorda com a COISA POSSUÍDA: un prieten al meu (um amigo meu), o carte a mea, doi prieteni ai mei, două cărți ale mele.",
+      "contrast_pt": "O português não tem nada parecido — dizemos 'um amigo meu' e acabou. É uma peça extra que precisa concordar, e esquecê-la é a marca registrada do estrangeiro.",
+      "examples": [
+        { "ro": "un prieten al meu", "pt": "um amigo meu" },
+        { "ro": "ușa casei mele", "pt": "a porta da minha casa" },
+        { "ro": "cărțile ale copiilor", "pt": "os livros das crianças" }
+      ],
+      "table": {
+        "headers": ["coisa possuída", "partícula", "exemplo"],
+        "rows": [
+          ["masculino singular", "al", "un prieten al meu"],
+          ["feminino singular", "a", "o carte a mea"],
+          ["masculino plural", "ai", "prietenii ai mei"],
+          ["feminino/neutro plural", "ale", "cărțile ale mele"]
+        ]
+      },
+      "pitfall_pt": "Ela concorda com o que é POSSUÍDO, nunca com quem possui. 'Um amigo da Maria' = 'un prieten al Mariei' — 'al' por causa de 'prieten', não de 'Maria'."
+    },
+    {
+      "id": "g.prep.pe.acuzativ",
+      "title": "O 'pe' antes de pessoa",
+      "level": "A2",
+      "tags": ["preposição", "caso", "estrutural"],
+      "explanation_pt": "Objeto direto que é PESSOA leva 'pe': 'îl văd pe Ion' (vejo o Ion), 'o cunosc pe Maria'. Com coisa, nada: 'văd casa'.",
+      "contrast_pt": "O espanhol faz igual com o 'a' pessoal ('veo a Juan'); o português não faz. Se você sabe espanhol, este é de graça — se não, é puro treino.",
+      "examples": [
+        { "ro": "Îl văd pe Ion.", "pt": "Vejo o Ion." },
+        { "ro": "Văd casa.", "pt": "Vejo a casa." },
+        { "ro": "Pe cine cauți?", "pt": "Quem você procura?" }
+      ],
+      "pitfall_pt": "O 'pe' quase sempre vem acompanhado de um pronome repetido antes do verbo ('îl văd pe Ion' — literalmente 'o vejo o Ion'). A redundância é obrigatória, não é erro."
+    },
+    {
+      "id": "g.vocativ",
+      "title": "Vocativo — chamar alguém",
+      "level": "A2",
+      "tags": ["substantivo", "caso"],
+      "explanation_pt": "Ao chamar, o nome muda: Ion → Ioane!, Maria → Marie!, doamnă → doamnă! O masculino ganha -e (ou -ule: băiat → băiatule!), o feminino troca o final por -o (fată → fato!) ou -e.",
+      "contrast_pt": "O português abandonou o vocativo — dizemos 'Maria!' igual a 'a Maria'. Em romeno, usar o nominativo para chamar soa frio ou grosseiro dependendo do tom.",
+      "examples": [
+        { "ro": "Ioane, vino aici!", "pt": "Ion, vem cá!" },
+        { "ro": "Băiatule!", "pt": "Rapaz!" },
+        { "ro": "Domnule profesor!", "pt": "Senhor professor!" }
+      ],
+      "pitfall_pt": "'Fato!' (de 'fată') é agressivo na maioria dos contextos, apesar de gramaticalmente correto. Com pessoas, o vocativo em -o costuma soar rude — use o nome ou 'domnișoară'."
+    }
+  ]
+}

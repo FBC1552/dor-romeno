@@ -1,0 +1,114 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "dor/lote.schema.json",
+  "title": "Lote de conteúdo pessoal",
+  "description": "Letra de música e trecho de jornal estudados parte por parte. Estes arquivos vivem no acervo LOCAL do usuário (%LOCALAPPDATA%/dor/conteudo), nunca no repositório: é o que permite guardar texto de terceiros inteiro sem distribuir nada. O schema mora aqui porque o formato é do projeto; o conteúdo, não.",
+  "type": "object",
+  "required": ["meta", "pieces"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": { "type": "string" },
+    "meta": { "$ref": "#/$defs/meta" },
+    "pieces": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/piece" }
+    }
+  },
+  "$defs": {
+    "level": { "enum": ["A1", "A2", "B1", "B2", "C1", "C2"] },
+    "meta": {
+      "type": "object",
+      "required": ["id", "kind", "week"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9_.-]+$" },
+        "kind": {
+          "description": "versuri = música parte por parte; jurnal = notícia da semana",
+          "enum": ["versuri", "jurnal"]
+        },
+        "week": {
+          "description": "Semana ISO em que o lote entrou — é o eixo do `dor atualizar`",
+          "type": "string",
+          "pattern": "^[0-9]{4}-W[0-9]{2}$"
+        },
+        "title": { "type": "string" },
+        "note_pt": { "type": "string" }
+      }
+    },
+    "piece": {
+      "description": "Uma faixa ou uma notícia.",
+      "type": "object",
+      "required": ["id", "title", "parts"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9_.-]+$" },
+        "title": { "type": "string", "minLength": 1 },
+        "title_pt": { "type": "string" },
+        "author": {
+          "description": "Artista, no caso de música; veículo, no caso de notícia",
+          "type": "string"
+        },
+        "source": { "type": "string" },
+        "link": { "type": "string" },
+        "date": { "type": "string" },
+        "level": { "$ref": "#/$defs/level" },
+        "why_pt": { "type": "string" },
+        "note_pt": { "type": "string" },
+        "tags": { "type": "array", "items": { "type": "string" } },
+        "parts": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/part" }
+        }
+      }
+    },
+    "part": {
+      "description": "O pedaço explicado: as linhas em romeno, a tradução linha a linha, o comentário e o glossário.",
+      "type": "object",
+      "required": ["ro"],
+      "additionalProperties": false,
+      "properties": {
+        "at": {
+          "description": "Momento na faixa (0:47) ou rótulo do trecho (lide, 2º parágrafo)",
+          "type": "string"
+        },
+        "ro": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "pt": {
+          "description": "Tradução, uma entrada por linha de `ro`",
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "explica_pt": {
+          "description": "O que está acontecendo aqui — gíria, elisão, referência, construção",
+          "type": "string"
+        },
+        "glossary": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["ro", "pt"],
+            "additionalProperties": false,
+            "properties": {
+              "ro": { "type": "string", "minLength": 1 },
+              "pt": { "type": "string", "minLength": 1 },
+              "register": {
+                "enum": ["formal", "neutru", "colocvial", "argou", "vulgar"]
+              },
+              "note": { "type": "string" }
+            }
+          }
+        },
+        "cloze": {
+          "description": "Uma das linhas de `ro` com ___ no lugar do alvo",
+          "type": "string"
+        },
+        "cloze_answer": { "type": "string" }
+      }
+    }
+  }
+}

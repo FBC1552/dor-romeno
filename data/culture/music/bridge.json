@@ -1,0 +1,171 @@
+{
+  "$schema": "../../schema/music.schema.json",
+  "meta": {
+    "id": "muzica_baza",
+    "title": "Acervo musical — trap, folclore e a ponte entre os dois",
+    "version": 1,
+    "description": "Fichas curadas para o Lyrics Lab. Ordenadas por dificuldade de escuta, não por fama.",
+    "copyright_note": "Este acervo guarda apenas fichas, glossário de gíria e links para streaming. Letras integrais e áudio de obras protegidas NUNCA são armazenados. Trechos, quando existirem, são citações curtas (máx. 4 versos) ou material de domínio público."
+  },
+  "artists": [
+    {
+      "id": "mu.subcarpati",
+      "name": "Subcarpați",
+      "genre": ["fusion", "hip-hop", "folclor"],
+      "era": "2010–hoje",
+      "region": "București",
+      "difficulty": "medio",
+      "dominant_register": "colocvial",
+      "why_pt": "⭐ A ponte exata entre os dois gostos: hip-hop construído em cima de folclore romeno de verdade — doină, fluier, țambal e samples de lăutari dentro da batida. É o melhor ponto de partida quando se quer trap E tradição ao mesmo tempo, porque cada faixa carrega as duas camadas de vocabulário: a da rua e a do campo.",
+      "links": { "wikipedia": "https://ro.wikipedia.org/wiki/Subcarpați" },
+      "tracks": [
+        {
+          "id": "tr.subcarpati_padure",
+          "title": "Pădure de fier",
+          "why_pt": "Dicção clara e refrão repetitivo — bom para primeira escuta. Vocabulário de natureza e melancolia.",
+          "theme": ["natureza", "identidade"],
+          "folk_elements": ["fluier", "linha vocal de doină"]
+        },
+        {
+          "id": "tr.subcarpati_underground",
+          "title": "Underground Folclor",
+          "why_pt": "O manifesto do projeto: a tese de que folclore e underground são a mesma coisa. Ótimo para ouvir sampling tradicional dentro de batida moderna.",
+          "theme": ["identidade", "tradição"],
+          "folk_elements": ["sample de lăutari", "țambal"]
+        }
+      ]
+    },
+    {
+      "id": "mu.maria_tanase",
+      "name": "Maria Tănase",
+      "genre": ["folclor", "doina"],
+      "era": "1913–1963",
+      "region": "Oltenia / București",
+      "difficulty": "dificil",
+      "dominant_register": "neutru",
+      "why_pt": "A voz nacional da Romênia — o equivalente ao que Cartola ou Elis são para nós. Dicção antiga e vocabulário rural, então é difícil para iniciante, mas é a referência cultural que todo romeno carrega. Comece ouvindo pela emoção, não pela letra.",
+      "links": { "wikipedia": "https://ro.wikipedia.org/wiki/Maria_Tănase" },
+      "tracks": [
+        {
+          "id": "tr.cine_iubeste",
+          "title": "Cine iubește și lasă",
+          "year": 1938,
+          "why_pt": "Canção tradicional sobre quem ama e abandona. Letra de domínio público, imagens fortes e simples.",
+          "theme": ["amor", "abandono", "maldição"],
+          "excerpt": {
+            "public_domain": true,
+            "lines": [
+              {
+                "ro": "Cine iubește și lasă",
+                "pt": "Quem ama e abandona",
+                "cloze": "iubește"
+              },
+              {
+                "ro": "Dumnezeu să-i dea pedeapsă",
+                "pt": "que Deus lhe dê castigo",
+                "cloze": "pedeapsă"
+              }
+            ]
+          },
+          "glossary": [
+            { "ro": "a iubi", "pt": "amar", "register": "neutru" },
+            { "ro": "a lăsa", "pt": "deixar, abandonar", "register": "neutru" },
+            { "ro": "pedeapsă", "pt": "castigo, punição", "register": "neutru" }
+          ],
+          "folk_elements": ["doină", "acompanhamento de taraf"]
+        },
+        {
+          "id": "tr.lung_drumul",
+          "title": "Lung îi drumul Gorjului",
+          "why_pt": "Da Oltenia, região natal dela. Vocabulário de estrada e distância — casa bem com o conceito de 'dor'.",
+          "theme": ["viagem", "saudade"],
+          "folk_elements": ["doină de Oltenia"]
+        }
+      ]
+    },
+    {
+      "id": "mu.bug_mafia",
+      "name": "B.U.G. Mafia",
+      "genre": ["hip-hop"],
+      "era": "1993–hoje",
+      "region": "Pantelimon, București",
+      "difficulty": "medio",
+      "dominant_register": "argou",
+      "why_pt": "Os fundadores do rap romeno e a trilha sonora dos bairros de blocos comunistas de Bucareste. Flow lento e articulado — mais fácil de acompanhar que o trap atual — e uma aula de gíria dos anos 90/2000 que ainda circula.",
+      "links": { "wikipedia": "https://ro.wikipedia.org/wiki/B.U.G._Mafia" },
+      "tracks": [
+        {
+          "id": "tr.pantelimonul",
+          "title": "Pantelimonul petrece",
+          "why_pt": "Retrato de bairro com nomes de lugar e vocabulário de vizinhança. Bom para geografia social de Bucareste.",
+          "theme": ["bairro", "festa"],
+          "glossary": [
+            { "ro": "cartier", "pt": "bairro", "register": "neutru" },
+            { "ro": "a petrece", "pt": "festejar", "register": "neutru" },
+            { "ro": "bloc", "pt": "prédio de apartamentos (era comunista)", "register": "neutru" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mu.parazitii",
+      "name": "Paraziții",
+      "genre": ["hip-hop"],
+      "era": "1994–hoje",
+      "region": "București",
+      "difficulty": "dificil",
+      "dominant_register": "vulgar",
+      "why_pt": "⚠ Rap político e pesadíssimo em gíria e palavrão — funciona como dicionário vivo do argou romeno, mas é o oposto do que se fala num ambiente formal. Estude pelo vocabulário e pela crítica social, com o Radar de Registro ligado. Não repita nada disso numa entrevista.",
+      "links": { "wikipedia": "https://ro.wikipedia.org/wiki/Paraziții" },
+      "tracks": []
+    },
+    {
+      "id": "mu.satra_benz",
+      "name": "Șatra B.E.N.Z.",
+      "genre": ["trap"],
+      "era": "2016–hoje",
+      "region": "București",
+      "difficulty": "dificil",
+      "dominant_register": "argou",
+      "why_pt": "O coletivo que definiu o trap romeno moderno (Killa Fonic, NANE, Super ED). Flow rápido e gíria densa — treino de ouvido avançado. Comece pelas faixas mais melódicas dos integrantes solo antes de encarar o grupo.",
+      "links": {},
+      "tracks": []
+    },
+    {
+      "id": "mu.carlas_dreams",
+      "name": "Carla's Dreams",
+      "genre": ["pop", "hip-hop"],
+      "era": "2012–hoje",
+      "region": "Chișinău / București",
+      "difficulty": "facil",
+      "dominant_register": "neutru",
+      "why_pt": "⭐ A melhor porta de entrada para escutar romeno cantado: dicção limpíssima, ritmo moderado e letras poéticas com vocabulário rico mas não gíria. Se o trap ainda está rápido demais, comece aqui e volte depois.",
+      "links": {},
+      "tracks": []
+    },
+    {
+      "id": "mu.taraf_de_haidouks",
+      "name": "Taraf de Haïdouks",
+      "genre": ["lautar", "folclor"],
+      "era": "1991–hoje",
+      "region": "Clejani, Giurgiu",
+      "difficulty": "dificil",
+      "dominant_register": "colocvial",
+      "why_pt": "Banda de lăutari romani de Clejani que rodou o mundo. Violino, acordeão e țambal em velocidade absurda. Mais para entender a matriz sonora que o Subcarpați sampleia do que para estudar letra.",
+      "links": {},
+      "tracks": []
+    },
+    {
+      "id": "mu.grigore_lese",
+      "name": "Grigore Leșe",
+      "genre": ["doina", "folclor"],
+      "era": "1954–hoje",
+      "region": "Maramureș",
+      "difficulty": "dificil",
+      "dominant_register": "neutru",
+      "why_pt": "Mestre vivo do canto tradicional e da doină — a forma lírica romena reconhecida pela UNESCO. É literalmente o 'dor' virado som: canto livre, quase sem métrica. Vale ouvir uma vez antes de estudar a palavra 'dor'.",
+      "links": {},
+      "tracks": []
+    }
+  ]
+}

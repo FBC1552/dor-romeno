@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "dor/history.schema.json",
+  "title": "Linha do tempo — história contada pelo que ela fez com a língua",
+  "type": "object",
+  "required": ["meta", "items"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": { "type": "string" },
+    "meta": {
+      "type": "object",
+      "required": ["id", "title", "version"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9_]+$" },
+        "title": { "type": "string" },
+        "version": { "type": "integer", "minimum": 1 },
+        "description": { "type": "string" }
+      }
+    },
+    "items": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "title", "era", "what_pt", "language_pt"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string", "pattern": "^hi\\.[a-z0-9_]+$" },
+          "title": { "type": "string" },
+          "title_ro": { "type": "string" },
+          "year": {
+            "type": "integer",
+            "description": "Ano de referência para ordenar. Negativo = a.C."
+          },
+          "period": { "type": "string", "description": "Como o período é exibido, ex.: '1711–1821'" },
+          "era": {
+            "enum": [
+              "dacia",
+              "roma",
+              "migratii",
+              "medieval",
+              "fanariot",
+              "modern",
+              "razboaie",
+              "comunism",
+              "contemporan"
+            ]
+          },
+          "what_pt": { "type": "string", "minLength": 1, "description": "O que aconteceu" },
+          "language_pt": {
+            "type": "string",
+            "minLength": 1,
+            "description": "O que isso fez COM A LÍNGUA — a razão de o evento estar num app de idioma"
+          },
+          "words": {
+            "type": "array",
+            "description": "Palavras que entraram (ou saíram) nesta camada",
+            "items": {
+              "type": "object",
+              "required": ["ro", "pt"],
+              "additionalProperties": false,
+              "properties": {
+                "ro": { "type": "string" },
+                "pt": { "type": "string" },
+                "note": { "type": "string" }
+              }
+            }
+          },
+          "grammar_refs": {
+            "type": "array",
+            "description": "Regras de gramática que este evento explica",
+            "items": { "type": "string" }
+          },
+          "tags": { "type": "array", "items": { "type": "string" } },
+          "note_pt": { "type": "string" }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "dor/situations.schema.json",
+  "title": "Cenas do dia a dia — o que se fala de verdade, e como se comporta",
+  "type": "object",
+  "required": ["meta", "items"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": { "type": "string" },
+    "meta": {
+      "type": "object",
+      "required": ["id", "title", "version"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9_]+$" },
+        "title": { "type": "string" },
+        "version": { "type": "integer", "minimum": 1 },
+        "description": { "type": "string" }
+      }
+    },
+    "items": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "title", "place", "level", "goal_pt", "turns"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string", "pattern": "^si\\.[a-z0-9_]+$" },
+          "title": { "type": "string" },
+          "title_ro": { "type": "string" },
+          "place": {
+            "enum": [
+              "cafenea",
+              "restaurant",
+              "piata",
+              "magazin",
+              "farmacie",
+              "transport",
+              "strada",
+              "acasa",
+              "birou",
+              "telefon",
+              "petrecere"
+            ]
+          },
+          "level": { "enum": ["A1", "A2", "B1", "B2", "C1", "C2"] },
+          "register": {
+            "enum": ["formal", "neutru", "colocvial", "argou", "vulgar"],
+            "default": "neutru"
+          },
+          "goal_pt": {
+            "type": "string",
+            "minLength": 1,
+            "description": "O que você consegue fazer depois desta cena"
+          },
+          "turns": {
+            "type": "array",
+            "minItems": 2,
+            "items": {
+              "type": "object",
+              "required": ["who", "ro", "pt"],
+              "additionalProperties": false,
+              "properties": {
+                "who": {
+                  "enum": ["tu", "ei"],
+                  "description": "tu = você fala; ei = o outro fala"
+                },
+                "ro": { "type": "string" },
+                "pt": { "type": "string" },
+                "note_pt": { "type": "string" }
+              }
+            }
+          },
+          "phrases": {
+            "type": "array",
+            "description": "As fórmulas que valem decorar — é daqui que saem os exercícios",
+            "items": {
+              "type": "object",
+              "required": ["ro", "pt"],
+              "additionalProperties": false,
+              "properties": {
+                "ro": { "type": "string" },
+                "pt": { "type": "string" },
+                "when_pt": { "type": "string" },
+                "register": {
+                  "enum": ["formal", "neutru", "colocvial", "argou", "vulgar"]
+                }
+              }
+            }
+          },
+          "street": {
+            "type": "array",
+            "description": "O que o livro ensina versus o que se fala na rua",
+            "items": {
+              "type": "object",
+              "required": ["textbook", "street"],
+              "additionalProperties": false,
+              "properties": {
+                "textbook": { "type": "string" },
+                "street": { "type": "string" },
+                "note_pt": { "type": "string" }
+              }
+            }
+          },
+          "etiquette_pt": {
+            "type": "array",
+            "description": "Comportamento, não gramática — o que faz você não passar por grosso",
+            "items": { "type": "string" }
+          },
+          "vocab_refs": { "type": "array", "items": { "type": "string" } },
+          "tags": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    }
+  }
+}

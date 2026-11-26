@@ -1,0 +1,306 @@
+{
+  "$schema": "../schema/vocabulary.schema.json",
+  "meta": {
+    "id": "a1_casa",
+    "title": "Casa, objetos e comida",
+    "level": "A1",
+    "version": 1,
+    "description": "Substantivos com o quadro de formas completo. É deste campo `forms` que o motor gera os exercícios de artigo, plural e genitivo — sem escrever questão à mão."
+  },
+  "items": [
+    {
+      "id": "ro.casa",
+      "ro": "casă",
+      "pt": ["casa"],
+      "pos": "noun",
+      "level": "A1",
+      "gender": "f",
+      "ipa": "ˈka.sə",
+      "forms": {
+        "def_sg": "casa",
+        "indef_pl": "case",
+        "def_pl": "casele",
+        "gen_dat_sg": "casei"
+      },
+      "tags": ["habitação"],
+      "etymology": "latin",
+      "cognate_pt": { "word": "casa", "confidence": "alto", "note": "← lat. casa, idêntico" },
+      "examples": ["s.a1.casa.01"]
+    },
+    {
+      "id": "ro.masa",
+      "ro": "masă",
+      "pt": ["mesa"],
+      "pos": "noun",
+      "level": "A1",
+      "gender": "f",
+      "ipa": "ˈma.sə",
+      "forms": {
+        "def_sg": "masa",
+        "indef_pl": "mese",
+        "def_pl": "mesele",
+        "gen_dat_sg": "mesei"
+      },
+      "tags": ["mobília"],
+      "etymology": "latin",
+      "cognate_pt": { "word": "mesa", "confidence": "alto", "note": "← lat. mensa" },
+      "note_pt": "'Masă' também significa 'refeição': 'la masă!' = à mesa / vamos comer.",
+      "examples": ["s.a1.casa.02"]
+    },
+    {
+      "id": "ro.carte",
+      "ro": "carte",
+      "pt": ["livro"],
+      "pos": "noun",
+      "level": "A1",
+      "gender": "f",
+      "ipa": "ˈkar.te",
+      "forms": {
+        "def_sg": "cartea",
+        "indef_pl": "cărți",
+        "def_pl": "cărțile",
+        "gen_dat_sg": "cărții"
+      },
+      "tags": ["objeto", "leitura"],
+      "etymology": "latin",
+      "false_friend": {
+        "looks_like": "carta",
+        "actually_means": "livro",
+        "note": "Carta em romeno é 'scrisoare'. Este é o falso amigo que mais pega brasileiro."
+      },
+      "examples": ["s.a1.casa.03"]
+    },
+    {
+      "id": "ro.usa",
+      "ro": "ușă",
+      "pt": ["porta"],
+      "pos": "noun",
+      "level": "A1",
+      "gender": "f",
+      "ipa": "ˈu.ʃə",
+      "forms": {
+        "def_sg": "ușa",
+        "indef_pl": "uși",
+        "def_pl": "ușile",
+        "gen_dat_sg": "ușii"
+      },
+      "tags": ["habitação"],
+      "etymology": "latin",
+      "note_pt": "Repare no ș (s com vírgula embaixo, som de 'ch'). Muito texto na internet escreve ş com cedilha — está errado, mas o app aceita os dois."
+    },
+    {
+      "id": "ro.fereastra",
+      "ro": "fereastră",
+      "pt": ["janela"],
+      "pos": "noun",
+      "level": "A1",
+      "gender": "f",
+      "ipa": "feˈre̯as.trə",
+      "forms": {
+        "def_sg": "fereastra",
+        "indef_pl": "ferestre",
+        "def_pl": "ferestrele",
+        "gen_dat_sg": "ferestrei"
+      },
+      "tags": ["habitação"],
+      "etymology": "latin",
+      "cognate_pt": {
+        "word": "fresta",
+        "confidence": "medio",
+        "note": "← lat. fenestra, a mesma raiz de 'fresta' e do italiano 'finestra'"
+      }
+    },
+    {
+      "id": "ro.scaun",
+      "ro": "scaun",
+      "pt": ["cadeira"],
+      "pos": "noun",
+      "level": "A1",
+      "gender": "n",
+      "ipa": "ˈskaun",
+      "forms": {
+        "def_sg": "scaunul",
+        "indef_pl": "scaune",
+        "def_pl": "scaunele"
+      },
+      "tags": ["mobília"],
+      "etymology": "latin",
+      "note_pt": "NEUTRO: comporta-se como masculino no singular (scaunul) e como feminino no plural (scaunele). O português não tem isso — é o obstáculo nº 1 do brasileiro no romeno.",
+      "examples": ["s.a1.casa.02"]
+    },
+    {
+      "id": "ro.pat",
+      "ro": "pat",
+      "pt": ["cama"],
+      "pos": "noun",
+      "level": "A1",
+      "gender": "n",
+      "forms": {
+        "def_sg": "patul",
+        "indef_pl": "paturi",
+        "def_pl": "paturile"
+      },
+      "tags": ["mobília"],
+      "etymology": "latin",
+      "note_pt": "Neutro. O plural em -uri é o padrão mais comum dessa classe."
+    },
+    {
+      "id": "ro.birou",
+      "ro": "birou",
+      "pt": ["escritório", "escrivaninha"],
+      "pos": "noun",
+      "level": "A1",
+      "gender": "n",
+      "forms": {
+        "def_sg": "biroul",
+        "indef_pl": "birouri",
+        "def_pl": "birourile"
+      },
+      "tags": ["mobília", "trabalho"],
+      "etymology": "francez",
+      "cognate_pt": { "word": "birô", "confidence": "alto", "note": "← fr. bureau" }
+    },
+    {
+      "id": "ro.baiat",
+      "ro": "băiat",
+      "pt": ["menino", "garoto"],
+      "pos": "noun",
+      "level": "A1",
+      "gender": "m",
+      "ipa": "bəˈjat",
+      "forms": {
+        "def_sg": "băiatul",
+        "indef_pl": "băieți",
+        "def_pl": "băieții"
+      },
+      "tags": ["pessoa"],
+      "etymology": "necunoscut",
+      "examples": ["s.a1.casa.04"]
+    },
+    {
+      "id": "ro.fata",
+      "ro": "fată",
+      "pt": ["menina", "garota"],
+      "pos": "noun",
+      "level": "A1",
+      "gender": "f",
+      "ipa": "ˈfa.tə",
+      "forms": {
+        "def_sg": "fata",
+        "indef_pl": "fete",
+        "def_pl": "fetele",
+        "gen_dat_sg": "fetei"
+      },
+      "tags": ["pessoa"],
+      "etymology": "latin",
+      "note_pt": "⚠ Cuidado com o par mínimo: 'fată' (menina) vs 'față' (rosto/cara). Um t simples e um ț mudam tudo.",
+      "examples": ["s.a1.casa.04"]
+    },
+    {
+      "id": "ro.om",
+      "ro": "om",
+      "pt": ["homem", "pessoa", "cara"],
+      "accepts_pt": ["ser humano", "gente", "sujeito", "indivíduo"],
+      "pos": "noun",
+      "level": "A1",
+      "gender": "m",
+      "forms": {
+        "def_sg": "omul",
+        "indef_pl": "oameni",
+        "def_pl": "oamenii"
+      },
+      "tags": ["pessoa"],
+      "etymology": "latin",
+      "cognate_pt": { "word": "homem", "confidence": "alto", "note": "← lat. homo/hominem" },
+      "note_pt": "Plural totalmente irregular: om → oameni. Não tente deduzir, decore."
+    },
+    {
+      "id": "ro.apa",
+      "ro": "apă",
+      "pt": ["água"],
+      "pos": "noun",
+      "level": "A1",
+      "gender": "f",
+      "ipa": "ˈa.pə",
+      "forms": {
+        "def_sg": "apa",
+        "indef_pl": "ape",
+        "def_pl": "apele",
+        "gen_dat_sg": "apei"
+      },
+      "tags": ["bebida"],
+      "etymology": "latin",
+      "cognate_pt": { "word": "água", "confidence": "alto", "note": "← lat. aqua" },
+      "examples": ["s.a1.casa.05"]
+    },
+    {
+      "id": "ro.paine",
+      "ro": "pâine",
+      "pt": ["pão"],
+      "pos": "noun",
+      "level": "A1",
+      "gender": "f",
+      "ipa": "ˈpɨ.i.ne",
+      "forms": {
+        "def_sg": "pâinea",
+        "indef_pl": "pâini",
+        "def_pl": "pâinile",
+        "gen_dat_sg": "pâinii"
+      },
+      "tags": ["comida"],
+      "etymology": "latin",
+      "cognate_pt": { "word": "pão", "confidence": "alto", "note": "← lat. panis" },
+      "note_pt": "O â soa como um 'i' guttural, feito com a língua atrás — não existe em português. Vale ouvir várias vezes."
+    },
+    {
+      "id": "ro.lapte",
+      "ro": "lapte",
+      "pt": ["leite"],
+      "pos": "noun",
+      "level": "A1",
+      "gender": "n",
+      "ipa": "ˈlap.te",
+      "forms": { "def_sg": "laptele" },
+      "tags": ["bebida"],
+      "etymology": "latin",
+      "cognate_pt": { "word": "leite", "confidence": "alto", "note": "← lat. lactem" }
+    },
+    {
+      "id": "ro.vin",
+      "ro": "vin",
+      "pt": ["vinho"],
+      "pos": "noun",
+      "level": "A1",
+      "gender": "n",
+      "forms": {
+        "def_sg": "vinul",
+        "indef_pl": "vinuri",
+        "def_pl": "vinurile"
+      },
+      "tags": ["bebida"],
+      "etymology": "latin",
+      "cognate_pt": { "word": "vinho", "confidence": "alto", "note": "← lat. vinum" },
+      "note_pt": "⚠ 'vin' também é 'eles vêm' (de 'a veni'). Contexto resolve.",
+      "examples": ["s.a1.casa.06"]
+    },
+    {
+      "id": "ro.cafea",
+      "ro": "cafea",
+      "pt": ["café"],
+      "pos": "noun",
+      "level": "A1",
+      "gender": "f",
+      "ipa": "kaˈfe̯a",
+      "forms": {
+        "def_sg": "cafeaua",
+        "indef_pl": "cafele",
+        "def_pl": "cafelele",
+        "gen_dat_sg": "cafelei"
+      },
+      "tags": ["bebida"],
+      "etymology": "turc",
+      "cognate_pt": { "word": "café", "confidence": "alto" },
+      "note_pt": "Diminutivo 'cafeluță' = cafezinho. Os romenos usam diminutivo o tempo todo, igualzinho a nós."
+    }
+  ]
+}

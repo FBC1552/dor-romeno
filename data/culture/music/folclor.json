@@ -1,0 +1,251 @@
+{
+  "$schema": "../../schema/music.schema.json",
+  "meta": {
+    "id": "muzica_folclor",
+    "title": "Folclore e poesia cantada — domínio público",
+    "version": 1,
+    "description": "O que todo romeno sabe de cor. Tudo aqui é tradicional ou de autor morto há mais de 70 anos, então os trechos podem ser citados e viram exercício no Lyrics Lab.",
+    "copyright_note": "Somente material em domínio público: folclore anônimo, colinde tradicionais e poetas do século XIX. Nenhuma gravação é armazenada — os áudios que o app toca são sintetizados."
+  },
+  "artists": [
+    {
+      "id": "mu.folclor_anonim",
+      "name": "Folclor anonim",
+      "genre": ["folclor", "doina"],
+      "era": "tradicional",
+      "region": "toda a Romênia",
+      "difficulty": "medio",
+      "dominant_register": "neutru",
+      "why_pt": "A camada mais antiga da língua, e a que menos mudou. O vocabulário do folclore é curto, concreto e cheio de palavras latinas que o brasileiro reconhece de primeira — 'plai', 'vale', 'cale'. É por aqui que se entra no romeno pela emoção, não pela gramática.",
+      "tracks": [
+        {
+          "id": "tr.miorita",
+          "title": "Miorița",
+          "why_pt": "A balada fundadora. Todo romeno decorou os primeiros versos na escola, e o país inteiro discute até hoje o que ela diz sobre o caráter nacional — o pastor que aceita o próprio destino em vez de fugir. Se você aprender quatro versos de romeno na vida, que sejam estes.",
+          "theme": ["destino", "pastoreio", "morte", "natureza"],
+          "excerpt": {
+            "public_domain": true,
+            "lines": [
+              { "ro": "Pe-un picior de plai,", "pt": "Numa encosta de campina,", "cloze": "plai" },
+              { "ro": "Pe-o gură de rai,", "pt": "numa boca de paraíso,", "cloze": "rai" },
+              { "ro": "Iată vin în cale,", "pt": "eis que vêm pelo caminho,", "cloze": "cale" },
+              { "ro": "Se cobor la vale", "pt": "descendo pelo vale", "cloze": "vale" }
+            ]
+          },
+          "glossary": [
+            { "ro": "plai", "pt": "planalto, encosta de montanha", "register": "neutru" },
+            { "ro": "rai", "pt": "paraíso", "register": "neutru" },
+            { "ro": "cale", "pt": "caminho", "register": "neutru" },
+            { "ro": "vale", "pt": "vale", "register": "neutru" },
+            { "ro": "mioară", "pt": "ovelhinha", "register": "neutru" }
+          ],
+          "folk_elements": ["baladă", "recitativ", "verso curto de 5–6 sílabas"]
+        },
+        {
+          "id": "tr.ciuleandra",
+          "title": "Ciuleandra",
+          "why_pt": "Uma hora que começa lenta e acelera até ninguém aguentar — dança de roda coletiva, de mãos nos ombros. Dá nome ao romance de Liviu Rebreanu, então é ponte direta com a biblioteca.",
+          "theme": ["dança", "festa", "coletividade"],
+          "glossary": [
+            { "ro": "horă", "pt": "dança de roda — a dança nacional", "register": "neutru" },
+            { "ro": "a juca", "pt": "dançar (no folclore) / brincar", "register": "neutru" },
+            { "ro": "lăutar", "pt": "músico popular, de formação oral", "register": "neutru" }
+          ],
+          "folk_elements": ["horă", "aceleração progressiva", "taraf"]
+        },
+        {
+          "id": "tr.doina",
+          "title": "Doina",
+          "why_pt": "Não é uma música: é um GÊNERO, e está na lista da UNESCO. Canto livre, sem métrica fixa, sobre solidão, saudade e distância — o parente romeno do nosso fado ou de uma toada sertaneja. A palavra 'dor' mora aqui.",
+          "theme": ["saudade", "solidão", "natureza"],
+          "glossary": [
+            { "ro": "dor", "pt": "saudade — a palavra que dá nome a este app", "register": "neutru" },
+            { "ro": "jale", "pt": "tristeza profunda, pesar", "register": "neutru" },
+            { "ro": "codru", "pt": "floresta densa, mata", "register": "neutru" },
+            { "ro": "a se duce", "pt": "ir embora, partir", "register": "neutru" }
+          ],
+          "folk_elements": ["ritmo livre", "melisma", "sem acompanhamento fixo"]
+        }
+      ]
+    },
+    {
+      "id": "mu.colinde",
+      "name": "Colinde de Crăciun",
+      "genre": ["colinde", "folclor"],
+      "era": "tradicional",
+      "region": "toda a Romênia",
+      "difficulty": "facil",
+      "dominant_register": "neutru",
+      "why_pt": "As canções de Natal são o folclore mais FÁCIL: melodia simples, repetição, vocabulário curto e dicção clara. Em dezembro tocam em todo lugar, e cantar junto é o atalho mais rápido para o ouvido pegar a prosódia romena.",
+      "tracks": [
+        {
+          "id": "tr.o_ce_veste",
+          "title": "O, ce veste minunată",
+          "why_pt": "O colind mais conhecido do país. Duas linhas e você já tem 'veste', 'minunat' e a estrutura 'ni s-arată' — reflexivo com pronome, direto do que se aprende em gramática.",
+          "theme": ["natal", "notícia"],
+          "excerpt": {
+            "public_domain": true,
+            "lines": [
+              {
+                "ro": "O, ce veste minunată",
+                "pt": "Oh, que notícia maravilhosa",
+                "cloze": "veste"
+              },
+              {
+                "ro": "În Betleem ni s-arată",
+                "pt": "em Belém nos aparece",
+                "cloze": "arată"
+              }
+            ]
+          },
+          "glossary": [
+            { "ro": "veste", "pt": "notícia", "register": "neutru" },
+            { "ro": "minunat", "pt": "maravilhoso", "register": "neutru" },
+            { "ro": "a se arăta", "pt": "aparecer, mostrar-se", "register": "neutru" }
+          ],
+          "folk_elements": ["colind", "canto em grupo, de porta em porta"]
+        },
+        {
+          "id": "tr.steaua_sus_rasare",
+          "title": "Steaua sus răsare",
+          "why_pt": "Vocabulário de céu e luz, com rimas transparentes. 'Steaua' é a estrela COM artigo colado — o sufixo definido aparecendo numa palavra que você vai cantar cem vezes.",
+          "theme": ["natal", "estrela"],
+          "excerpt": {
+            "public_domain": true,
+            "lines": [
+              { "ro": "Steaua sus răsare", "pt": "A estrela desponta no alto", "cloze": "Steaua" },
+              { "ro": "Ca o taină mare,", "pt": "como um grande mistério,", "cloze": "taină" },
+              { "ro": "Steaua strălucește", "pt": "a estrela reluz", "cloze": "strălucește" },
+              { "ro": "Și lumii vestește", "pt": "e ao mundo anuncia", "cloze": "vestește" }
+            ]
+          },
+          "glossary": [
+            { "ro": "stea / steaua", "pt": "estrela / a estrela", "register": "neutru" },
+            { "ro": "a răsări", "pt": "nascer (o sol, a estrela), despontar", "register": "neutru" },
+            { "ro": "taină", "pt": "mistério, segredo", "register": "neutru" },
+            { "ro": "a vesti", "pt": "anunciar", "register": "neutru" }
+          ],
+          "folk_elements": ["colind de stea", "procissão com estrela de papel"]
+        }
+      ]
+    },
+    {
+      "id": "mu.poeti_cantati",
+      "name": "Poeți cântați",
+      "genre": ["folclor", "pop"],
+      "era": "século XIX, musicado no XX",
+      "region": "Moldávia / Valáquia",
+      "difficulty": "medio",
+      "dominant_register": "formal",
+      "why_pt": "Eminescu e Alecsandri são domínio público e foram musicados por gente como Tudor Gheorghe e Nicu Alifantis. É o romeno mais bonito que existe — e, por ser poesia do século XIX, é também o mais distante da rua. Estude pela imagem, não pelo uso.",
+      "tracks": [
+        {
+          "id": "tr.somnoroase_pasarele",
+          "title": "Somnoroase păsărele",
+          "year": 1883,
+          "why_pt": "Eminescu no modo mais simples. Quatro versos, vocabulário de bicho e ninho, e um 'noapte bună' no fim — é literalmente uma canção de ninar nacional.",
+          "theme": ["noite", "natureza", "sono"],
+          "excerpt": {
+            "public_domain": true,
+            "lines": [
+              {
+                "ro": "Somnoroase păsărele",
+                "pt": "Passarinhos sonolentos",
+                "cloze": "păsărele"
+              },
+              {
+                "ro": "Pe la cuiburi se adună,",
+                "pt": "juntam-se pelos ninhos,",
+                "cloze": "cuiburi"
+              },
+              {
+                "ro": "Se ascund în rămurele —",
+                "pt": "escondem-se nos raminhos —",
+                "cloze": "ascund"
+              },
+              { "ro": "Noapte bună!", "pt": "Boa noite!", "cloze": "Noapte" }
+            ]
+          },
+          "glossary": [
+            { "ro": "somnoros", "pt": "sonolento", "register": "neutru" },
+            { "ro": "pasăre / păsărele", "pt": "pássaro / passarinhos", "register": "neutru" },
+            { "ro": "cuib", "pt": "ninho", "register": "neutru" },
+            { "ro": "a se ascunde", "pt": "esconder-se", "register": "neutru" },
+            { "ro": "ramură / rămurele", "pt": "galho / raminhos", "register": "neutru" }
+          ],
+          "folk_elements": ["diminutivos em -ele", "reflexivo obrigatório"]
+        },
+        {
+          "id": "tr.sara_pe_deal",
+          "title": "Sara pe deal",
+          "year": 1885,
+          "why_pt": "O poema de amor mais conhecido da língua. Difícil de vocabulário, fácil de sentir — e cheio de palavras latinas que o português reconhece: 'ape', 'stele', 'cale'.",
+          "theme": ["amor", "entardecer", "aldeia"],
+          "excerpt": {
+            "public_domain": true,
+            "lines": [
+              {
+                "ro": "Sara pe deal buciumul sună cu jale,",
+                "pt": "À tardinha na colina o corno soa com pesar,",
+                "cloze": "jale"
+              },
+              {
+                "ro": "Turmele-l urc, stele le scapără-n cale,",
+                "pt": "os rebanhos sobem, estrelas faíscam no caminho,",
+                "cloze": "stele"
+              }
+            ]
+          },
+          "glossary": [
+            { "ro": "sară / seară", "pt": "tarde, entardecer", "register": "neutru" },
+            { "ro": "deal", "pt": "colina", "register": "neutru" },
+            { "ro": "bucium", "pt": "corno alpino dos pastores", "register": "neutru" },
+            { "ro": "jale", "pt": "pesar, tristeza", "register": "neutru" },
+            { "ro": "turmă", "pt": "rebanho", "register": "neutru" }
+          ],
+          "folk_elements": ["hexâmetro", "imagem pastoral"]
+        },
+        {
+          "id": "tr.hora_unirii",
+          "title": "Hora Unirii",
+          "year": 1856,
+          "why_pt": "Escrita por Vasile Alecsandri para a união dos principados, em 1859. É o hino não-oficial da fraternidade nacional, cantado de mãos dadas em roda — e a letra é uma aula de imperativo na 1ª pessoa do plural: 'hai să dăm', 'să-nvârtim'.",
+          "theme": ["união", "pátria", "dança"],
+          "excerpt": {
+            "public_domain": true,
+            "lines": [
+              {
+                "ro": "Hai să dăm mână cu mână",
+                "pt": "Vamos dar as mãos",
+                "cloze": "mână"
+              },
+              {
+                "ro": "Cei cu inima română,",
+                "pt": "os que têm coração romeno,",
+                "cloze": "inima"
+              },
+              {
+                "ro": "Să-nvârtim hora frăției",
+                "pt": "giremos a roda da fraternidade",
+                "cloze": "hora"
+              },
+              {
+                "ro": "Pe pământul României!",
+                "pt": "na terra da Romênia!",
+                "cloze": "pământul"
+              }
+            ]
+          },
+          "glossary": [
+            { "ro": "hai să...", "pt": "vamos... (convite, com conjuntivo)", "register": "colocvial" },
+            { "ro": "mână", "pt": "mão", "register": "neutru" },
+            { "ro": "inimă", "pt": "coração", "register": "neutru" },
+            { "ro": "frăție", "pt": "fraternidade", "register": "neutru" },
+            { "ro": "pământ", "pt": "terra, chão", "register": "neutru" }
+          ],
+          "folk_elements": ["horă", "canto coletivo em 24 de janeiro"]
+        }
+      ]
+    }
+  ]
+}

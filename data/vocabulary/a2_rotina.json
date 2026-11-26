@@ -1,0 +1,846 @@
+{
+  "$schema": "../schema/vocabulary.schema.json",
+  "meta": {
+    "id": "a2_rotina",
+    "title": "Verbos do dia a dia",
+    "level": "A2",
+    "version": 2,
+    "description": "Os verbos que aparecem em toda frase. Cada um traz o quadro completo, então cada entrada aqui vira exercício em sete regras de gramática de uma vez."
+  },
+  "items": [
+    {
+      "id": "ro.a_da",
+      "ro": "a da",
+      "pt": [
+        "dar"
+      ],
+      "pos": "verb",
+      "level": "A1",
+      "conjugation": "I",
+      "ipa": "a da",
+      "forms": {
+        "prezent": [
+          "dau",
+          "dai",
+          "dă",
+          "dăm",
+          "dați",
+          "dau"
+        ],
+        "participiu": "dat",
+        "perfect_compus": "am dat",
+        "viitor": "voi da",
+        "viitor_popular": "o să dau",
+        "conjunctiv": "să dea",
+        "imperfect": [
+          "dădeam",
+          "dădeai",
+          "dădea",
+          "dădeam",
+          "dădeați",
+          "dădeau"
+        ],
+        "gerunziu": "dând",
+        "imperativ": "dă!",
+        "conditional": "aș da",
+        "mai_mult_ca_perfect": "dădusem"
+      },
+      "tags": [
+        "essencial"
+      ],
+      "etymology": "latin",
+      "cognate_pt": {
+        "word": "dar",
+        "confidence": "alto",
+        "note": "← lat. dare"
+      },
+      "note_pt": "'Îmi dați...?' é o 'me dá...?' da feira e do balcão."
+    },
+    {
+      "id": "ro.a_lua",
+      "ro": "a lua",
+      "pt": [
+        "pegar",
+        "tomar",
+        "levar"
+      ],
+      "accepts_pt": ["apanhar", "agarrar"],
+      "pos": "verb",
+      "level": "A1",
+      "conjugation": "I",
+      "ipa": "a luˈa",
+      "forms": {
+        "prezent": [
+          "iau",
+          "iei",
+          "ia",
+          "luăm",
+          "luați",
+          "iau"
+        ],
+        "participiu": "luat",
+        "perfect_compus": "am luat",
+        "viitor_popular": "o să iau",
+        "conjunctiv": "să ia",
+        "imperfect": [
+          "luam",
+          "luai",
+          "lua",
+          "luam",
+          "luați",
+          "luau"
+        ],
+        "gerunziu": "luând",
+        "imperativ": "ia!",
+        "conditional": "aș lua",
+        "mai_mult_ca_perfect": "luasem"
+      },
+      "tags": [
+        "essencial"
+      ],
+      "etymology": "latin",
+      "note_pt": "Radical irregular: iau/iei/ia, mas luăm/luați. 'Ia loc!' = sente-se."
+    },
+    {
+      "id": "ro.a_pune",
+      "ro": "a pune",
+      "pt": [
+        "pôr",
+        "colocar"
+      ],
+      "pos": "verb",
+      "level": "A2",
+      "conjugation": "III",
+      "ipa": "a ˈpu.ne",
+      "forms": {
+        "prezent": [
+          "pun",
+          "pui",
+          "pune",
+          "punem",
+          "puneți",
+          "pun"
+        ],
+        "participiu": "pus",
+        "perfect_compus": "am pus",
+        "viitor_popular": "o să pun",
+        "conjunctiv": "să pună",
+        "imperfect": [
+          "puneam",
+          "puneai",
+          "punea",
+          "puneam",
+          "puneați",
+          "puneau"
+        ],
+        "gerunziu": "punând",
+        "imperativ": "pune!",
+        "conditional": "aș pune",
+        "mai_mult_ca_perfect": "pusesem"
+      },
+      "tags": [
+        "essencial"
+      ],
+      "etymology": "latin",
+      "cognate_pt": {
+        "word": "pôr",
+        "confidence": "alto",
+        "note": "← lat. ponere"
+      },
+      "note_pt": "Particípio em -s ('pus'), típico da conjugação III — não há regra, é lista."
+    },
+    {
+      "id": "ro.a_spune",
+      "ro": "a spune",
+      "pt": [
+        "dizer",
+        "contar"
+      ],
+      "pos": "verb",
+      "level": "A1",
+      "conjugation": "III",
+      "ipa": "a ˈspu.ne",
+      "forms": {
+        "prezent": [
+          "spun",
+          "spui",
+          "spune",
+          "spunem",
+          "spuneți",
+          "spun"
+        ],
+        "participiu": "spus",
+        "perfect_compus": "am spus",
+        "viitor_popular": "o să spun",
+        "conjunctiv": "să spună",
+        "imperfect": [
+          "spuneam",
+          "spuneai",
+          "spunea",
+          "spuneam",
+          "spuneați",
+          "spuneau"
+        ],
+        "gerunziu": "spunând",
+        "imperativ": "spune!",
+        "conditional": "aș spune",
+        "mai_mult_ca_perfect": "spusesem"
+      },
+      "tags": [
+        "essencial",
+        "comunicação"
+      ],
+      "etymology": "latin",
+      "cognate_pt": {
+        "word": "expor / expoente",
+        "confidence": "medio",
+        "note": "← lat. exponere"
+      },
+      "note_pt": "'Cum se spune...?' = como se diz...? A frase que resolve qualquer palavra que falta."
+    },
+    {
+      "id": "ro.a_intreba",
+      "ro": "a întreba",
+      "pt": [
+        "perguntar"
+      ],
+      "pos": "verb",
+      "level": "A2",
+      "conjugation": "I",
+      "ipa": "a ɨn.treˈba",
+      "forms": {
+        "prezent": [
+          "întreb",
+          "întrebi",
+          "întreabă",
+          "întrebăm",
+          "întrebați",
+          "întreabă"
+        ],
+        "participiu": "întrebat",
+        "perfect_compus": "am întrebat",
+        "viitor_popular": "o să întreb",
+        "conjunctiv": "să întrebe",
+        "imperfect": [
+          "întrebam",
+          "întrebai",
+          "întreba",
+          "întrebam",
+          "întrebați",
+          "întrebau"
+        ],
+        "gerunziu": "întrebând",
+        "imperativ": "întreabă!",
+        "conditional": "aș întreba",
+        "mai_mult_ca_perfect": "întrebasem"
+      },
+      "tags": [
+        "comunicação"
+      ],
+      "etymology": "latin",
+      "note_pt": "← lat. interrogare. 'Întrebare' é a pergunta."
+    },
+    {
+      "id": "ro.a_raspunde",
+      "ro": "a răspunde",
+      "pt": [
+        "responder"
+      ],
+      "pos": "verb",
+      "level": "A2",
+      "conjugation": "III",
+      "ipa": "a rəsˈpun.de",
+      "forms": {
+        "prezent": [
+          "răspund",
+          "răspunzi",
+          "răspunde",
+          "răspundem",
+          "răspundeți",
+          "răspund"
+        ],
+        "participiu": "răspuns",
+        "perfect_compus": "am răspuns",
+        "viitor_popular": "o să răspund",
+        "conjunctiv": "să răspundă",
+        "imperfect": [
+          "răspundeam",
+          "răspundeai",
+          "răspundea",
+          "răspundeam",
+          "răspundeați",
+          "răspundeau"
+        ],
+        "gerunziu": "răspunzând",
+        "imperativ": "răspunde!",
+        "conditional": "aș răspunde",
+        "mai_mult_ca_perfect": "răspunsesem"
+      },
+      "tags": [
+        "comunicação"
+      ],
+      "etymology": "latin",
+      "cognate_pt": {
+        "word": "responder",
+        "confidence": "alto",
+        "note": "← lat. respondere"
+      }
+    },
+    {
+      "id": "ro.a_scrie",
+      "ro": "a scrie",
+      "pt": [
+        "escrever"
+      ],
+      "pos": "verb",
+      "level": "A2",
+      "conjugation": "III",
+      "ipa": "a ˈskri.e",
+      "forms": {
+        "prezent": [
+          "scriu",
+          "scrii",
+          "scrie",
+          "scriem",
+          "scrieți",
+          "scriu"
+        ],
+        "participiu": "scris",
+        "perfect_compus": "am scris",
+        "viitor_popular": "o să scriu",
+        "conjunctiv": "să scrie",
+        "imperfect": [
+          "scriam",
+          "scriai",
+          "scria",
+          "scriam",
+          "scriați",
+          "scriau"
+        ],
+        "gerunziu": "scriind",
+        "imperativ": "scrie!",
+        "conditional": "aș scrie",
+        "mai_mult_ca_perfect": "scrisesem"
+      },
+      "tags": [
+        "essencial",
+        "estudo"
+      ],
+      "etymology": "latin",
+      "cognate_pt": {
+        "word": "escrever",
+        "confidence": "alto",
+        "note": "← lat. scribere"
+      }
+    },
+    {
+      "id": "ro.a_asculta",
+      "ro": "a asculta",
+      "pt": [
+        "escutar",
+        "ouvir"
+      ],
+      "pos": "verb",
+      "level": "A2",
+      "conjugation": "I",
+      "ipa": "a as.kulˈta",
+      "forms": {
+        "prezent": [
+          "ascult",
+          "asculți",
+          "ascultă",
+          "ascultăm",
+          "ascultați",
+          "ascultă"
+        ],
+        "participiu": "ascultat",
+        "perfect_compus": "am ascultat",
+        "viitor_popular": "o să ascult",
+        "conjunctiv": "să asculte",
+        "imperfect": [
+          "ascultam",
+          "ascultai",
+          "asculta",
+          "ascultam",
+          "ascultați",
+          "ascultau"
+        ],
+        "gerunziu": "ascultând",
+        "imperativ": "ascultă!",
+        "conditional": "aș asculta",
+        "mai_mult_ca_perfect": "ascultasem"
+      },
+      "tags": [
+        "essencial",
+        "música"
+      ],
+      "etymology": "latin",
+      "cognate_pt": {
+        "word": "escutar",
+        "confidence": "alto",
+        "note": "← lat. ascultare"
+      }
+    },
+    {
+      "id": "ro.a_vedea",
+      "ro": "a vedea",
+      "pt": [
+        "ver"
+      ],
+      "pos": "verb",
+      "level": "A1",
+      "conjugation": "II",
+      "ipa": "a veˈde̯a",
+      "forms": {
+        "prezent": [
+          "văd",
+          "vezi",
+          "vede",
+          "vedem",
+          "vedeți",
+          "văd"
+        ],
+        "participiu": "văzut",
+        "perfect_compus": "am văzut",
+        "viitor": "voi vedea",
+        "viitor_popular": "o să văd",
+        "conjunctiv": "să vadă",
+        "imperfect": [
+          "vedeam",
+          "vedeai",
+          "vedea",
+          "vedeam",
+          "vedeați",
+          "vedeau"
+        ],
+        "gerunziu": "văzând",
+        "imperativ": "vezi!",
+        "conditional": "aș vedea",
+        "mai_mult_ca_perfect": "văzusem"
+      },
+      "tags": [
+        "essencial"
+      ],
+      "etymology": "latin",
+      "cognate_pt": {
+        "word": "ver",
+        "confidence": "alto",
+        "note": "← lat. videre"
+      },
+      "note_pt": "'La revedere!' (até logo) é literalmente 'ao rever'. Você já sabia este verbo sem saber."
+    },
+    {
+      "id": "ro.a_lucra",
+      "ro": "a lucra",
+      "pt": [
+        "trabalhar"
+      ],
+      "pos": "verb",
+      "level": "A2",
+      "conjugation": "I",
+      "ipa": "a luˈkra",
+      "forms": {
+        "prezent": [
+          "lucrez",
+          "lucrezi",
+          "lucrează",
+          "lucrăm",
+          "lucrați",
+          "lucrează"
+        ],
+        "participiu": "lucrat",
+        "perfect_compus": "am lucrat",
+        "viitor_popular": "o să lucrez",
+        "conjunctiv": "să lucreze",
+        "imperfect": [
+          "lucram",
+          "lucrai",
+          "lucra",
+          "lucram",
+          "lucrați",
+          "lucrau"
+        ],
+        "gerunziu": "lucrând",
+        "imperativ": "lucrează!",
+        "conditional": "aș lucra",
+        "mai_mult_ca_perfect": "lucrasem"
+      },
+      "tags": [
+        "trabalho",
+        "essencial"
+      ],
+      "etymology": "latin",
+      "cognate_pt": {
+        "word": "lucrar / lucro",
+        "confidence": "medio",
+        "note": "← lat. lucrare"
+      },
+      "note_pt": "Da conjugação I com infixo -ez-: lucrez, lucrezi, lucrează. É o outro padrão irregular além do -esc."
+    },
+    {
+      "id": "ro.a_invata",
+      "ro": "a învăța",
+      "pt": [
+        "aprender",
+        "ensinar"
+      ],
+      "pos": "verb",
+      "level": "A1",
+      "conjugation": "I",
+      "ipa": "a ɨn.vəˈt͡sa",
+      "forms": {
+        "prezent": [
+          "învăț",
+          "înveți",
+          "învață",
+          "învățăm",
+          "învățați",
+          "învață"
+        ],
+        "participiu": "învățat",
+        "perfect_compus": "am învățat",
+        "viitor_popular": "o să învăț",
+        "conjunctiv": "să învețe",
+        "imperfect": [
+          "învățam",
+          "învățai",
+          "învăța",
+          "învățam",
+          "învățați",
+          "învățau"
+        ],
+        "gerunziu": "învățând",
+        "imperativ": "învață!",
+        "conditional": "aș învăța",
+        "mai_mult_ca_perfect": "învățasem"
+      },
+      "tags": [
+        "estudo",
+        "essencial"
+      ],
+      "etymology": "latin",
+      "note_pt": "Uma palavra para aprender E ensinar — o contexto decide. 'Învăț română' = estou aprendendo romeno."
+    },
+    {
+      "id": "ro.a_incepe",
+      "ro": "a începe",
+      "pt": [
+        "começar"
+      ],
+      "accepts_pt": ["iniciar", "principiar"],
+      "pos": "verb",
+      "level": "A2",
+      "conjugation": "III",
+      "ipa": "a ɨnˈt͡ʃe.pe",
+      "forms": {
+        "prezent": [
+          "încep",
+          "începi",
+          "începe",
+          "începem",
+          "începeți",
+          "încep"
+        ],
+        "participiu": "început",
+        "perfect_compus": "am început",
+        "viitor_popular": "o să încep",
+        "conjunctiv": "să înceapă",
+        "imperfect": [
+          "începeam",
+          "începeai",
+          "începea",
+          "începeam",
+          "începeați",
+          "începeau"
+        ],
+        "gerunziu": "începând",
+        "imperativ": "începe!",
+        "conditional": "aș începe",
+        "mai_mult_ca_perfect": "începusem"
+      },
+      "tags": [
+        "essencial"
+      ],
+      "etymology": "latin",
+      "cognate_pt": {
+        "word": "incipiente",
+        "confidence": "medio",
+        "note": "← lat. incipere"
+      },
+      "note_pt": "Escreve-se com 'î' porque está no começo da palavra — a regra da reforma de 1993."
+    },
+    {
+      "id": "ro.a_termina",
+      "ro": "a termina",
+      "pt": [
+        "terminar",
+        "acabar"
+      ],
+      "accepts_pt": ["finalizar", "concluir"],
+      "pos": "verb",
+      "level": "A2",
+      "conjugation": "I",
+      "ipa": "a ter.miˈna",
+      "forms": {
+        "prezent": [
+          "termin",
+          "termini",
+          "termină",
+          "terminăm",
+          "terminați",
+          "termină"
+        ],
+        "participiu": "terminat",
+        "perfect_compus": "am terminat",
+        "viitor_popular": "o să termin",
+        "conjunctiv": "să termine",
+        "imperfect": [
+          "terminam",
+          "terminai",
+          "termina",
+          "terminam",
+          "terminați",
+          "terminau"
+        ],
+        "gerunziu": "terminând",
+        "imperativ": "termină!",
+        "conditional": "aș termina",
+        "mai_mult_ca_perfect": "terminasem"
+      },
+      "tags": [
+        "essencial"
+      ],
+      "etymology": "latin",
+      "cognate_pt": {
+        "word": "terminar",
+        "confidence": "alto"
+      },
+      "note_pt": "'Termină!' sozinho é 'para com isso!' — imperativo com força de repreensão."
+    },
+    {
+      "id": "ro.a_ajuta",
+      "ro": "a ajuta",
+      "pt": [
+        "ajudar"
+      ],
+      "pos": "verb",
+      "level": "A1",
+      "conjugation": "I",
+      "ipa": "a a.ʒuˈta",
+      "forms": {
+        "prezent": [
+          "ajut",
+          "ajuți",
+          "ajută",
+          "ajutăm",
+          "ajutați",
+          "ajută"
+        ],
+        "participiu": "ajutat",
+        "perfect_compus": "am ajutat",
+        "viitor_popular": "o să ajut",
+        "conjunctiv": "să ajute",
+        "imperfect": [
+          "ajutam",
+          "ajutai",
+          "ajuta",
+          "ajutam",
+          "ajutați",
+          "ajutau"
+        ],
+        "gerunziu": "ajutând",
+        "imperativ": "ajută!",
+        "conditional": "aș ajuta",
+        "mai_mult_ca_perfect": "ajutasem"
+      },
+      "tags": [
+        "essencial",
+        "socorro"
+      ],
+      "etymology": "latin",
+      "cognate_pt": {
+        "word": "ajudar",
+        "confidence": "alto",
+        "note": "← lat. adiutare"
+      },
+      "note_pt": "'Ajutor!' é 'socorro!'. E 'mă ajuți?' é 'você me ajuda?'."
+    },
+    {
+      "id": "ro.a_se_trezi",
+      "ro": "a se trezi",
+      "pt": [
+        "acordar"
+      ],
+      "accepts_pt": ["despertar", "levantar"],
+      "pos": "verb",
+      "level": "A2",
+      "conjugation": "IV",
+      "ipa": "a se treˈzi",
+      "forms": {
+        "prezent": [
+          "mă trezesc",
+          "te trezești",
+          "se trezește",
+          "ne trezim",
+          "vă treziți",
+          "se trezesc"
+        ],
+        "participiu": "trezit",
+        "perfect_compus": "m-am trezit",
+        "viitor_popular": "o să mă trezesc",
+        "conjunctiv": "să se trezească",
+        "imperfect": [
+          "mă trezeam",
+          "te trezeai",
+          "se trezea",
+          "ne trezeam",
+          "vă trezeați",
+          "se trezeau"
+        ],
+        "gerunziu": "trezindu-se",
+        "conditional": "m-aș trezi",
+        "mai_mult_ca_perfect": "mă trezisem"
+      },
+      "tags": [
+        "rotina"
+      ],
+      "etymology": "slav",
+      "note_pt": "Reflexivo obrigatório, como o nosso 'acordar-se' antigo. 'Mă trezesc la șapte.'"
+    },
+    {
+      "id": "ro.a_spala",
+      "ro": "a spăla",
+      "pt": [
+        "lavar"
+      ],
+      "pos": "verb",
+      "level": "A2",
+      "conjugation": "I",
+      "ipa": "a spəˈla",
+      "forms": {
+        "prezent": [
+          "spăl",
+          "speli",
+          "spală",
+          "spălăm",
+          "spălați",
+          "spală"
+        ],
+        "participiu": "spălat",
+        "perfect_compus": "am spălat",
+        "viitor_popular": "o să spăl",
+        "conjunctiv": "să spele",
+        "imperfect": [
+          "spălam",
+          "spălai",
+          "spăla",
+          "spălam",
+          "spălați",
+          "spălau"
+        ],
+        "gerunziu": "spălând",
+        "imperativ": "spală!",
+        "conditional": "aș spăla",
+        "mai_mult_ca_perfect": "spălasem"
+      },
+      "tags": [
+        "rotina",
+        "casa"
+      ],
+      "etymology": "latin",
+      "note_pt": "'Mă spăl' é 'eu me lavo, tomo banho'."
+    },
+    {
+      "id": "ro.a_crede",
+      "ro": "a crede",
+      "pt": [
+        "achar",
+        "acreditar"
+      ],
+      "accepts_pt": ["crer", "pensar"],
+      "pos": "verb",
+      "level": "A2",
+      "conjugation": "III",
+      "ipa": "a ˈkre.de",
+      "forms": {
+        "prezent": [
+          "cred",
+          "crezi",
+          "crede",
+          "credem",
+          "credeți",
+          "cred"
+        ],
+        "participiu": "crezut",
+        "perfect_compus": "am crezut",
+        "viitor_popular": "o să cred",
+        "conjunctiv": "să creadă",
+        "imperfect": [
+          "credeam",
+          "credeai",
+          "credea",
+          "credeam",
+          "credeați",
+          "credeau"
+        ],
+        "gerunziu": "crezând",
+        "conditional": "aș crede",
+        "mai_mult_ca_perfect": "crezusem"
+      },
+      "tags": [
+        "essencial",
+        "opinião"
+      ],
+      "etymology": "latin",
+      "cognate_pt": {
+        "word": "crer",
+        "confidence": "alto",
+        "note": "← lat. credere"
+      },
+      "note_pt": "'Cred că...' é o 'eu acho que...' de toda conversa. Não precisa ser sobre fé."
+    },
+    {
+      "id": "ro.a_trebui",
+      "ro": "a trebui",
+      "pt": [
+        "dever",
+        "precisar"
+      ],
+      "accepts_pt": ["ter que", "ser preciso"],
+      "pos": "verb",
+      "level": "A2",
+      "conjugation": "IV",
+      "ipa": "a treˈbuj",
+      "forms": {
+        "prezent": [
+          "trebuie",
+          "trebuie",
+          "trebuie",
+          "trebuie",
+          "trebuie",
+          "trebuie"
+        ],
+        "participiu": "trebuit",
+        "perfect_compus": "a trebuit",
+        "conjunctiv": "să trebuiască",
+        "imperfect": [
+          "trebuia",
+          "trebuia",
+          "trebuia",
+          "trebuia",
+          "trebuia",
+          "trebuia"
+        ],
+        "gerunziu": "trebuind",
+        "conditional": "aș trebui",
+        "mai_mult_ca_perfect": "trebuisem"
+      },
+      "tags": [
+        "essencial",
+        "obrigação"
+      ],
+      "etymology": "slav",
+      "note_pt": "INVARIÁVEL: 'trebuie' serve para todas as pessoas. 'Trebuie să plec' = tenho que ir. Quem conjuga se entrega."
+    }
+  ]
+}

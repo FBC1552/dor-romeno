@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "dor/slang.schema.json",
+  "title": "Argou, expressões idiomáticas e provérbios",
+  "type": "object",
+  "required": ["meta", "items"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": { "type": "string" },
+    "meta": {
+      "type": "object",
+      "required": ["id", "title", "version"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9_]+$" },
+        "title": { "type": "string" },
+        "version": { "type": "integer", "minimum": 1 },
+        "description": { "type": "string" }
+      }
+    },
+    "items": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "ro", "pt", "register", "kind"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string", "pattern": "^sl\\.[a-z0-9_]+$" },
+          "ro": { "type": "string", "minLength": 1 },
+          "pt": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+          "kind": { "enum": ["cuvant", "expresie", "proverb", "interjectie"] },
+          "register": { "enum": ["formal", "neutru", "colocvial", "argou", "vulgar"] },
+          "literal_pt": {
+            "type": "string",
+            "description": "Tradução literal quando a imagem for divertida ou reveladora"
+          },
+          "pt_mirror": {
+            "type": "string",
+            "description": "Expressão equivalente em português brasileiro"
+          },
+          "etymology": {
+            "enum": ["latin", "slav", "romani", "turc", "maghiar", "francez",
+                     "german", "grec", "englez", "necunoscut"]
+          },
+          "safe_with": {
+            "type": "array",
+            "description": "Com quem dá pra usar — alimenta o modo Radar de Registro",
+            "items": { "enum": ["sef", "politist", "prieten", "bunica", "strain", "coleg"] }
+          },
+          "example": {
+            "type": "object",
+            "required": ["ro", "pt"],
+            "additionalProperties": false,
+            "properties": {
+              "ro": { "type": "string" },
+              "pt": { "type": "string" }
+            }
+          },
+          "note_pt": { "type": "string" },
+          "tags": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    }
+  }
+}

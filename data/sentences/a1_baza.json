@@ -1,0 +1,204 @@
+{
+  "$schema": "../schema/sentences.schema.json",
+  "meta": {
+    "id": "a1_baza",
+    "title": "Frases básicas",
+    "level": "A1",
+    "version": 1,
+    "description": "Corpus que alimenta os exercícios de lacuna e os episódios de podcast."
+  },
+  "items": [
+    {
+      "id": "s.a1.saluturi.01",
+      "ro": "Bună ziua, mă numesc Ana.",
+      "pt": "Bom dia, meu nome é Ana.",
+      "level": "A1",
+      "register": "formal",
+      "vocab": ["ro.buna_ziua"],
+      "cloze_target": "Bună"
+    },
+    {
+      "id": "s.a1.saluturi.02",
+      "ro": "Bună, ce faci? — Bine, mulțumesc!",
+      "pt": "Oi, como vai? — Bem, obrigado!",
+      "level": "A1",
+      "register": "colocvial",
+      "vocab": ["ro.buna", "ro.ce_faci", "ro.bine", "ro.a_face"],
+      "cloze_target": "faci"
+    },
+    {
+      "id": "s.a1.saluturi.03",
+      "ro": "Noroc! Să trăiești!",
+      "pt": "Saúde! Vida longa!",
+      "level": "A1",
+      "register": "colocvial",
+      "vocab": ["ro.noroc"],
+      "cloze_target": "Noroc",
+      "note_pt": "O brinde padrão. 'Să trăiești' = que você viva (muito)."
+    },
+    {
+      "id": "s.a1.saluturi.04",
+      "ro": "Mulțumesc mult pentru ajutor.",
+      "pt": "Muito obrigado pela ajuda.",
+      "level": "A1",
+      "register": "neutru",
+      "vocab": ["ro.multumesc"],
+      "cloze_target": "Mulțumesc"
+    },
+    {
+      "id": "s.a1.saluturi.05",
+      "ro": "Te rog, mai spune o dată.",
+      "pt": "Por favor, fala de novo.",
+      "level": "A1",
+      "register": "colocvial",
+      "vocab": ["ro.te_rog"],
+      "cloze_target": "rog"
+    },
+    {
+      "id": "s.a1.saluturi.06",
+      "ro": "Poftim? N-am înțeles nimic.",
+      "pt": "Como? Não entendi nada.",
+      "level": "A1",
+      "register": "colocvial",
+      "vocab": ["ro.poftim", "ro.a_intelege"],
+      "cloze_target": "Poftim",
+      "note_pt": "A frase que você mais vai usar no primeiro mês. Decore agora."
+    },
+    {
+      "id": "s.a1.saluturi.07",
+      "ro": "Mi-e dor de tine.",
+      "pt": "Estou com saudade de você.",
+      "level": "A1",
+      "register": "neutru",
+      "vocab": ["ro.dor"],
+      "cloze_target": "dor",
+      "note_pt": "Literalmente 'me é saudade de ti'. A construção é impessoal, como em 'mi-e foame' (estou com fome)."
+    },
+    {
+      "id": "s.a1.casa.01",
+      "ro": "Casa este mare și frumoasă.",
+      "pt": "A casa é grande e bonita.",
+      "level": "A1",
+      "register": "neutru",
+      "vocab": ["ro.casa", "ro.a_fi"],
+      "cloze_target": "Casa",
+      "grammar": ["g.articol.hotarat.fem.sg"],
+      "note_pt": "'Casa' já contém o artigo — não existe 'a casă'."
+    },
+    {
+      "id": "s.a1.casa.02",
+      "ro": "Scaunul este lângă masă.",
+      "pt": "A cadeira está ao lado da mesa.",
+      "level": "A1",
+      "register": "neutru",
+      "vocab": ["ro.scaun", "ro.masa", "ro.a_fi"],
+      "cloze_target": "Scaunul",
+      "grammar": ["g.gen.neutru"]
+    },
+    {
+      "id": "s.a1.casa.03",
+      "ro": "Citesc o carte bună.",
+      "pt": "Estou lendo um livro bom.",
+      "level": "A1",
+      "register": "neutru",
+      "vocab": ["ro.carte"],
+      "cloze_target": "carte",
+      "note_pt": "⚠ 'carte' = livro, não carta. E o romeno não tem gerúndio: 'citesc' cobre 'leio' e 'estou lendo'."
+    },
+    {
+      "id": "s.a1.casa.04",
+      "ro": "Băiatul și fata sunt acasă.",
+      "pt": "O menino e a menina estão em casa.",
+      "level": "A1",
+      "register": "neutru",
+      "vocab": ["ro.baiat", "ro.fata", "ro.a_fi"],
+      "cloze_target": "Băiatul",
+      "grammar": ["g.articol.hotarat.masc.sg"]
+    },
+    {
+      "id": "s.a1.casa.05",
+      "ro": "Vreau un pahar cu apă, vă rog.",
+      "pt": "Quero um copo de água, por favor.",
+      "level": "A1",
+      "register": "formal",
+      "vocab": ["ro.apa", "ro.a_vrea", "ro.va_rog"],
+      "cloze_target": "apă"
+    },
+    {
+      "id": "s.a1.casa.06",
+      "ro": "Beau vin roșu cu prietenii.",
+      "pt": "Bebo vinho tinto com os amigos.",
+      "level": "A1",
+      "register": "neutru",
+      "vocab": ["ro.vin", "ro.a_bea"],
+      "cloze_target": "vin",
+      "note_pt": "Vinho tinto é 'vin roșu' (vinho vermelho), não 'negru'."
+    },
+    {
+      "id": "s.a1.verbe.01",
+      "ro": "Eu sunt din Brazilia.",
+      "pt": "Eu sou do Brasil.",
+      "level": "A1",
+      "register": "neutru",
+      "vocab": ["ro.a_fi"],
+      "cloze_target": "sunt"
+    },
+    {
+      "id": "s.a1.verbe.02",
+      "ro": "Am o întrebare.",
+      "pt": "Tenho uma pergunta.",
+      "level": "A1",
+      "register": "neutru",
+      "vocab": ["ro.a_avea"],
+      "cloze_target": "Am"
+    },
+    {
+      "id": "s.a1.verbe.03",
+      "ro": "Merge și așa.",
+      "pt": "Assim já serve. / Tá bom assim.",
+      "level": "A1",
+      "register": "colocvial",
+      "vocab": ["ro.a_merge"],
+      "cloze_target": "Merge",
+      "note_pt": "⭐ Frase-mentalidade. Ouça isso num escritório romeno e você entendeu o país."
+    },
+    {
+      "id": "s.a1.verbe.04",
+      "ro": "Vorbesc puțin românește.",
+      "pt": "Falo um pouco de romeno.",
+      "level": "A1",
+      "register": "neutru",
+      "vocab": ["ro.a_vorbi"],
+      "cloze_target": "Vorbesc",
+      "note_pt": "O idioma é 'românește' (advérbio) quando se fala dele assim, ou 'limba română'."
+    },
+    {
+      "id": "s.a1.verbe.05",
+      "ro": "Nu știu, nu înțeleg.",
+      "pt": "Não sei, não entendo.",
+      "level": "A1",
+      "register": "neutru",
+      "vocab": ["ro.a_sti", "ro.a_intelege", "ro.nu"],
+      "cloze_target": "știu"
+    },
+    {
+      "id": "s.a1.verbe.06",
+      "ro": "Locuiesc în București de doi ani.",
+      "pt": "Moro em Bucareste há dois anos.",
+      "level": "A1",
+      "register": "neutru",
+      "vocab": ["ro.a_locui"],
+      "cloze_target": "Locuiesc"
+    },
+    {
+      "id": "s.a1.verbe.07",
+      "ro": "Nu-ți face griji, mă descurc.",
+      "pt": "Não se preocupa, eu me viro.",
+      "level": "A2",
+      "register": "colocvial",
+      "vocab": ["ro.a_se_descurca"],
+      "cloze_target": "descurc",
+      "note_pt": "⭐ Se você aprender uma frase de gíria hoje, que seja esta."
+    }
+  ]
+}

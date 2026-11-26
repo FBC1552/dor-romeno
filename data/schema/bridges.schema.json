@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "dor/bridges.schema.json",
+  "title": "Cognate Bridge — as correspondências que transformam português em romeno",
+  "type": "object",
+  "required": ["meta", "items"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": { "type": "string" },
+    "meta": {
+      "type": "object",
+      "required": ["id", "title", "version"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9_]+$" },
+        "title": { "type": "string" },
+        "version": { "type": "integer", "minimum": 1 },
+        "description": { "type": "string" }
+      }
+    },
+    "items": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "title", "kind", "pt", "ro", "rule_pt", "examples"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string", "pattern": "^br\\.[a-z0-9_]+$" },
+          "title": { "type": "string" },
+          "kind": {
+            "enum": ["sunet", "sufix"],
+            "description": "sunet = correspondência de som; sufix = terminação produtiva"
+          },
+          "pt": { "type": "string", "description": "O padrão do lado português" },
+          "ro": { "type": "string", "description": "O padrão do lado romeno" },
+          "latin": { "type": "string" },
+          "rule_pt": { "type": "string", "minLength": 1 },
+          "confidence": {
+            "enum": ["alto", "medio"],
+            "default": "alto",
+            "description": "Quão seguro é aplicar a regra numa palavra que você não conhece"
+          },
+          "productive": {
+            "type": "boolean",
+            "default": false,
+            "description": "Dá para inventar palavra nova com ela e acertar"
+          },
+          "examples": {
+            "type": "array",
+            "minItems": 2,
+            "items": {
+              "type": "object",
+              "required": ["pt", "ro"],
+              "additionalProperties": false,
+              "properties": {
+                "pt": { "type": "string" },
+                "ro": { "type": "string" },
+                "latin": { "type": "string" },
+                "note": { "type": "string" }
+              }
+            }
+          },
+          "traps": {
+            "type": "array",
+            "description": "Onde a regra engana — o preço de confiar demais nela",
+            "items": {
+              "type": "object",
+              "required": ["pt", "note"],
+              "additionalProperties": false,
+              "properties": {
+                "pt": { "type": "string" },
+                "wrong_ro": { "type": "string" },
+                "right_ro": { "type": "string" },
+                "note": { "type": "string" }
+              }
+            }
+          },
+          "tags": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,189 @@
+{
+  "$schema": "../schema/grammar.schema.json",
+  "meta": {
+    "id": "a2_verb",
+    "title": "Verbo: passado, futuro e conjuntivo",
+    "level": "A2",
+    "version": 1,
+    "description": "Os tempos que fazem o romeno sair do presente. O conjuntivo é a regra mais importante do nível: ele substitui o infinitivo que o português usa o tempo todo."
+  },
+  "items": [
+    {
+      "id": "g.verb.conjunctiv",
+      "title": "Conjuntivo com să — o que substitui o infinitivo",
+      "level": "A2",
+      "tags": ["verbo", "conjuntivo", "estrutural"],
+      "explanation_pt": "Onde o português encadeia dois verbos com infinitivo ('quero comer'), o romeno usa 'să' + conjuntivo: 'vreau să mănânc'. O conjuntivo é idêntico ao presente em todas as pessoas MENOS a terceira — é só essa forma que você precisa aprender de novo: el mănâncă → el să mănânce.",
+      "contrast_pt": "Esta é a diferença estrutural nº 1 entre os dois idiomas. 'Posso entrar?' não é 'pot intra' na fala normal, é 'pot să intru?'. Sem isso, a frase soa traduzida ao pé da letra.",
+      "examples": [
+        { "ro": "Vreau să mănânc.", "pt": "Quero comer." },
+        { "ro": "Pot să te ajut?", "pt": "Posso te ajudar?" },
+        { "ro": "Trebuie să merg acasă.", "pt": "Tenho que ir para casa." },
+        { "ro": "Vrea să bea apă.", "pt": "Ele quer beber água." }
+      ],
+      "table": {
+        "headers": ["pessoa", "presente", "conjuntivo"],
+        "rows": [
+          ["eu", "mănânc", "să mănânc"],
+          ["tu", "mănânci", "să mănânci"],
+          ["el / ea", "mănâncă", "să mănânce  ← única diferença"],
+          ["noi", "mâncăm", "să mâncăm"],
+          ["voi", "mâncați", "să mâncați"],
+          ["ei / ele", "mănâncă", "să mănânce"]
+        ]
+      },
+      "pitfall_pt": "O erro clássico é traduzir 'quero comer' como 'vreau mânca'. Sempre que houver dois verbos seguidos, entre 'să' no meio — e lembre que a terceira pessoa do conjuntivo é a forma que muda.",
+      "drill": {
+        "type": "transform",
+        "query": { "pos": "verb", "has_form": "forms.conjunctiv" },
+        "from": "ro",
+        "to": "forms.conjunctiv",
+        "prompt_pt": "Conjuntivo, 3ª pessoa (el/ea ...):"
+      }
+    },
+    {
+      "id": "g.verb.viitor.popular",
+      "title": "Futuro que se fala de verdade — o să",
+      "level": "A2",
+      "tags": ["verbo", "futuro", "registro"],
+      "explanation_pt": "O romeno tem dois futuros. O literário usa auxiliar próprio: 'voi mânca'. O falado usa 'o să' + conjuntivo: 'o să mănânc'. Na rua, na música e nas mensagens, é o segundo — o primeiro soa a jornal.",
+      "contrast_pt": "O português faz o mesmo movimento: escrevemos 'comerei' e falamos 'vou comer'. A diferença é que aqui o futuro falado reaproveita o conjuntivo que você acabou de aprender.",
+      "examples": [
+        { "ro": "O să vin mâine.", "pt": "Vou (eu venho) amanhã." },
+        { "ro": "Voi veni mâine.", "pt": "Virei amanhã. (escrito, formal)" },
+        { "ro": "O să fie bine.", "pt": "Vai dar certo." }
+      ],
+      "table": {
+        "headers": ["registro", "forma", "quando"],
+        "rows": [
+          ["falado", "o să mănânc", "conversa, música, mensagem"],
+          ["falado (variante)", "am să mănânc", "mais comum entre mais velhos"],
+          ["literário", "voi mânca", "texto formal, notícia, contrato"]
+        ]
+      },
+      "pitfall_pt": "'O să' não muda com a pessoa — é sempre 'o să', do 'eu' ao 'eles'. Quem conjuga o 'o' se entrega na hora.",
+      "drill": {
+        "type": "transform",
+        "query": { "pos": "verb", "has_form": "forms.viitor_popular" },
+        "from": "ro",
+        "to": "forms.viitor_popular",
+        "prompt_pt": "Futuro falado, 1ª pessoa (o să ...):"
+      }
+    },
+    {
+      "id": "g.verb.imperfect",
+      "title": "Imperfeito — o passado que ainda estava acontecendo",
+      "level": "A2",
+      "tags": ["verbo", "passado"],
+      "explanation_pt": "O imperfeito descreve o que era contínuo ou habitual no passado: 'mâncam' = eu comia / eu estava comendo. Ele contrasta com o perfeito composto ('am mâncat' = eu comi), que fecha a ação.",
+      "contrast_pt": "Boa notícia: a divisão é exatamente a mesma do português entre 'comia' e 'comi'. Se você sabe escolher em português, acerta em romeno — só troca a terminação.",
+      "examples": [
+        { "ro": "Când eram mic, mâncam mult.", "pt": "Quando eu era pequeno, comia muito." },
+        { "ro": "Ieri am mâncat la restaurant.", "pt": "Ontem comi no restaurante." },
+        { "ro": "Vorbeam la telefon când ai sunat.", "pt": "Eu estava falando ao telefone quando você ligou." }
+      ],
+      "pitfall_pt": "A 1ª pessoa do singular e a do plural são idênticas: 'eu mâncam' e 'noi mâncam'. Só o pronome desfaz — e o romeno costuma omitir o pronome. Aqui você vai precisar dele.",
+      "drill": {
+        "type": "transform",
+        "query": { "pos": "verb", "has_form": "forms.imperfect" },
+        "from": "ro",
+        "to": "forms.imperfect",
+        "prompt_pt": "Conjugue no imperfeito:"
+      }
+    },
+    {
+      "id": "g.verb.perfect.compus",
+      "title": "Perfeito composto — o passado do dia a dia",
+      "level": "A2",
+      "tags": ["verbo", "passado"],
+      "explanation_pt": "É 'a avea' (am, ai, a, am, ați, au) + particípio: am mâncat, ai mâncat, a mâncat. O particípio nunca muda — não concorda com nada.",
+      "contrast_pt": "Idêntico ao nosso 'ter comido', mas usado onde o português usa o passado simples: 'am mâncat' é 'eu comi', não 'eu tenho comido'. O passado simples romeno existe, mas só se fala na Oltênia e em narrativa literária.",
+      "examples": [
+        { "ro": "Am mâncat deja.", "pt": "Já comi." },
+        { "ro": "Ai vorbit cu el?", "pt": "Você falou com ele?" },
+        { "ro": "Au fost aici ieri.", "pt": "Eles estiveram aqui ontem." }
+      ],
+      "table": {
+        "headers": ["pessoa", "auxiliar", "exemplo"],
+        "rows": [
+          ["eu", "am", "am vorbit"],
+          ["tu", "ai", "ai vorbit"],
+          ["el / ea", "a", "a vorbit"],
+          ["noi", "am", "am vorbit"],
+          ["voi", "ați", "ați vorbit"],
+          ["ei / ele", "au", "au vorbit"]
+        ]
+      },
+      "pitfall_pt": "A 3ª pessoa do singular usa 'a' sozinho — 'a vorbit'. Como o infinitivo também é 'a vorbi', dá para confundir os dois na leitura. O particípio termina diferente: vorbi → vorbit.",
+      "drill": {
+        "type": "transform",
+        "query": { "pos": "verb", "has_form": "forms.perfect_compus" },
+        "from": "ro",
+        "to": "forms.perfect_compus",
+        "prompt_pt": "Passe para o perfeito composto (eu ...):"
+      }
+    },
+    {
+      "id": "g.verb.participiu",
+      "title": "Particípio — a peça que monta metade dos tempos",
+      "level": "A2",
+      "tags": ["verbo", "passado"],
+      "explanation_pt": "Conjugações I e IV fazem particípio em -at/-it (mâncat, vorbit). As II e III são as imprevisíveis: băut, făcut, mers, înțeles. Vale a pena decorar o particípio junto com o infinitivo, porque dele saem o perfeito composto, a voz passiva e o adjetivo.",
+      "contrast_pt": "Como em português: 'comido', 'falado' — e os irregulares 'feito', 'visto'. A distribuição da irregularidade é bem parecida.",
+      "examples": [
+        { "ro": "a mânca → mâncat", "pt": "comer → comido" },
+        { "ro": "a face → făcut", "pt": "fazer → feito" },
+        { "ro": "a merge → mers", "pt": "ir → ido" }
+      ],
+      "pitfall_pt": "Particípios em -s (mers, înțeles) são os que mais escapam. Não existe regra: são os verbos da III, e são poucos — decore a lista.",
+      "drill": {
+        "type": "transform",
+        "query": { "pos": "verb", "has_form": "forms.participiu" },
+        "from": "ro",
+        "to": "forms.participiu",
+        "prompt_pt": "Qual o particípio?"
+      }
+    },
+    {
+      "id": "g.verb.gerunziu",
+      "title": "Gerúndio em -ând / -ind",
+      "level": "A2",
+      "tags": ["verbo", "gerúndio"],
+      "explanation_pt": "Forma-se com -ând (ou -ind depois de vogal palatal): mâncând, vorbind, fiind. Serve para ação simultânea: 'a intrat cântând' = entrou cantando.",
+      "contrast_pt": "ATENÇÃO: ele NÃO forma tempo contínuo. 'Estou comendo' é só 'mănânc'. Usar o gerúndio como no português — 'sunt mâncând' — não existe e soa incompreensível.",
+      "examples": [
+        { "ro": "A plecat râzând.", "pt": "Saiu rindo." },
+        { "ro": "Mănânc.", "pt": "Estou comendo. (sem gerúndio!)" },
+        { "ro": "Vorbind cu el, am înțeles tot.", "pt": "Falando com ele, entendi tudo." }
+      ],
+      "pitfall_pt": "O brasileiro é o falante mais gerundista do mundo e vai querer usar isto o tempo todo. Regra prática: se em português cabe 'estou ...ndo', em romeno é presente simples.",
+      "drill": {
+        "type": "transform",
+        "query": { "pos": "verb", "has_form": "forms.gerunziu" },
+        "from": "ro",
+        "to": "forms.gerunziu",
+        "prompt_pt": "Qual o gerúndio?"
+      }
+    },
+    {
+      "id": "g.verb.conjugarea.iv",
+      "title": "Conjugação IV — com e sem -esc",
+      "level": "A2",
+      "tags": ["verbo", "presente", "conjugação"],
+      "explanation_pt": "Boa parte dos verbos em -i insere -esc no singular e na 3ª do plural: vorbesc, vorbești, vorbește, vorbim, vorbiți, vorbesc. Outros não inserem nada: dorm, dormi, doarme. Não há regra segura — é traço do verbo, e vem marcado no acervo.",
+      "contrast_pt": "O português tem o mesmo tipo de traço arbitrário entre 'construo' e 'construço'... só que resolvido há séculos. Aqui você decide verbo a verbo.",
+      "examples": [
+        { "ro": "eu vorbesc, noi vorbim", "pt": "eu falo, nós falamos" },
+        { "ro": "eu locuiesc în București", "pt": "eu moro em Bucareste" }
+      ],
+      "pitfall_pt": "O -esc só aparece onde a terminação é fraca: eu, tu, el e ei. Em 'noi' e 'voi' ele some — 'noi vorbesim' não existe.",
+      "drill": {
+        "type": "transform",
+        "query": { "pos": "verb", "conjugation": "IV", "has_form": "forms.prezent" },
+        "from": "ro",
+        "to": "forms.prezent",
+        "prompt_pt": "Conjugue no presente (conjugação IV):"
+      }
+    }
+  ]
+}

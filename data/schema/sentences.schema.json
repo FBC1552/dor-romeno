@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "dor/sentences.schema.json",
+  "title": "Corpus de frases",
+  "type": "object",
+  "required": ["meta", "items"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": { "type": "string" },
+    "meta": {
+      "type": "object",
+      "required": ["id", "title", "level", "version"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9_]+$" },
+        "title": { "type": "string" },
+        "level": { "enum": ["A1", "A2", "B1", "B2", "C1", "C2"] },
+        "version": { "type": "integer", "minimum": 1 },
+        "description": { "type": "string" }
+      }
+    },
+    "items": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "ro", "pt", "level"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string", "pattern": "^s\\.[a-z0-9_.]+$" },
+          "ro": { "type": "string", "minLength": 1 },
+          "pt": { "type": "string", "minLength": 1 },
+          "level": { "enum": ["A1", "A2", "B1", "B2", "C1", "C2"] },
+          "register": { "enum": ["formal", "neutru", "colocvial", "argou", "vulgar"] },
+          "vocab": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "IDs de vocabulário presentes — usado para gerar cloze"
+          },
+          "cloze_target": {
+            "type": "string",
+            "description": "Palavra a ocultar por padrão no exercício de lacuna"
+          },
+          "grammar": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "IDs de regras gramaticais ilustradas"
+          },
+          "note_pt": { "type": "string" }
+        }
+      }
+    }
+  }
+}

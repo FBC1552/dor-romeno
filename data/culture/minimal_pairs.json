@@ -1,0 +1,141 @@
+{
+  "$schema": "../schema/minimal_pairs.schema.json",
+  "meta": {
+    "id": "perechi_minimale",
+    "title": "Pares mínimos — o que o ouvido brasileiro não separa sozinho",
+    "version": 1,
+    "description": "Pares de palavras reais que diferem por um único som. Todos os contrastes escolhidos são invisíveis para quem só fala português: ș/s e ț/t não existem como oposição no nosso sistema, e â/ă não existe de jeito nenhum. Ler não resolve — só ouvir repetidamente resolve."
+  },
+  "items": [
+    {
+      "id": "mp.peste",
+      "contrast": "ș / s",
+      "level": "A1",
+      "a": { "ro": "pește", "pt": "peixe", "ipa": "ˈpeʃ.te", "pos": "noun" },
+      "b": { "ro": "peste", "pt": "sobre, por cima de", "ipa": "ˈpes.te", "pos": "prep" },
+      "note_pt": "⭐ O par mais útil da lista: as duas palavras são frequentíssimas e aparecem no mesmo tipo de frase.",
+      "tags": ["essencial"]
+    },
+    {
+      "id": "mp.musca",
+      "contrast": "ș / s",
+      "level": "A1",
+      "a": { "ro": "mușca", "pt": "morder (a mușca)", "ipa": "ˈmuʃ.ka", "pos": "verb" },
+      "b": { "ro": "musca", "pt": "a mosca", "ipa": "ˈmus.ka", "pos": "noun" },
+      "note_pt": "Um verbo e um substantivo — o contexto ajuda, mas o som é o que decide.",
+      "tags": ["essencial"]
+    },
+    {
+      "id": "mp.desert",
+      "contrast": "ș / s",
+      "level": "A2",
+      "a": { "ro": "deșert", "pt": "deserto", "ipa": "deˈʃert", "pos": "noun" },
+      "b": { "ro": "desert", "pt": "sobremesa", "ipa": "deˈsert", "pos": "noun" },
+      "note_pt": "Confundir aqui muda bastante o jantar. 'Desert' veio do francês; 'deșert' veio do latim.",
+      "tags": ["comida"]
+    },
+    {
+      "id": "mp.cos",
+      "contrast": "ș / s",
+      "level": "A2",
+      "a": { "ro": "coș", "pt": "cesto, cesta", "ipa": "koʃ", "pos": "noun" },
+      "b": { "ro": "cos", "pt": "eu costuro (a coase)", "ipa": "kos", "pos": "verb" },
+      "tags": ["objeto"]
+    },
+    {
+      "id": "mp.sura",
+      "contrast": "ș / s",
+      "level": "B1",
+      "a": { "ro": "șură", "pt": "celeiro", "ipa": "ˈʃu.rə", "pos": "noun" },
+      "b": { "ro": "sură", "pt": "cinzenta (fem. de sur)", "ipa": "ˈsu.rə", "pos": "adj" },
+      "tags": ["rural"]
+    },
+    {
+      "id": "mp.fata",
+      "contrast": "ț / t",
+      "level": "A1",
+      "a": { "ro": "față", "pt": "rosto, face", "ipa": "ˈfa.t͡sa", "pos": "noun" },
+      "b": { "ro": "fată", "pt": "menina, garota", "ipa": "ˈfa.tə", "pos": "noun" },
+      "note_pt": "⭐ O par clássico. Repare que mudam DOIS sons: o ț e o ă final. Ouvir os dois de uma vez é o exercício.",
+      "tags": ["essencial", "pessoa"]
+    },
+    {
+      "id": "mp.rata",
+      "contrast": "ț / t",
+      "level": "A2",
+      "a": { "ro": "rață", "pt": "pato, pata", "ipa": "ˈra.t͡sa", "pos": "noun" },
+      "b": { "ro": "rata", "pt": "a prestação, a taxa", "ipa": "ˈra.ta", "pos": "noun" },
+      "tags": ["animal"]
+    },
+    {
+      "id": "mp.roti",
+      "contrast": "ț / t",
+      "level": "A2",
+      "a": { "ro": "roți", "pt": "rodas", "ipa": "rot͡sʲ", "pos": "noun" },
+      "b": { "ro": "roti", "pt": "girar (a roti)", "ipa": "roˈti", "pos": "verb" },
+      "note_pt": "O ț final do plural é justamente o que o brasileiro come. Aqui ele muda a palavra inteira.",
+      "tags": ["objeto"]
+    },
+    {
+      "id": "mp.tara",
+      "contrast": "ț / t",
+      "level": "A1",
+      "a": { "ro": "țară", "pt": "país", "ipa": "ˈt͡sa.rə", "pos": "noun" },
+      "b": { "ro": "tara", "pt": "o defeito, a tara", "ipa": "ˈta.ra", "pos": "noun" },
+      "note_pt": "'Țară' é palavra do dia a dia; 'tara' é rara. Mas o contraste ț/t no início da palavra é o que interessa aqui.",
+      "tags": ["essencial"]
+    },
+    {
+      "id": "mp.rau",
+      "contrast": "â / ă",
+      "level": "A1",
+      "a": { "ro": "râu", "pt": "rio", "ipa": "rɨw", "pos": "noun" },
+      "b": { "ro": "rău", "pt": "mau, ruim", "ipa": "rəw", "pos": "adj" },
+      "note_pt": "⭐ O contraste mais difícil de todos. O â é uma vogal central alta que o português simplesmente não tem — não é 'i' nem 'u'. Ouça vinte vezes antes de tentar produzir.",
+      "tags": ["essencial"]
+    },
+    {
+      "id": "mp.par",
+      "contrast": "ă / a",
+      "level": "A1",
+      "a": { "ro": "păr", "pt": "cabelo", "ipa": "pər", "pos": "noun" },
+      "b": { "ro": "par", "pt": "par (número par), estaca", "ipa": "par", "pos": "adj" },
+      "note_pt": "O ă é o som mais frequente do romeno e o que mais escapa ao ouvido brasileiro — é uma vogal neutra, como o 'e' mudo do francês.",
+      "tags": ["essencial"]
+    },
+    {
+      "id": "mp.cant",
+      "contrast": "â / a",
+      "level": "A2",
+      "a": { "ro": "cânt", "pt": "eu canto (a cânta)", "ipa": "kɨnt", "pos": "verb" },
+      "b": { "ro": "cant", "pt": "canto, aresta, borda", "ipa": "kant", "pos": "noun" },
+      "tags": ["essencial"]
+    },
+    {
+      "id": "mp.casa",
+      "contrast": "ă / a — indefinido vs. definido",
+      "level": "A1",
+      "a": { "ro": "casă", "pt": "casa (uma casa)", "ipa": "ˈka.sə", "pos": "noun" },
+      "b": { "ro": "casa", "pt": "a casa (definido)", "ipa": "ˈka.sa", "pos": "noun" },
+      "note_pt": "⭐ Este par é gramática disfarçada de fonética: a única diferença entre 'uma casa' e 'a casa' é o ă virar a. Se o ouvido não separa, o artigo definido some.",
+      "tags": ["essencial", "gramática"]
+    },
+    {
+      "id": "mp.masa",
+      "contrast": "ă / a — indefinido vs. definido",
+      "level": "A1",
+      "a": { "ro": "masă", "pt": "mesa (uma mesa)", "ipa": "ˈma.sə", "pos": "noun" },
+      "b": { "ro": "masa", "pt": "a mesa (definido)", "ipa": "ˈma.sa", "pos": "noun" },
+      "tags": ["gramática"]
+    },
+    {
+      "id": "mp.vara",
+      "contrast": "ă / a — indefinido vs. definido",
+      "level": "A1",
+      "a": { "ro": "vară", "pt": "verão", "ipa": "ˈva.rə", "pos": "noun" },
+      "b": { "ro": "vara", "pt": "o verão (definido)", "ipa": "ˈva.ra", "pos": "noun" },
+      "note_pt": "⚠ Nenhum dos dois é 'vara' em português — falso amigo além do par mínimo.",
+      "tags": ["gramática", "tempo"]
+    }
+  ]
+}

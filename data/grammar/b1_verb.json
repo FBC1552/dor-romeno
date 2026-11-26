@@ -1,0 +1,115 @@
+{
+  "$schema": "../schema/grammar.schema.json",
+  "meta": {
+    "id": "b1_verb",
+    "title": "B1: condicional, passado remoto e voz passiva",
+    "level": "B1",
+    "version": 1,
+    "description": "O que separa quem se vira do dia a dia de quem conversa de verdade: hipótese, camadas de passado e o jeito de falar sem dizer quem fez."
+  },
+  "items": [
+    {
+      "id": "g.verb.conditional",
+      "title": "Condicional — o 'eu faria' romeno",
+      "level": "B1",
+      "tags": ["verbo", "condicional"],
+      "explanation_pt": "Auxiliar próprio + infinitivo SEM o 'a': aș, ai, ar, am, ați, ar. 'Aș vrea' = eu gostaria. É analítico, ao contrário do português, que usa terminação.",
+      "contrast_pt": "O português diz 'faria' com sufixo; o romeno diz 'aș face' com palavra separada — mais parecido com o inglês 'would do'. A boa notícia: o verbo principal não muda em nenhuma pessoa.",
+      "examples": [
+        { "ro": "Aș vrea o cafea, vă rog.", "pt": "Eu gostaria de um café, por favor." },
+        { "ro": "Ai putea să mă ajuți?", "pt": "Você poderia me ajudar?" },
+        { "ro": "Dacă aș avea timp, aș veni.", "pt": "Se eu tivesse tempo, eu viria." }
+      ],
+      "table": {
+        "headers": ["pessoa", "auxiliar", "exemplo"],
+        "rows": [
+          ["eu", "aș", "aș face"],
+          ["tu", "ai", "ai face"],
+          ["el / ea", "ar", "ar face"],
+          ["noi", "am", "am face"],
+          ["voi", "ați", "ați face"],
+          ["ei / ele", "ar", "ar face"]
+        ]
+      },
+      "pitfall_pt": "'Am' e 'ai' são iguais aos auxiliares do passado composto — 'am făcut' (eu fiz) versus 'am face' (nós faríamos). O que separa é a forma do verbo: particípio no passado, infinitivo no condicional.",
+      "drill": {
+        "type": "transform",
+        "query": { "pos": "verb", "has_form": "forms.conditional" },
+        "from": "ro",
+        "to": "forms.conditional",
+        "prompt_pt": "Condicional, 1ª pessoa (eu ...ria):"
+      }
+    },
+    {
+      "id": "g.verb.mmcp",
+      "title": "Mais-que-perfeito — o passado antes do passado",
+      "level": "B1",
+      "tags": ["verbo", "passado"],
+      "explanation_pt": "Uma palavra só, sem auxiliar: parte-se do particípio, tira-se o -t e acrescenta-se -sem (vorbit → vorbisem). Particípio em -s ganha -esem: mers → mersesem.",
+      "contrast_pt": "O português precisa de duas palavras ('tinha falado') ou de uma forma literária ('falara'). O romeno resolve com uma palavra só, e ela é de uso corrente — não é literária como o nosso 'falara'.",
+      "examples": [
+        { "ro": "Când am ajuns, el plecase deja.", "pt": "Quando cheguei, ele já tinha ido embora." },
+        { "ro": "Nu știam că vorbiseși cu ea.", "pt": "Eu não sabia que você tinha falado com ela." },
+        { "ro": "Mâncasem înainte să vină.", "pt": "Eu já tinha comido antes de ele chegar." }
+      ],
+      "pitfall_pt": "Não confunda com o imperfeito. 'Mâncam' = eu comia (estava comendo); 'mâncasem' = eu tinha comido (já estava terminado antes de outra coisa).",
+      "drill": {
+        "type": "transform",
+        "query": { "pos": "verb", "has_form": "forms.mai_mult_ca_perfect" },
+        "from": "ro",
+        "to": "forms.mai_mult_ca_perfect",
+        "prompt_pt": "Mais-que-perfeito, 1ª pessoa (eu tinha ...):"
+      }
+    },
+    {
+      "id": "g.verb.pasiv",
+      "title": "Voz passiva — 'a fi' + particípio que CONCORDA",
+      "level": "B1",
+      "tags": ["verbo", "voz"],
+      "explanation_pt": "Monta-se com 'a fi' + particípio, e aqui o particípio concorda em gênero e número com o sujeito: 'cartea este citită', 'cărțile sunt citite'. O agente entra com 'de': 'de către profesor' na língua formal, só 'de' na conversa.",
+      "contrast_pt": "Igual ao português ('o livro é lido'), inclusive na concordância. A diferença está no uso: o romeno prefere de longe o reflexivo impessoal — 'se vinde' em vez de 'este vândut'.",
+      "examples": [
+        { "ro": "Cartea este citită de mulți.", "pt": "O livro é lido por muitos." },
+        { "ro": "Casa a fost vândută anul trecut.", "pt": "A casa foi vendida no ano passado." },
+        { "ro": "Aici se vorbește românește.", "pt": "Aqui se fala romeno. (passiva com 'se' — a preferida)" }
+      ],
+      "table": {
+        "headers": ["sujeito", "passiva com 'a fi'", "com 'se' (mais natural)"],
+        "rows": [
+          ["cartea", "este citită", "se citește"],
+          ["cărțile", "sunt citite", "se citesc"],
+          ["casa", "a fost vândută", "s-a vândut"]
+        ]
+      },
+      "pitfall_pt": "No perfeito, 'a fost mâncat' pode ser lido como passiva ('foi comido') ou como o passado de 'a fi' + adjetivo. Se soar ambíguo, use a construção com 'se' — é o que o romeno faz."
+    },
+    {
+      "id": "g.verb.imperativ.negativ",
+      "title": "Imperativo negativo usa o INFINITIVO",
+      "level": "B1",
+      "tags": ["verbo", "imperativo"],
+      "explanation_pt": "O imperativo afirmativo tem forma própria ('vino!', 'mănâncă!'). Mas o negativo, no singular, usa 'nu' + INFINITIVO sem 'a': 'nu veni!', 'nu mânca!'. No plural, a forma normal: 'nu veniți!'.",
+      "contrast_pt": "O português troca para o subjuntivo ('não venha'). O romeno troca para o infinitivo — mas apenas no singular, o que faz o par 'vino! / nu veni!' parecer de dois verbos diferentes.",
+      "examples": [
+        { "ro": "Vino aici! → Nu veni aici!", "pt": "Vem aqui! → Não venha aqui!" },
+        { "ro": "Mănâncă! → Nu mânca!", "pt": "Come! → Não coma!" },
+        { "ro": "Veniți! → Nu veniți!", "pt": "Venham! → Não venham! (plural não muda)" }
+      ],
+      "pitfall_pt": "Usar a forma afirmativa com 'nu' — 'nu vino!' — é agramatical e soa muito estranho. Este é um dos erros que o ouvido nativo pega na hora."
+    },
+    {
+      "id": "g.vorbire.indirecta",
+      "title": "Discurso indireto — o tempo NÃO recua",
+      "level": "B1",
+      "tags": ["sintaxe", "estrutural"],
+      "explanation_pt": "Ao relatar uma fala, o romeno mantém o tempo original: 'El a spus că VINE mâine' — presente, mesmo o verbo principal estando no passado.",
+      "contrast_pt": "O português recua o tempo: 'Ele disse que VIRIA amanhã'. Em romeno esse recuo não acontece, e traduzir ao pé da letra soa errado. É uma das diferenças que mais entrega o estrangeiro em conversa longa.",
+      "examples": [
+        { "ro": "A spus că vine mâine.", "pt": "Ele disse que viria amanhã." },
+        { "ro": "Am crezut că ești acasă.", "pt": "Eu achei que você estivesse em casa." },
+        { "ro": "Mi-a zis că nu poate.", "pt": "Ele me disse que não podia." }
+      ],
+      "pitfall_pt": "A tentação é usar o condicional para o futuro do pretérito ('ar veni'). Em romeno isso muda o sentido: passa a ser hipótese, não relato."
+    }
+  ]
+}

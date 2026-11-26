@@ -1,0 +1,136 @@
+{
+  "$schema": "../schema/grammar.schema.json",
+  "meta": {
+    "id": "a1_substantiv",
+    "title": "Substantivo: gênero e artigo",
+    "level": "A1",
+    "version": 1,
+    "description": "Cada regra traz um bloco `drill` declarativo. O motor cruza o filtro com data/vocabulary/ e gera exercícios infinitos — nenhuma questão escrita à mão."
+  },
+  "items": [
+    {
+      "id": "g.articol.hotarat.fem.sg",
+      "title": "Artigo definido — feminino singular",
+      "level": "A1",
+      "tags": ["substantivo", "artigo"],
+      "explanation_pt": "O romeno gruda o artigo definido no FIM da palavra, não na frente. Feminino em -ă troca o -ă por -a: casă → casa.",
+      "contrast_pt": "Em português o artigo é uma palavra solta antes do substantivo ('a casa'). Em romeno ele é um sufixo colado ('casa'). Não existe artigo definido separado.",
+      "examples": [
+        { "ro": "casă → casa", "pt": "casa → a casa" },
+        { "ro": "masă → masa", "pt": "mesa → a mesa" },
+        { "ro": "fată → fata", "pt": "menina → a menina" }
+      ],
+      "pitfall_pt": "O erro clássico do brasileiro é dizer 'a casă'. Nunca ponha artigo solto antes — a informação já está no fim da palavra.",
+      "drill": {
+        "type": "transform",
+        "query": { "pos": "noun", "gender": "f", "has_form": "forms.def_sg" },
+        "from": "ro",
+        "to": "forms.def_sg",
+        "prompt_pt": "Coloque no definido (o/a ...):"
+      }
+    },
+    {
+      "id": "g.articol.hotarat.masc.sg",
+      "title": "Artigo definido — masculino e neutro singular",
+      "level": "A1",
+      "tags": ["substantivo", "artigo"],
+      "explanation_pt": "Masculinos e neutros ganham o sufixo -ul (ou -l se a palavra já termina em -u): băiat → băiatul, scaun → scaunul, birou → biroul.",
+      "contrast_pt": "Mesma lógica do feminino: o artigo é sufixo. Só muda a terminação.",
+      "examples": [
+        { "ro": "băiat → băiatul", "pt": "menino → o menino" },
+        { "ro": "scaun → scaunul", "pt": "cadeira → a cadeira" },
+        { "ro": "birou → biroul", "pt": "escritório → o escritório" }
+      ],
+      "pitfall_pt": "Na fala rápida o -l final quase some: 'băiatu''. Você vai ouvir assim antes de ver escrito.",
+      "drill": {
+        "type": "transform",
+        "query": { "pos": "noun", "gender": ["m", "n"], "has_form": "forms.def_sg" },
+        "from": "ro",
+        "to": "forms.def_sg",
+        "prompt_pt": "Coloque no definido:"
+      }
+    },
+    {
+      "id": "g.gen.neutru",
+      "title": "O gênero neutro — o obstáculo nº 1",
+      "level": "A1",
+      "tags": ["substantivo", "gênero"],
+      "explanation_pt": "O romeno tem TRÊS gêneros. O neutro não é um terceiro comportamento: ele se comporta como MASCULINO no singular e como FEMININO no plural. 'un scaun' (um) → 'două scaune' (duas).",
+      "contrast_pt": "O português tem só dois gêneros, e um substantivo mantém o mesmo do singular ao plural. Aqui ele troca de lado no meio do caminho.",
+      "examples": [
+        { "ro": "un scaun → două scaune", "pt": "uma cadeira → duas cadeiras" },
+        { "ro": "un pat → două paturi", "pt": "uma cama → duas camas" },
+        { "ro": "un birou → două birouri", "pt": "um escritório → dois escritórios" }
+      ],
+      "table": {
+        "headers": ["gênero", "um / uma", "dois / duas", "artigo sg.", "artigo pl."],
+        "rows": [
+          ["masculin", "un băiat", "doi băieți", "băiatul", "băieții"],
+          ["feminin", "o casă", "două case", "casa", "casele"],
+          ["neutru", "un scaun", "două scaune", "scaunul", "scaunele"]
+        ]
+      },
+      "pitfall_pt": "Truque prático: teste com 'un ... / două ...'. Se aceitar 'un' no singular e 'două' no plural, é neutro. A maioria dos objetos inanimados cai aqui.",
+      "drill": {
+        "type": "choose",
+        "query": { "pos": "noun" },
+        "from": "ro",
+        "to": "gender",
+        "options_from": "gender",
+        "prompt_pt": "Qual o gênero?"
+      }
+    },
+    {
+      "id": "g.plural.nedefinit",
+      "title": "Plural indefinido",
+      "level": "A1",
+      "tags": ["substantivo", "plural"],
+      "explanation_pt": "Femininos costumam fazer plural em -e ou -i (casă → case, carte → cărți). Masculinos em -i (băiat → băieți). Neutros em -e ou -uri (scaun → scaune, pat → paturi).",
+      "contrast_pt": "O português resolve quase tudo com -s. O romeno não usa -s nenhuma vez no plural — esqueça esse reflexo.",
+      "examples": [
+        { "ro": "casă → case", "pt": "casa → casas" },
+        { "ro": "carte → cărți", "pt": "livro → livros" },
+        { "ro": "om → oameni", "pt": "homem → homens (irregular)" }
+      ],
+      "pitfall_pt": "O -i final do plural masculino quase não soa: 'băieți' sai como 'băiets'. Não é erro seu, é assim mesmo.",
+      "drill": {
+        "type": "transform",
+        "query": { "pos": "noun", "has_form": "forms.indef_pl" },
+        "from": "ro",
+        "to": "forms.indef_pl",
+        "prompt_pt": "Passe para o plural:"
+      }
+    },
+    {
+      "id": "g.verb.prezent",
+      "title": "Presente do indicativo",
+      "level": "A1",
+      "tags": ["verbo", "presente"],
+      "explanation_pt": "Quatro conjugações, pela terminação do infinitivo: I em -a (a mânca), II em -ea (a bea), III em -e (a merge), IV em -i/-î (a vorbi). Os verbos da IV normalmente inserem -esc na 1ª pessoa.",
+      "contrast_pt": "O português tem três conjugações (-ar, -er, -ir); o romeno tem quatro. E não existe gerúndio: 'vorbesc' cobre tanto 'falo' quanto 'estou falando'.",
+      "examples": [
+        { "ro": "eu vorbesc, tu vorbești, el vorbește", "pt": "eu falo, tu falas, ele fala" },
+        { "ro": "eu merg, tu mergi, el merge", "pt": "eu vou, tu vais, ele vai" }
+      ],
+      "table": {
+        "headers": ["pessoa", "a fi (ser)", "a avea (ter)", "a merge (ir)", "a vorbi (falar)"],
+        "rows": [
+          ["eu", "sunt", "am", "merg", "vorbesc"],
+          ["tu", "ești", "ai", "mergi", "vorbești"],
+          ["el / ea", "este", "are", "merge", "vorbește"],
+          ["noi", "suntem", "avem", "mergem", "vorbim"],
+          ["voi", "sunteți", "aveți", "mergeți", "vorbiți"],
+          ["ei / ele", "sunt", "au", "merg", "vorbesc"]
+        ]
+      },
+      "pitfall_pt": "Nos verbos da IV, 'eu' e 'eles' são idênticos (vorbesc/vorbesc). Só o pronome ou o contexto desfaz a ambiguidade.",
+      "drill": {
+        "type": "transform",
+        "query": { "pos": "verb", "has_form": "forms.prezent" },
+        "from": "ro",
+        "to": "forms.prezent",
+        "prompt_pt": "Conjugue no presente:"
+      }
+    }
+  ]
+}

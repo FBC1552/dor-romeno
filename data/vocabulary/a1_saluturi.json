@@ -1,0 +1,339 @@
+{
+  "$schema": "../schema/vocabulary.schema.json",
+  "meta": {
+    "id": "a1_saluturi",
+    "title": "Saudações e cortesia",
+    "level": "A1",
+    "version": 1,
+    "description": "O mínimo para não passar vergonha na primeira semana. Repare que o romeno separa registro formal e informal com mais rigor que o português."
+  },
+  "items": [
+    {
+      "id": "ro.buna_ziua",
+      "ro": "bună ziua",
+      "pt": ["bom dia", "boa tarde"],
+      "pos": "expr",
+      "level": "A1",
+      "register": "formal",
+      "ipa": "ˈbu.nə ˈzi.wa",
+      "tags": ["saudação"],
+      "etymology": "latin",
+      "cognate_pt": {
+        "word": "boa + dia",
+        "confidence": "alto",
+        "note": "bună ← lat. bona; ziua ← lat. dies"
+      },
+      "note_pt": "Vale das ~10h até escurecer — cobre 'bom dia' e 'boa tarde' de uma vez.",
+      "examples": ["s.a1.saluturi.01"]
+    },
+    {
+      "id": "ro.buna_dimineata",
+      "ro": "bună dimineața",
+      "pt": ["bom dia"],
+      "pos": "expr",
+      "level": "A1",
+      "register": "neutru",
+      "ipa": "ˈbu.nə di.miˈne̯a.t͡sa",
+      "tags": ["saudação"],
+      "etymology": "latin",
+      "note_pt": "Só de manhã cedo, até umas 10h."
+    },
+    {
+      "id": "ro.buna_seara",
+      "ro": "bună seara",
+      "pt": ["boa noite"],
+      "pos": "expr",
+      "level": "A1",
+      "register": "neutru",
+      "tags": ["saudação"],
+      "etymology": "latin",
+      "cognate_pt": {
+        "word": "sarau / serão",
+        "confidence": "medio",
+        "note": "seara ← lat. sera, a mesma raiz de 'serão'"
+      },
+      "note_pt": "Ao CHEGAR à noite. Para se despedir usa-se 'noapte bună'."
+    },
+    {
+      "id": "ro.noapte_buna",
+      "ro": "noapte bună",
+      "pt": ["boa noite"],
+      "pos": "expr",
+      "level": "A1",
+      "register": "neutru",
+      "ipa": "ˈnwap.te ˈbu.nə",
+      "tags": ["saudação", "despedida"],
+      "etymology": "latin",
+      "cognate_pt": {
+        "word": "noite boa",
+        "confidence": "alto",
+        "note": "noapte ← lat. noctem, exatamente como 'noite'"
+      },
+      "note_pt": "Só na despedida ou antes de dormir. Repare que a ordem inverte: aqui o adjetivo vem depois."
+    },
+    {
+      "id": "ro.buna",
+      "ro": "bună",
+      "pt": ["oi", "olá"],
+      "accepts_pt": ["e aí", "opa", "fala"],
+      "pos": "interj",
+      "level": "A1",
+      "register": "colocvial",
+      "ipa": "ˈbu.nə",
+      "tags": ["saudação"],
+      "etymology": "latin",
+      "examples": ["s.a1.saluturi.02"]
+    },
+    {
+      "id": "ro.salut",
+      "ro": "salut",
+      "pt": ["oi", "e aí"],
+      "pos": "interj",
+      "level": "A1",
+      "register": "colocvial",
+      "ipa": "saˈlut",
+      "tags": ["saudação"],
+      "etymology": "latin",
+      "cognate_pt": { "word": "salve", "confidence": "alto" },
+      "note_pt": "Serve para chegar e para sair, igual ao nosso 'salve'."
+    },
+    {
+      "id": "ro.servus",
+      "ro": "servus",
+      "pt": ["oi", "tchau"],
+      "pos": "interj",
+      "level": "A1",
+      "register": "colocvial",
+      "tags": ["saudação", "regional"],
+      "etymology": "latin",
+      "note_pt": "Marca da Transilvânia. Se alguém te cumprimenta assim, provavelmente é de Cluj, Sibiu ou Timișoara."
+    },
+    {
+      "id": "ro.noroc",
+      "ro": "noroc",
+      "pt": ["saúde", "oi", "sorte"],
+      "accepts_pt": ["boa sorte", "tim-tim", "salve"],
+      "pos": "interj",
+      "level": "A1",
+      "register": "colocvial",
+      "ipa": "noˈrok",
+      "tags": ["saudação", "brinde"],
+      "etymology": "slav",
+      "note_pt": "Palavra-canivete: é o brinde ('saúde!'), é 'oi' entre amigos e é literalmente 'sorte'. Origem eslava — não tente achar cognato em português.",
+      "examples": ["s.a1.saluturi.03"]
+    },
+    {
+      "id": "ro.la_revedere",
+      "ro": "la revedere",
+      "pt": ["até logo", "adeus"],
+      "pos": "expr",
+      "level": "A1",
+      "register": "formal",
+      "ipa": "la re.veˈde.re",
+      "tags": ["despedida"],
+      "etymology": "latin",
+      "cognate_pt": {
+        "word": "até rever",
+        "confidence": "alto",
+        "note": "literalmente 'ao rever' — mesma lógica do francês 'au revoir'"
+      }
+    },
+    {
+      "id": "ro.pa",
+      "ro": "pa",
+      "pt": ["tchau"],
+      "pos": "interj",
+      "level": "A1",
+      "register": "colocvial",
+      "tags": ["despedida"],
+      "accepts": ["pa-pa", "pa pa"],
+      "note_pt": "Dobrar vira carinhoso: 'pa-pa!'"
+    },
+    {
+      "id": "ro.multumesc",
+      "ro": "mulțumesc",
+      "pt": ["obrigado", "obrigada"],
+      "pos": "verb",
+      "level": "A1",
+      "register": "neutru",
+      "ipa": "mul.t͡suˈmesk",
+      "conjugation": "IV",
+      "tags": ["cortesia"],
+      "accepts": ["multumesc"],
+      "note_pt": "Não muda com o gênero de quem fala — não existe 'obrigada' separado. Vem de 'mulți ani' (muitos anos), o desejo que virou agradecimento.",
+      "examples": ["s.a1.saluturi.04"]
+    },
+    {
+      "id": "ro.mersi",
+      "ro": "mersi",
+      "pt": ["valeu", "obrigado"],
+      "pos": "interj",
+      "level": "A1",
+      "register": "colocvial",
+      "tags": ["cortesia"],
+      "etymology": "francez",
+      "note_pt": "Empréstimo do francês 'merci'. No dia a dia é mais usado que 'mulțumesc' — os romenos importaram meio dicionário do francês no século XIX."
+    },
+    {
+      "id": "ro.cu_placere",
+      "ro": "cu plăcere",
+      "pt": ["de nada", "por favor"],
+      "pos": "expr",
+      "level": "A1",
+      "register": "neutru",
+      "ipa": "ku pləˈt͡ʃe.re",
+      "tags": ["cortesia"],
+      "etymology": "latin",
+      "cognate_pt": {
+        "word": "com prazer",
+        "confidence": "alto",
+        "note": "plăcere ← lat. placere, a mesma raiz de 'prazer'"
+      }
+    },
+    {
+      "id": "ro.te_rog",
+      "ro": "te rog",
+      "pt": ["por favor"],
+      "pos": "expr",
+      "level": "A1",
+      "register": "colocvial",
+      "ipa": "te ˈrog",
+      "tags": ["cortesia"],
+      "etymology": "latin",
+      "cognate_pt": {
+        "word": "eu te rogo",
+        "confidence": "alto",
+        "note": "rog ← lat. rogare, exatamente o nosso 'rogar'"
+      },
+      "note_pt": "Versão 'tu'. Com estranhos ou superiores, use 'vă rog'.",
+      "examples": ["s.a1.saluturi.05"]
+    },
+    {
+      "id": "ro.va_rog",
+      "ro": "vă rog",
+      "pt": ["por favor"],
+      "pos": "expr",
+      "level": "A1",
+      "register": "formal",
+      "tags": ["cortesia"],
+      "etymology": "latin",
+      "note_pt": "Versão formal / plural. Na dúvida com desconhecido, use esta."
+    },
+    {
+      "id": "ro.poftim",
+      "ro": "poftim",
+      "pt": ["aqui está", "como?", "pois não"],
+      "accepts_pt": ["toma", "aqui", "oi?", "pode falar", "às ordens"],
+      "pos": "interj",
+      "level": "A1",
+      "register": "neutru",
+      "ipa": "pofˈtim",
+      "tags": ["cortesia", "canivete"],
+      "etymology": "slav",
+      "note_pt": "A palavra mais versátil do romeno: entregando algo = 'aqui está'; não entendeu = 'como?'; atendendo alguém = 'pois não'. Aprenda de uma vez.",
+      "examples": ["s.a1.saluturi.06"]
+    },
+    {
+      "id": "ro.pofta_buna",
+      "ro": "poftă bună",
+      "pt": ["bom apetite"],
+      "pos": "expr",
+      "level": "A1",
+      "register": "neutru",
+      "tags": ["cortesia", "comida"],
+      "note_pt": "Dito ao começar a comer. Ignorar isso à mesa soa mal-educado."
+    },
+    {
+      "id": "ro.ce_faci",
+      "ro": "ce faci",
+      "pt": ["como vai", "e aí", "tudo bem"],
+      "accepts_pt": ["como você tem passado", "que tal"],
+      "pos": "expr",
+      "level": "A1",
+      "register": "colocvial",
+      "ipa": "t͡ʃe ˈfat͡ʃʲ",
+      "tags": ["saudação"],
+      "accepts": ["ce faci?", "ce mai faci"],
+      "note_pt": "Literalmente 'o que você faz'. É a pergunta padrão de 'como vai', não uma pergunta sobre a profissão.",
+      "examples": ["s.a1.saluturi.02"]
+    },
+    {
+      "id": "ro.bine",
+      "ro": "bine",
+      "pt": ["bem", "tá bom"],
+      "pos": "adv",
+      "level": "A1",
+      "register": "neutru",
+      "ipa": "ˈbi.ne",
+      "tags": ["resposta"],
+      "etymology": "latin",
+      "cognate_pt": { "word": "bem", "confidence": "alto", "note": "← lat. bene" },
+      "examples": ["s.a1.saluturi.02"]
+    },
+    {
+      "id": "ro.scuze",
+      "ro": "scuze",
+      "pt": ["desculpa", "foi mal"],
+      "pos": "interj",
+      "level": "A1",
+      "register": "colocvial",
+      "tags": ["cortesia"],
+      "etymology": "latin",
+      "cognate_pt": { "word": "escusas / desculpas", "confidence": "alto" }
+    },
+    {
+      "id": "ro.imi_pare_rau",
+      "ro": "îmi pare rău",
+      "pt": ["sinto muito", "lamento"],
+      "pos": "expr",
+      "level": "A1",
+      "register": "neutru",
+      "tags": ["cortesia"],
+      "etymology": "latin",
+      "note_pt": "Literalmente 'me parece ruim'. Mais pesado que 'scuze' — usa-se para pêsames e arrependimento real."
+    },
+    {
+      "id": "ro.da",
+      "ro": "da",
+      "pt": ["sim"],
+      "pos": "particle",
+      "level": "A1",
+      "register": "neutru",
+      "tags": ["básico"],
+      "etymology": "slav",
+      "note_pt": "⚠ Uma das palavras mais usadas do idioma e é eslava, não latina. O romeno perdeu o 'sic' latino que virou 'sim' em português."
+    },
+    {
+      "id": "ro.nu",
+      "ro": "nu",
+      "pt": ["não"],
+      "pos": "particle",
+      "level": "A1",
+      "register": "neutru",
+      "tags": ["básico"],
+      "etymology": "latin",
+      "cognate_pt": { "word": "não", "confidence": "alto", "note": "← lat. non" }
+    },
+    {
+      "id": "ro.dor",
+      "ro": "dor",
+      "pt": ["saudade"],
+      "accepts_pt": ["saudades", "nostalgia", "falta"],
+      "pos": "noun",
+      "level": "A1",
+      "register": "neutru",
+      "gender": "n",
+      "ipa": "dor",
+      "forms": { "def_sg": "dorul", "indef_pl": "doruri", "def_pl": "dorurile" },
+      "tags": ["sentimento", "cultura"],
+      "etymology": "latin",
+      "cognate_pt": {
+        "word": "saudade",
+        "confidence": "alto",
+        "note": "← lat. dolus/dolor. Os romenos dizem que 'dor' é intraduzível — exatamente como nós dizemos de 'saudade'. É o único par perfeito entre os dois idiomas."
+      },
+      "note_pt": "'Mi-e dor de tine' = estou com saudade de você. Dá nome a este app.",
+      "examples": ["s.a1.saluturi.07"]
+    }
+  ]
+}

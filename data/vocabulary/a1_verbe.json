@@ -1,0 +1,792 @@
+{
+  "$schema": "../schema/vocabulary.schema.json",
+  "meta": {
+    "id": "a1_verbe",
+    "title": "Verbos essenciais",
+    "level": "A1",
+    "version": 3,
+    "description": "Verbos com o quadro completo: presente, particípio, perfeito composto, imperfeito, futuro literário e popular, conjuntivo e gerúndio. Cada campo novo aqui vira exercício em toda regra de gramática que o consome."
+  },
+  "items": [
+    {
+      "id": "ro.a_fi",
+      "ro": "a fi",
+      "pt": [
+        "ser",
+        "estar"
+      ],
+      "pos": "verb",
+      "level": "A1",
+      "conjugation": "irregular",
+      "ipa": "a fi",
+      "forms": {
+        "prezent": [
+          "sunt",
+          "ești",
+          "este",
+          "suntem",
+          "sunteți",
+          "sunt"
+        ],
+        "participiu": "fost",
+        "perfect_compus": "am fost",
+        "viitor": "voi fi",
+        "imperfect": [
+          "eram",
+          "erai",
+          "era",
+          "eram",
+          "erați",
+          "erau"
+        ],
+        "viitor_popular": "o să fiu",
+        "conjunctiv": "să fie",
+        "gerunziu": "fiind",
+        "imperativ": "fii!",
+        "conditional": "aș fi",
+        "mai_mult_ca_perfect": "fusesem"
+      },
+      "tags": [
+        "essencial"
+      ],
+      "etymology": "latin",
+      "cognate_pt": {
+        "word": "ser / fui",
+        "confidence": "alto",
+        "note": "← lat. esse + fui; o particípio 'fost' e o nosso 'foi' vêm da mesma raiz"
+      },
+      "note_pt": "Um só verbo cobre 'ser' e 'estar'. 'este' vira 'e' na fala: 'el e bine'.",
+      "examples": [
+        "s.a1.verbe.01"
+      ]
+    },
+    {
+      "id": "ro.a_avea",
+      "ro": "a avea",
+      "pt": [
+        "ter",
+        "haver"
+      ],
+      "pos": "verb",
+      "level": "A1",
+      "conjugation": "irregular",
+      "ipa": "a aˈve̯a",
+      "forms": {
+        "prezent": [
+          "am",
+          "ai",
+          "are",
+          "avem",
+          "aveți",
+          "au"
+        ],
+        "participiu": "avut",
+        "perfect_compus": "am avut",
+        "viitor": "voi avea",
+        "imperfect": [
+          "aveam",
+          "aveai",
+          "avea",
+          "aveam",
+          "aveați",
+          "aveau"
+        ],
+        "viitor_popular": "o să am",
+        "conjunctiv": "să aibă",
+        "gerunziu": "având",
+        "imperativ": "ai!",
+        "conditional": "aș avea",
+        "mai_mult_ca_perfect": "avusesem"
+      },
+      "tags": [
+        "essencial"
+      ],
+      "etymology": "latin",
+      "cognate_pt": {
+        "word": "haver",
+        "confidence": "alto",
+        "note": "← lat. habere"
+      },
+      "note_pt": "Também é o auxiliar do passado: 'am mâncat' = eu comi. Igual ao nosso 'hei de'.",
+      "examples": [
+        "s.a1.verbe.02"
+      ]
+    },
+    {
+      "id": "ro.a_face",
+      "ro": "a face",
+      "pt": [
+        "fazer"
+      ],
+      "pos": "verb",
+      "level": "A1",
+      "conjugation": "III",
+      "ipa": "a ˈfa.t͡ʃe",
+      "forms": {
+        "prezent": [
+          "fac",
+          "faci",
+          "face",
+          "facem",
+          "faceți",
+          "fac"
+        ],
+        "participiu": "făcut",
+        "perfect_compus": "am făcut",
+        "imperfect": [
+          "făceam",
+          "făceai",
+          "făcea",
+          "făceam",
+          "făceați",
+          "făceau"
+        ],
+        "viitor": "voi face",
+        "viitor_popular": "o să fac",
+        "conjunctiv": "să facă",
+        "gerunziu": "făcând",
+        "imperativ": "fă!",
+        "conditional": "aș face",
+        "mai_mult_ca_perfect": "făcusem"
+      },
+      "tags": [
+        "essencial"
+      ],
+      "etymology": "latin",
+      "cognate_pt": {
+        "word": "fazer / feito",
+        "confidence": "alto",
+        "note": "← lat. facere"
+      },
+      "examples": [
+        "s.a1.saluturi.02"
+      ]
+    },
+    {
+      "id": "ro.a_merge",
+      "ro": "a merge",
+      "pt": [
+        "ir",
+        "andar",
+        "funcionar"
+      ],
+      "accepts_pt": ["caminhar", "dar certo", "estar funcionando"],
+      "pos": "verb",
+      "level": "A1",
+      "conjugation": "III",
+      "ipa": "a ˈmer.d͡ʒe",
+      "forms": {
+        "prezent": [
+          "merg",
+          "mergi",
+          "merge",
+          "mergem",
+          "mergeți",
+          "merg"
+        ],
+        "participiu": "mers",
+        "perfect_compus": "am mers",
+        "imperfect": [
+          "mergeam",
+          "mergeai",
+          "mergea",
+          "mergeam",
+          "mergeați",
+          "mergeau"
+        ],
+        "viitor": "voi merge",
+        "viitor_popular": "o să merg",
+        "conjunctiv": "să meargă",
+        "gerunziu": "mergând",
+        "imperativ": "mergi!",
+        "conditional": "aș merge",
+        "mai_mult_ca_perfect": "mersesem"
+      },
+      "tags": [
+        "essencial",
+        "movimento"
+      ],
+      "etymology": "latin",
+      "cognate_pt": {
+        "word": "mergulhar",
+        "confidence": "baixo",
+        "note": "← lat. mergere"
+      },
+      "note_pt": "'Merge' sozinho = 'funciona' / 'dá pra levar'. É metade da filosofia nacional: 'merge și așa' — assim já serve.",
+      "examples": [
+        "s.a1.verbe.03"
+      ]
+    },
+    {
+      "id": "ro.a_vorbi",
+      "ro": "a vorbi",
+      "pt": [
+        "falar"
+      ],
+      "pos": "verb",
+      "level": "A1",
+      "conjugation": "IV",
+      "ipa": "a vorˈbi",
+      "forms": {
+        "prezent": [
+          "vorbesc",
+          "vorbești",
+          "vorbește",
+          "vorbim",
+          "vorbiți",
+          "vorbesc"
+        ],
+        "participiu": "vorbit",
+        "perfect_compus": "am vorbit",
+        "imperfect": [
+          "vorbeam",
+          "vorbeai",
+          "vorbea",
+          "vorbeam",
+          "vorbeați",
+          "vorbeau"
+        ],
+        "viitor": "voi vorbi",
+        "viitor_popular": "o să vorbesc",
+        "conjunctiv": "să vorbească",
+        "gerunziu": "vorbind",
+        "imperativ": "vorbește!",
+        "conditional": "aș vorbi",
+        "mai_mult_ca_perfect": "vorbisem"
+      },
+      "tags": [
+        "essencial",
+        "comunicação"
+      ],
+      "etymology": "slav",
+      "note_pt": "Conjugação IV com infixo -esc: repare que 'eu' e 'eles' ficam idênticos (vorbesc). Isso vale para quase todo verbo em -i.",
+      "examples": [
+        "s.a1.verbe.04"
+      ]
+    },
+    {
+      "id": "ro.a_manca",
+      "ro": "a mânca",
+      "pt": [
+        "comer"
+      ],
+      "pos": "verb",
+      "level": "A1",
+      "conjugation": "I",
+      "ipa": "a mɨnˈka",
+      "forms": {
+        "prezent": [
+          "mănânc",
+          "mănânci",
+          "mănâncă",
+          "mâncăm",
+          "mâncați",
+          "mănâncă"
+        ],
+        "participiu": "mâncat",
+        "perfect_compus": "am mâncat",
+        "imperfect": [
+          "mâncam",
+          "mâncai",
+          "mânca",
+          "mâncam",
+          "mâncați",
+          "mâncau"
+        ],
+        "viitor": "voi mânca",
+        "viitor_popular": "o să mănânc",
+        "conjunctiv": "să mănânce",
+        "gerunziu": "mâncând",
+        "imperativ": "mănâncă!",
+        "conditional": "aș mânca",
+        "mai_mult_ca_perfect": "mâncasem"
+      },
+      "tags": [
+        "essencial",
+        "comida"
+      ],
+      "etymology": "latin",
+      "cognate_pt": {
+        "word": "manducar",
+        "confidence": "medio",
+        "note": "← lat. manducare"
+      },
+      "note_pt": "Alternância â/ă dentro do radical (mânca → mănânc). Feio de início, mas é regular."
+    },
+    {
+      "id": "ro.a_bea",
+      "ro": "a bea",
+      "pt": [
+        "beber"
+      ],
+      "pos": "verb",
+      "level": "A1",
+      "conjugation": "II",
+      "ipa": "a be̯a",
+      "forms": {
+        "prezent": [
+          "beau",
+          "bei",
+          "bea",
+          "bem",
+          "beți",
+          "beau"
+        ],
+        "participiu": "băut",
+        "perfect_compus": "am băut",
+        "imperfect": [
+          "beam",
+          "beai",
+          "bea",
+          "beam",
+          "beați",
+          "beau"
+        ],
+        "viitor": "voi bea",
+        "viitor_popular": "o să beau",
+        "conjunctiv": "să bea",
+        "gerunziu": "bând",
+        "imperativ": "bea!",
+        "conditional": "aș bea",
+        "mai_mult_ca_perfect": "băusem"
+      },
+      "tags": [
+        "essencial",
+        "bebida"
+      ],
+      "etymology": "latin",
+      "cognate_pt": {
+        "word": "beber",
+        "confidence": "alto",
+        "note": "← lat. bibere"
+      },
+      "examples": [
+        "s.a1.casa.06"
+      ]
+    },
+    {
+      "id": "ro.a_vrea",
+      "ro": "a vrea",
+      "pt": [
+        "querer"
+      ],
+      "pos": "verb",
+      "level": "A1",
+      "conjugation": "irregular",
+      "forms": {
+        "prezent": [
+          "vreau",
+          "vrei",
+          "vrea",
+          "vrem",
+          "vreți",
+          "vor"
+        ],
+        "participiu": "vrut",
+        "perfect_compus": "am vrut",
+        "imperfect": [
+          "voiam",
+          "voiai",
+          "voia",
+          "voiam",
+          "voiați",
+          "voiau"
+        ],
+        "viitor": "voi vrea",
+        "viitor_popular": "o să vreau",
+        "conjunctiv": "să vrea",
+        "gerunziu": "vrând",
+        "conditional": "aș vrea",
+        "mai_mult_ca_perfect": "vrusesem"
+      },
+      "tags": [
+        "essencial"
+      ],
+      "etymology": "latin",
+      "note_pt": "A forma 'vor' (eles querem) é a mesma do auxiliar de futuro. Contexto resolve."
+    },
+    {
+      "id": "ro.a_putea",
+      "ro": "a putea",
+      "pt": [
+        "poder"
+      ],
+      "pos": "verb",
+      "level": "A1",
+      "conjugation": "II",
+      "ipa": "a puˈte̯a",
+      "forms": {
+        "prezent": [
+          "pot",
+          "poți",
+          "poate",
+          "putem",
+          "puteți",
+          "pot"
+        ],
+        "participiu": "putut",
+        "perfect_compus": "am putut",
+        "imperfect": [
+          "puteam",
+          "puteai",
+          "putea",
+          "puteam",
+          "puteați",
+          "puteau"
+        ],
+        "viitor": "voi putea",
+        "viitor_popular": "o să pot",
+        "conjunctiv": "să poată",
+        "gerunziu": "putând",
+        "conditional": "aș putea",
+        "mai_mult_ca_perfect": "putusem"
+      },
+      "tags": [
+        "essencial"
+      ],
+      "etymology": "latin",
+      "cognate_pt": {
+        "word": "poder / pode",
+        "confidence": "alto",
+        "note": "← lat. potere"
+      },
+      "note_pt": "'Poate' sozinho = 'talvez'. Aparece o tempo todo na fala."
+    },
+    {
+      "id": "ro.a_sti",
+      "ro": "a ști",
+      "pt": [
+        "saber"
+      ],
+      "pos": "verb",
+      "level": "A1",
+      "conjugation": "IV",
+      "ipa": "a ʃti",
+      "forms": {
+        "prezent": [
+          "știu",
+          "știi",
+          "știe",
+          "știm",
+          "știți",
+          "știu"
+        ],
+        "participiu": "știut",
+        "perfect_compus": "am știut",
+        "imperfect": [
+          "știam",
+          "știai",
+          "știa",
+          "știam",
+          "știați",
+          "știau"
+        ],
+        "viitor": "voi ști",
+        "viitor_popular": "o să știu",
+        "conjunctiv": "să știe",
+        "gerunziu": "știind",
+        "conditional": "aș ști",
+        "mai_mult_ca_perfect": "știusem"
+      },
+      "tags": [
+        "essencial"
+      ],
+      "etymology": "latin",
+      "cognate_pt": {
+        "word": "ciência",
+        "confidence": "medio",
+        "note": "← lat. scire"
+      },
+      "examples": [
+        "s.a1.verbe.05"
+      ]
+    },
+    {
+      "id": "ro.a_intelege",
+      "ro": "a înțelege",
+      "pt": [
+        "entender",
+        "compreender"
+      ],
+      "pos": "verb",
+      "level": "A1",
+      "conjugation": "III",
+      "ipa": "a ɨn.t͡seˈle.d͡ʒe",
+      "forms": {
+        "prezent": [
+          "înțeleg",
+          "înțelegi",
+          "înțelege",
+          "înțelegem",
+          "înțelegeți",
+          "înțeleg"
+        ],
+        "participiu": "înțeles",
+        "perfect_compus": "am înțeles",
+        "imperfect": [
+          "înțelegeam",
+          "înțelegeai",
+          "înțelegea",
+          "înțelegeam",
+          "înțelegeați",
+          "înțelegeau"
+        ],
+        "viitor": "voi înțelege",
+        "viitor_popular": "o să înțeleg",
+        "conjunctiv": "să înțeleagă",
+        "gerunziu": "înțelegând",
+        "imperativ": "înțelege!",
+        "conditional": "aș înțelege",
+        "mai_mult_ca_perfect": "înțelesesem"
+      },
+      "tags": [
+        "essencial",
+        "comunicação"
+      ],
+      "etymology": "latin",
+      "cognate_pt": {
+        "word": "inteligir / inteligente",
+        "confidence": "medio",
+        "note": "← lat. intelligere"
+      },
+      "examples": [
+        "s.a1.verbe.05"
+      ]
+    },
+    {
+      "id": "ro.a_locui",
+      "ro": "a locui",
+      "pt": [
+        "morar",
+        "residir"
+      ],
+      "accepts_pt": ["viver"],
+      "pos": "verb",
+      "level": "A1",
+      "conjugation": "IV",
+      "forms": {
+        "prezent": [
+          "locuiesc",
+          "locuiești",
+          "locuiește",
+          "locuim",
+          "locuiți",
+          "locuiesc"
+        ],
+        "participiu": "locuit",
+        "perfect_compus": "am locuit",
+        "imperfect": [
+          "locuiam",
+          "locuiai",
+          "locuia",
+          "locuiam",
+          "locuiați",
+          "locuiau"
+        ],
+        "viitor": "voi locui",
+        "viitor_popular": "o să locuiesc",
+        "conjunctiv": "să locuiască",
+        "gerunziu": "locuind",
+        "imperativ": "locuiește!",
+        "conditional": "aș locui",
+        "mai_mult_ca_perfect": "locuisem"
+      },
+      "tags": [
+        "essencial"
+      ],
+      "etymology": "maghiar",
+      "examples": [
+        "s.a1.verbe.06"
+      ]
+    },
+    {
+      "id": "ro.a_iubi",
+      "ro": "a iubi",
+      "pt": [
+        "amar"
+      ],
+      "pos": "verb",
+      "level": "A1",
+      "conjugation": "IV",
+      "ipa": "a juˈbi",
+      "forms": {
+        "prezent": [
+          "iubesc",
+          "iubești",
+          "iubește",
+          "iubim",
+          "iubiți",
+          "iubesc"
+        ],
+        "participiu": "iubit",
+        "perfect_compus": "am iubit",
+        "imperfect": [
+          "iubeam",
+          "iubeai",
+          "iubea",
+          "iubeam",
+          "iubeați",
+          "iubeau"
+        ],
+        "viitor": "voi iubi",
+        "viitor_popular": "o să iubesc",
+        "conjunctiv": "să iubească",
+        "gerunziu": "iubind",
+        "imperativ": "iubește!",
+        "conditional": "aș iubi",
+        "mai_mult_ca_perfect": "iubisem"
+      },
+      "tags": [
+        "essencial",
+        "sentimento"
+      ],
+      "etymology": "slav",
+      "note_pt": "⚠ Sem atalho: o verbo 'amar' do romeno é eslavo (cf. russo 'ljubit'), não latino. 'Te iubesc' = eu te amo — e você não vai adivinhar isso pelo português."
+    },
+    {
+      "id": "ro.a_se_descurca",
+      "ro": "a se descurca",
+      "pt": [
+        "se virar",
+        "se arranjar",
+        "dar um jeito"
+      ],
+      "accepts_pt": ["virar-se", "dar conta", "se garantir"],
+      "pos": "verb",
+      "level": "A2",
+      "conjugation": "I",
+      "register": "colocvial",
+      "forms": {
+        "prezent": [
+          "mă descurc",
+          "te descurci",
+          "se descurcă",
+          "ne descurcăm",
+          "vă descurcați",
+          "se descurcă"
+        ],
+        "participiu": "descurcat",
+        "imperfect": [
+          "mă descurcam",
+          "te descurcai",
+          "se descurca",
+          "ne descurcam",
+          "vă descurcați",
+          "se descurcau"
+        ],
+        "viitor_popular": "o să mă descurc",
+        "conjunctiv": "să se descurce",
+        "gerunziu": "descurcându-se",
+        "conditional": "m-aș descurca",
+        "mai_mult_ca_perfect": "mă descurcasem"
+      },
+      "tags": [
+        "cultura",
+        "mentalidade"
+      ],
+      "etymology": "latin",
+      "note_pt": "⭐ Conceito central da cultura romena — o equivalente exato do nosso 'jeitinho'. Quem se vira bem é 'descurcăreț', e isso é elogio.",
+      "examples": [
+        "s.a1.verbe.07"
+      ]
+    },
+    {
+      "id": "ro.a_dormi",
+      "ro": "a dormi",
+      "pt": [
+        "dormir"
+      ],
+      "pos": "verb",
+      "level": "A1",
+      "conjugation": "IV",
+      "ipa": "a dorˈmi",
+      "forms": {
+        "prezent": [
+          "dorm",
+          "dormi",
+          "doarme",
+          "dormim",
+          "dormiți",
+          "dorm"
+        ],
+        "participiu": "dormit",
+        "perfect_compus": "am dormit",
+        "viitor": "voi dormi",
+        "viitor_popular": "o să dorm",
+        "conjunctiv": "să doarmă",
+        "imperfect": [
+          "dormeam",
+          "dormeai",
+          "dormea",
+          "dormeam",
+          "dormeați",
+          "dormeau"
+        ],
+        "gerunziu": "dormind",
+        "imperativ": "dormi!",
+        "conditional": "aș dormi",
+        "mai_mult_ca_perfect": "dormisem"
+      },
+      "tags": [
+        "essencial",
+        "rotina"
+      ],
+      "etymology": "latin",
+      "cognate_pt": {
+        "word": "dormir",
+        "confidence": "alto",
+        "note": "← lat. dormire"
+      },
+      "note_pt": "Da conjugação IV, mas SEM -esc: 'dorm', não 'dormesc'. É o contraexemplo que prova que o -esc é traço do verbo, não da terminação."
+    },
+    {
+      "id": "ro.a_citi",
+      "ro": "a citi",
+      "pt": [
+        "ler"
+      ],
+      "pos": "verb",
+      "level": "A1",
+      "conjugation": "IV",
+      "ipa": "a tʃiˈti",
+      "forms": {
+        "prezent": [
+          "citesc",
+          "citești",
+          "citește",
+          "citim",
+          "citiți",
+          "citesc"
+        ],
+        "participiu": "citit",
+        "perfect_compus": "am citit",
+        "viitor": "voi citi",
+        "viitor_popular": "o să citesc",
+        "conjunctiv": "să citească",
+        "imperfect": [
+          "citeam",
+          "citeai",
+          "citea",
+          "citeam",
+          "citeați",
+          "citeau"
+        ],
+        "gerunziu": "citind",
+        "imperativ": "citește!",
+        "conditional": "aș citi",
+        "mai_mult_ca_perfect": "citisem"
+      },
+      "tags": [
+        "essencial",
+        "estudo"
+      ],
+      "etymology": "slav",
+      "false_friend": {
+        "looks_like": "citar",
+        "actually_means": "ler",
+        "note": "Vem do eslavo 'čitati'. Não tem parentesco com 'citar' — a semelhança é coincidência."
+      },
+      "note_pt": "Da conjugação IV COM -esc: citesc, citești, citește. Compare com 'a dormi', que não insere nada."
+    }
+  ]
+}

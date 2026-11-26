@@ -1,0 +1,257 @@
+{
+  "$schema": "../../schema/history.schema.json",
+  "meta": {
+    "id": "istorie_limba",
+    "title": "A história da Romênia contada pelo que ela fez com a língua",
+    "version": 1,
+    "description": "Cada evento está aqui por um motivo linguístico. Não é aula de história: é a explicação de por que o romeno tem artigo grudado no fim, por que 'a iubi' não parece latim e por que metade do vocabulário culto parece francês."
+  },
+  "items": [
+    {
+      "id": "hi.dacia",
+      "title": "Os dácios, antes de Roma",
+      "title_ro": "Dacia preromană",
+      "year": -500,
+      "period": "séc. VI a.C. – 106 d.C.",
+      "era": "dacia",
+      "what_pt": "Povo trácio organizado nos Cárpatos, com capital em Sarmizegetusa. Deram trabalho ao império por décadas antes de cair.",
+      "language_pt": "A língua dácia desapareceu quase sem registro, mas deixou um substrato de cerca de 100 palavras que o romeno guarda até hoje — e que não têm cognato em nenhuma outra língua latina. Quando uma palavra romena não se parece com nada em português, espanhol ou italiano, há boa chance de ser daqui.",
+      "words": [
+        { "ro": "brânză", "pt": "queijo", "note": "a palavra mais famosa do substrato — nada a ver com o latim 'caseus'" },
+        { "ro": "copil", "pt": "criança", "note": "onde as outras línguas latinas usam derivados de 'infans'" },
+        { "ro": "brad", "pt": "abeto, pinheiro" },
+        { "ro": "mal", "pt": "margem, beira" },
+        { "ro": "barză", "pt": "cegonha" },
+        { "ro": "mioară", "pt": "ovelhinha", "note": "a palavra que dá nome à Miorița" }
+      ],
+      "tags": ["substrato", "vocabulário"]
+    },
+    {
+      "id": "hi.cucerirea_romana",
+      "title": "Trajano conquista a Dácia",
+      "title_ro": "Cucerirea romană",
+      "year": 106,
+      "era": "roma",
+      "what_pt": "Depois de duas guerras, Roma anexa a Dácia. A vitória está esculpida na Coluna de Trajano, em Roma — o quadrinho em pedra que os romenos consideram sua certidão de nascimento.",
+      "language_pt": "É a origem de tudo: o latim vulgar falado por soldados e colonos vira a base do romeno. Por isso o vocabulário essencial — casă, apă, om, pâine, a mânca — é reconhecível para um brasileiro sem estudo nenhum.",
+      "words": [
+        { "ro": "casă", "pt": "casa", "note": "← casa" },
+        { "ro": "apă", "pt": "água", "note": "← aqua" },
+        { "ro": "om", "pt": "homem", "note": "← homo" },
+        { "ro": "pâine", "pt": "pão", "note": "← panis" }
+      ],
+      "tags": ["latim", "fundação"]
+    },
+    {
+      "id": "hi.retragerea_aureliana",
+      "title": "Roma vai embora — e o latim fica sozinho",
+      "title_ro": "Retragerea aureliană",
+      "year": 271,
+      "era": "roma",
+      "what_pt": "O imperador Aureliano retira a administração e as legiões ao sul do Danúbio. Foram só 165 anos de ocupação — menos que qualquer outra província que virou país latino.",
+      "language_pt": "É a chave da estranheza do romeno. Enquanto o francês, o espanhol e o português continuaram conversando entre si e com o latim escrito por mais mil anos, o latim daqui ficou isolado, cercado de línguas eslavas, e evoluiu sozinho. Toda diferença que te surpreender tem raiz neste ano.",
+      "tags": ["isolamento", "divergência"]
+    },
+    {
+      "id": "hi.slavii",
+      "title": "A chegada dos eslavos",
+      "title_ro": "Venirea slavilor",
+      "year": 600,
+      "period": "séc. VI–VIII",
+      "era": "migratii",
+      "what_pt": "Migrações eslavas ocupam os Bálcãs e se assentam junto à população latinizada, num convívio longo de séculos.",
+      "language_pt": "A segunda camada mais pesada do idioma: cerca de 10 a 15% do vocabulário. E não são palavras periféricas — são 'da' (sim), 'a iubi' (amar), 'prieten' (amigo), 'a citi' (ler). É aqui que a sua intuição de falante de português para de funcionar, e é exatamente por isso que o app marca a etimologia de cada palavra.",
+      "words": [
+        { "ro": "da", "pt": "sim", "note": "o 'sim' romeno não é latino" },
+        { "ro": "a iubi", "pt": "amar", "note": "← ljubiti; o verbo mais importante da língua não é latim" },
+        { "ro": "prieten", "pt": "amigo" },
+        { "ro": "a citi", "pt": "ler", "note": "← čitati" },
+        { "ro": "nevastă", "pt": "esposa" },
+        { "ro": "ceas", "pt": "relógio, hora" }
+      ],
+      "tags": ["eslavo", "vocabulário"]
+    },
+    {
+      "id": "hi.uniunea_balcanica",
+      "title": "A liga linguística balcânica",
+      "title_ro": "Uniunea lingvistică balcanică",
+      "period": "séculos de convívio",
+      "year": 900,
+      "era": "migratii",
+      "what_pt": "Romeno, albanês, búlgaro, macedônio e grego conviveram tanto tempo que passaram a compartilhar estruturas gramaticais, apesar de virem de famílias diferentes.",
+      "language_pt": "Aqui estão as DUAS esquisitices que mais confundem o brasileiro, e nenhuma delas é de origem latina: o artigo definido colado no fim da palavra (casa = a casa) e o quase desaparecimento do infinitivo depois de outro verbo, substituído por 'să' + conjuntivo (vreau să mănânc). Você não está aprendendo latim torto — está aprendendo os Bálcãs.",
+      "grammar_refs": ["g.articol.hotarat.fem.sg", "g.verb.conjunctiv"],
+      "tags": ["gramática", "estrutural"]
+    },
+    {
+      "id": "hi.slavona_chirilic",
+      "title": "Eslavônico na igreja, cirílico no papel",
+      "title_ro": "Slavona și alfabetul chirilic",
+      "year": 1000,
+      "period": "séc. X–XIX",
+      "era": "medieval",
+      "what_pt": "A Igreja Ortodoxa adota o eslavo eclesiástico como língua de culto e de chancelaria. O romeno era falado por todos, mas quase não era escrito.",
+      "language_pt": "Por quase mil anos o romeno se escreveu em alfabeto CIRÍLICO. É por isso que os documentos antigos parecem russos à primeira vista, e é a razão de o vocabulário religioso ser eslavo: 'sfânt' (santo), 'a sluji' (servir), 'rai' e 'iad' (paraíso e inferno).",
+      "words": [
+        { "ro": "sfânt", "pt": "santo" },
+        { "ro": "rai", "pt": "paraíso" },
+        { "ro": "iad", "pt": "inferno" },
+        { "ro": "a sluji", "pt": "servir" }
+      ],
+      "tags": ["alfabeto", "religião"]
+    },
+    {
+      "id": "hi.scrisoarea_neacsu",
+      "title": "A primeira frase escrita em romeno",
+      "title_ro": "Scrisoarea lui Neacșu",
+      "year": 1521,
+      "era": "medieval",
+      "what_pt": "Um comerciante de Câmpulung, Neacșu, escreve ao prefeito de Brașov avisando de uma movimentação turca. É o documento mais antigo conhecido em língua romena — escrito em cirílico.",
+      "language_pt": "O romeno de 1521 é surpreendentemente legível hoje: a língua mudou pouco em cinco séculos. Compare com o português da mesma época e a diferença salta — outro efeito do isolamento.",
+      "tags": ["escrita", "marco"]
+    },
+    {
+      "id": "hi.mihai_viteazul",
+      "title": "Mihai Viteazul une os três principados",
+      "title_ro": "Unirea de la 1600",
+      "year": 1600,
+      "era": "medieval",
+      "what_pt": "Por alguns meses, Valáquia, Moldávia e Transilvânia ficam sob um mesmo governante. Ele é assassinado no ano seguinte e tudo se desfaz.",
+      "language_pt": "Importa menos pela língua e mais pelo imaginário: virou o símbolo fundador da unidade nacional, e o nome dele está em rua de toda cidade do país. Saber quem foi é o mínimo para não passar vergonha numa conversa.",
+      "tags": ["nação", "cultura geral"]
+    },
+    {
+      "id": "hi.fanariotii",
+      "title": "A época fanariota",
+      "title_ro": "Epoca fanariotă",
+      "year": 1711,
+      "period": "1711–1821",
+      "era": "fanariot",
+      "what_pt": "O império otomano passa a nomear governadores gregos do bairro do Fanar, em Constantinopla, para administrar os principados. Um século de administração estrangeira, impostos pesados e corte oriental.",
+      "language_pt": "Entra a camada turca e grega, e ela ficou justamente onde a vida é concreta: comida, casa, dinheiro e convivência. É a camada que dá ao romeno o seu sabor oriental — e quase toda ela é palavra do dia a dia, não do dicionário.",
+      "words": [
+        { "ro": "cafea", "pt": "café", "note": "turco" },
+        { "ro": "ciorbă", "pt": "sopa azeda — o prato nacional", "note": "turco" },
+        { "ro": "iaurt", "pt": "iogurte", "note": "turco" },
+        { "ro": "musafir", "pt": "convidado, visita", "note": "turco" },
+        { "ro": "chef", "pt": "vontade / festa animada", "note": "turco — nada a ver com o 'chef' de cozinha" },
+        { "ro": "dușman", "pt": "inimigo", "note": "turco" },
+        { "ro": "ieftin", "pt": "barato", "note": "grego" },
+        { "ro": "a plictisi", "pt": "entediar", "note": "grego" }
+      ],
+      "tags": ["turco", "grego", "vocabulário"]
+    },
+    {
+      "id": "hi.relatinizarea",
+      "title": "A relatinização — o romeno decide parecer latino de novo",
+      "title_ro": "Relatinizarea",
+      "year": 1800,
+      "period": "séc. XIX",
+      "era": "modern",
+      "what_pt": "A Escola Transilvana e, depois, a elite formada em Paris promovem uma reforma consciente: substituir eslavismos por palavras do francês, do italiano e do latim erudito, e trocar o alfabeto cirílico pelo latino.",
+      "language_pt": "É a reforma mais bem-sucedida da história das línguas latinas — e é um presente para você. Todo o vocabulário moderno, técnico e urbano do romeno vem do francês, o que significa que 'birou', 'trotuar', 'cadou' e 'șomaj' já são meio conhecidos. Quando não souber uma palavra abstrata, tente o francês afrancesado: costuma funcionar.",
+      "words": [
+        { "ro": "birou", "pt": "escritório, escrivaninha", "note": "← bureau" },
+        { "ro": "trotuar", "pt": "calçada", "note": "← trottoir" },
+        { "ro": "cadou", "pt": "presente", "note": "← cadeau" },
+        { "ro": "șofer", "pt": "motorista", "note": "← chauffeur" },
+        { "ro": "machiaj", "pt": "maquiagem", "note": "← maquillage" },
+        { "ro": "bulevard", "pt": "avenida", "note": "← boulevard" }
+      ],
+      "tags": ["francês", "reforma", "vocabulário"]
+    },
+    {
+      "id": "hi.unirea_1859",
+      "title": "A União dos Principados",
+      "title_ro": "Mica Unire",
+      "year": 1859,
+      "era": "modern",
+      "what_pt": "Valáquia e Moldávia elegem o mesmo príncipe, Alexandru Ioan Cuza, e se unem num só país, que em 1862 passa a se chamar România. Em 1860 o alfabeto latino se torna oficial.",
+      "language_pt": "É o momento em que a língua ganha a forma que você está estudando: alfabeto latino, ortografia padronizada e um Estado para sustentá-la. A 'Hora Unirii', de Alecsandri, é a canção desta data — e está no Lyrics Lab.",
+      "tags": ["nação", "alfabeto"],
+      "note_pt": "24 de janeiro é feriado. Nas praças, gente de mãos dadas dançando a hora — literalmente a mesma cena da letra."
+    },
+    {
+      "id": "hi.marea_unire",
+      "title": "A Grande União",
+      "title_ro": "Marea Unire",
+      "year": 1918,
+      "era": "razboaie",
+      "what_pt": "Em 1º de dezembro de 1918, em Alba Iulia, a Transilvânia proclama a união com a Romênia. Bessarábia e Bucovina fazem o mesmo no mesmo ano.",
+      "language_pt": "A Transilvânia trouxe séculos de convívio com o húngaro e o alemão, e um sotaque que você vai reconhecer — mais cantado, com vogais mais longas. Palavras como 'oraș' (cidade) e 'a cheltui' (gastar) vêm do húngaro.",
+      "words": [
+        { "ro": "oraș", "pt": "cidade", "note": "húngaro (város)" },
+        { "ro": "a cheltui", "pt": "gastar", "note": "húngaro" }
+      ],
+      "tags": ["nação", "húngaro"],
+      "note_pt": "1º de dezembro é o feriado nacional. Se alguém te desejar 'La mulți ani, România!' nesse dia, é disso que se trata."
+    },
+    {
+      "id": "hi.comunismul",
+      "title": "O regime comunista",
+      "title_ro": "Perioada comunistă",
+      "year": 1947,
+      "period": "1947–1989",
+      "era": "comunism",
+      "what_pt": "Monarquia abolida, industrialização forçada, coletivização do campo e, sob Ceaușescu, uma das ditaduras mais duras do bloco — com racionamento, culto à personalidade e a polícia política Securitate.",
+      "language_pt": "Deixou um vocabulário inteiro que ainda circula, às vezes com ironia: 'tovarăș' (camarada), 'bloc' (prédio de apartamentos), 'alimentara' (a mercearia estatal), 'a sta la coadă' (ficar na fila). Entender esse léxico é entender metade das piadas e todo o rap dos anos 90.",
+      "words": [
+        { "ro": "tovarăș", "pt": "camarada", "note": "hoje só irônico — chamar alguém assim é provocação" },
+        { "ro": "bloc", "pt": "prédio de apartamentos da era comunista" },
+        { "ro": "a sta la coadă", "pt": "ficar na fila" },
+        { "ro": "Securitate", "pt": "a polícia política" }
+      ],
+      "tags": ["comunismo", "vocabulário", "cultura"]
+    },
+    {
+      "id": "hi.revolutia",
+      "title": "A Revolução de 1989",
+      "title_ro": "Revoluția din decembrie",
+      "year": 1989,
+      "era": "comunism",
+      "what_pt": "Começa em Timișoara e chega a Bucareste em dias. Ceaușescu foge de helicóptero do teto do Comitê Central, é capturado e executado em 25 de dezembro. Foi a única queda violenta do bloco soviético.",
+      "language_pt": "Assunto sensível, e é bom saber por quê: quase todo romeno acima dos 40 tem memória pessoal disso, e a versão oficial dos fatos ainda é disputada. Vale ouvir muito antes de opinar.",
+      "tags": ["história recente", "etiqueta"]
+    },
+    {
+      "id": "hi.reforma_1993",
+      "title": "A volta do â — uma reforma ortográfica que ainda irrita",
+      "title_ro": "Reforma ortografică din 1993",
+      "year": 1993,
+      "era": "contemporan",
+      "what_pt": "A Academia Romena decide reintroduzir o 'â' no meio das palavras, onde desde 1953 se escrevia 'î': 'romîn' volta a ser 'român'.",
+      "language_pt": "Por isso você verá 'î' e 'â' representando exatamente o MESMO som. A regra prática: 'î' no começo e no fim (începe, a coborî), 'â' no meio (român, cânta). E cuidado com textos antigos ou publicações que ignoraram a reforma — não é erro de digitação.",
+      "words": [
+        { "ro": "român", "pt": "romeno", "note": "escrito 'romîn' entre 1953 e 1993" },
+        { "ro": "a începe", "pt": "começar", "note": "î no começo" },
+        { "ro": "a cânta", "pt": "cantar", "note": "â no meio" }
+      ],
+      "tags": ["ortografia", "escrita"]
+    },
+    {
+      "id": "hi.diaspora_ue",
+      "title": "A diáspora e a entrada na União Europeia",
+      "title_ro": "Diaspora și aderarea la UE",
+      "year": 2007,
+      "era": "contemporan",
+      "what_pt": "A Romênia entra na UE em 1º de janeiro de 2007. Milhões emigram — Itália, Espanha, Alemanha e Reino Unido — e enviam dinheiro para casa. É uma das maiores diásporas da Europa.",
+      "language_pt": "O romeno de hoje absorve inglês em bloco ('a da un search', 'job', 'a downloada') e recebe de volta italianismos e espanholismos trazidos por quem voltou. Para você isso é ótima notícia: o romeno contemporâneo urbano é muito mais fácil que o de 1990.",
+      "words": [
+        { "ro": "job", "pt": "emprego", "note": "inglês, hoje mais comum que 'slujbă' entre jovens" },
+        { "ro": "a downloada", "pt": "baixar", "note": "verbo inglês com terminação romena" }
+      ],
+      "tags": ["contemporâneo", "inglês"]
+    },
+    {
+      "id": "hi.moldova",
+      "title": "A Moldávia e a mesma língua com dois nomes",
+      "title_ro": "Republica Moldova",
+      "year": 1991,
+      "era": "contemporan",
+      "what_pt": "A antiga Bessarábia, soviética desde 1940, torna-se a República da Moldávia em 1991. Fala-se romeno, escrito em cirílico até 1989.",
+      "language_pt": "É a MESMA língua — a constituição moldava chamou-a de 'moldavo' por décadas, o que sempre foi disputa política, não linguística. Praticamente: o romeno da Moldávia tem mais empréstimos russos e um sotaque próprio, mas você entende tudo. Na Transnístria ainda se escreve romeno em cirílico.",
+      "tags": ["variedade", "política"],
+      "note_pt": "Chamar a língua de 'moldavo' na frente de um romeno rende discussão. Chamar de 'romeno' na frente de certos moldavos, também. Ouça antes de escolher a palavra."
+    }
+  ]
+}

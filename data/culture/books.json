@@ -1,0 +1,340 @@
+{
+  "$schema": "../schema/library.schema.json",
+  "meta": {
+    "id": "biblioteca",
+    "title": "Biblioteca graduada — o que ler, e em que ordem",
+    "version": 1,
+    "description": "Ordenada por dificuldade REAL para quem fala português, não por importância literária. Começa nos contos populares, termina em Cărtărescu.",
+    "copyright_note": "Trechos citados apenas de obras em domínio público (autor morto há mais de 70 anos). Para as demais, o app guarda ficha, glossário e onde encontrar — nunca o texto."
+  },
+  "items": [
+    {
+      "id": "bk.capra_cu_trei_iezi",
+      "title": "Capra cu trei iezi",
+      "title_pt": "A cabra e os três cabritos",
+      "author": "Ion Creangă",
+      "year": 1875,
+      "level": "A2",
+      "kind": "basm",
+      "public_domain": true,
+      "why_pt": "O primeiro texto que qualquer romeno lê na vida, e o primeiro que você consegue ler inteiro. Frases curtas, muita repetição e uma história que você já conhece — é praticamente 'Os três porquinhos' com lobo.",
+      "difficulty_pt": "Fácil na estrutura, com dois obstáculos: diminutivos por toda parte (ied → iezișor) e algumas palavras rurais antigas. Nada que o contexto não resolva.",
+      "where_pt": "Domínio público — texto integral e gratuito em wikisource.org e em dezenas de sites romenos.",
+      "excerpt": {
+        "public_domain": true,
+        "lines": [
+          {
+            "ro": "Era odată o capră care avea trei iezi.",
+            "pt": "Era uma vez uma cabra que tinha três cabritos.",
+            "cloze": "capră"
+          }
+        ]
+      },
+      "glossary": [
+        { "ro": "capră", "pt": "cabra", "register": "neutru" },
+        { "ro": "ied", "pt": "cabrito", "register": "neutru" },
+        { "ro": "lup", "pt": "lobo", "register": "neutru" },
+        { "ro": "a se ascunde", "pt": "esconder-se", "register": "neutru" }
+      ],
+      "tags": ["conto popular", "iniciante"],
+      "note_pt": "'Era odată...' é o 'era uma vez' romeno. Toda história infantil começa assim — vale decorar a fórmula inteira."
+    },
+    {
+      "id": "bk.punguta_cu_doi_bani",
+      "title": "Punguța cu doi bani",
+      "title_pt": "A bolsinha com duas moedas",
+      "author": "Ion Creangă",
+      "year": 1876,
+      "level": "A2",
+      "kind": "basm",
+      "public_domain": true,
+      "why_pt": "Um galo, uma bolsa de moedas e um refrão que se repete a cada página — repetição é exatamente o que o iniciante precisa. Leia em voz alta: a musicalidade do romeno fica óbvia.",
+      "difficulty_pt": "A repetição faz metade do trabalho. Você vai reencontrar as mesmas cinco estruturas o texto inteiro.",
+      "where_pt": "Domínio público, gratuito online.",
+      "excerpt": {
+        "public_domain": true,
+        "lines": [
+          {
+            "ro": "Era odată o babă și un moșneag.",
+            "pt": "Era uma vez uma velha e um velho.",
+            "cloze": "babă"
+          }
+        ]
+      },
+      "glossary": [
+        { "ro": "babă", "pt": "velha", "register": "colocvial" },
+        { "ro": "moșneag", "pt": "velho, ancião", "register": "colocvial" },
+        { "ro": "cocoș", "pt": "galo", "register": "neutru" },
+        { "ro": "pungă", "pt": "bolsa, sacola", "register": "neutru" }
+      ],
+      "tags": ["conto popular", "iniciante"]
+    },
+    {
+      "id": "bk.somnoroase_pasarele",
+      "title": "Somnoroase păsărele",
+      "author": "Mihai Eminescu",
+      "year": 1883,
+      "level": "A2",
+      "kind": "poezie",
+      "public_domain": true,
+      "why_pt": "Quatro estrofes e você terá lido o poeta nacional no original. É o texto literário mais curto e mais bonito que existe neste nível — e está musicado, então dá para ouvir enquanto lê.",
+      "difficulty_pt": "Vocabulário concreto e diminutivos. A ordem das palavras é poética, então não use como modelo de fala.",
+      "where_pt": "Domínio público. Está também no Lyrics Lab: dor lyrics somnoroase",
+      "excerpt": {
+        "public_domain": true,
+        "lines": [
+          {
+            "ro": "Somnoroase păsărele",
+            "pt": "Passarinhos sonolentos",
+            "cloze": "păsărele"
+          },
+          {
+            "ro": "Pe la cuiburi se adună,",
+            "pt": "juntam-se pelos ninhos,",
+            "cloze": "cuiburi"
+          }
+        ]
+      },
+      "glossary": [
+        { "ro": "somnoros", "pt": "sonolento", "register": "neutru" },
+        { "ro": "cuib", "pt": "ninho", "register": "neutru" }
+      ],
+      "tags": ["poesia", "curto"]
+    },
+    {
+      "id": "bk.luceafarul",
+      "title": "Luceafărul",
+      "title_pt": "A Estrela d'Alva",
+      "author": "Mihai Eminescu",
+      "year": 1883,
+      "level": "C1",
+      "kind": "poezie",
+      "public_domain": true,
+      "why_pt": "O poema mais importante da língua: 98 estrofes sobre um astro que se apaixona por uma mortal. Todo romeno sabe os primeiros versos de cor. É a meta de longo prazo — leia agora para saber onde quer chegar.",
+      "difficulty_pt": "Difícil de verdade: vocabulário arcaico, inversões sintáticas e metáforas densas. Leia com tradução ao lado e sem pressa de entender tudo.",
+      "where_pt": "Domínio público. Há traduções para o português, mas o efeito sonoro só existe no original.",
+      "excerpt": {
+        "public_domain": true,
+        "lines": [
+          {
+            "ro": "A fost odată ca-n povești,",
+            "pt": "Houve uma vez, como nas histórias,",
+            "cloze": "povești"
+          },
+          {
+            "ro": "A fost ca niciodată,",
+            "pt": "houve como nunca houve,",
+            "cloze": "niciodată"
+          }
+        ]
+      },
+      "glossary": [
+        { "ro": "poveste", "pt": "história, conto", "register": "neutru" },
+        { "ro": "niciodată", "pt": "nunca", "register": "neutru" },
+        { "ro": "luceafăr", "pt": "estrela d'alva, Vênus", "register": "neutru" }
+      ],
+      "tags": ["poesia", "cânone"]
+    },
+    {
+      "id": "bk.momente_si_schite",
+      "title": "Momente și schițe",
+      "title_pt": "Momentos e esquetes",
+      "author": "Ion Luca Caragiale",
+      "year": 1901,
+      "level": "B1",
+      "kind": "povestire",
+      "public_domain": true,
+      "why_pt": "Textos de duas a cinco páginas, quase todos em diálogo, sobre gente comum se atrapalhando na Bucareste de 1900. É o melhor treino de romeno FALADO que existe em livro — e é engraçado de verdade, o que faz você continuar lendo.",
+      "difficulty_pt": "O diálogo é acessível, mas está cheio de ironia e de referências à burocracia da época. Você vai entender as frases antes de entender a piada.",
+      "where_pt": "Domínio público, gratuito online. Comece por 'Vizită' e 'D-l Goe...'.",
+      "glossary": [
+        { "ro": "domnule", "pt": "senhor (vocativo)", "register": "formal" },
+        { "ro": "a se plictisi", "pt": "entediar-se", "register": "neutru" },
+        { "ro": "nene", "pt": "tio, moço (tratamento informal)", "register": "colocvial" }
+      ],
+      "history_refs": ["hi.relatinizarea"],
+      "tags": ["humor", "diálogo", "melhor para falar"]
+    },
+    {
+      "id": "bk.o_scrisoare_pierduta",
+      "title": "O scrisoare pierdută",
+      "title_pt": "Uma carta perdida",
+      "author": "Ion Luca Caragiale",
+      "year": 1884,
+      "level": "B2",
+      "kind": "teatru",
+      "public_domain": true,
+      "why_pt": "A comédia política mais citada do país — sobre uma eleição fraudada e uma carta comprometedora. Frases inteiras dela viraram expressão corrente: quem entende as citações entende metade das conversas sobre política.",
+      "difficulty_pt": "Teatro é bom para aprender porque é só diálogo, mas aqui as personagens falam ERRADO de propósito, cada uma do seu jeito. Não copie a gramática delas.",
+      "where_pt": "Domínio público. Há montagens completas no YouTube, com legenda em romeno.",
+      "excerpt": {
+        "public_domain": true,
+        "lines": [
+          {
+            "ro": "Curat murdar!",
+            "pt": "Limpo sujo! (contradição que virou bordão)",
+            "cloze": "murdar"
+          },
+          {
+            "ro": "Trădare să fie, dar s-o știm și noi!",
+            "pt": "Que haja traição, mas que a gente também fique sabendo!",
+            "cloze": "Trădare"
+          }
+        ]
+      },
+      "glossary": [
+        { "ro": "curat", "pt": "limpo", "register": "neutru" },
+        { "ro": "murdar", "pt": "sujo", "register": "neutru" },
+        { "ro": "trădare", "pt": "traição", "register": "neutru" }
+      ],
+      "tags": ["teatro", "política", "citações"]
+    },
+    {
+      "id": "bk.amintiri_din_copilarie",
+      "title": "Amintiri din copilărie",
+      "title_pt": "Recordações da infância",
+      "author": "Ion Creangă",
+      "year": 1881,
+      "level": "B2",
+      "kind": "jurnal",
+      "public_domain": true,
+      "why_pt": "A infância numa aldeia da Moldávia do século XIX, contada com um humor que envelheceu muito bem. É o livro mais querido da literatura romena — se você quiser UM livro para conhecer o país por dentro, é este.",
+      "difficulty_pt": "Enganosamente difícil: a sintaxe é simples, mas o vocabulário é rural e moldavo, cheio de palavras que nem romeno urbano usa. Leia com dicionário e paciência.",
+      "where_pt": "Domínio público, gratuito online.",
+      "excerpt": {
+        "public_domain": true,
+        "lines": [
+          {
+            "ro": "Stau câteodată și-mi aduc aminte ce vremi și ce oameni mai erau în părțile noastre.",
+            "pt": "Às vezes fico pensando em que tempos e que gente havia pelas nossas bandas.",
+            "cloze": "aminte"
+          }
+        ]
+      },
+      "glossary": [
+        { "ro": "a-și aduce aminte", "pt": "lembrar-se", "register": "neutru" },
+        { "ro": "vreme", "pt": "tempo (época) / clima", "register": "neutru" },
+        { "ro": "sat", "pt": "aldeia", "register": "neutru" }
+      ],
+      "tags": ["memórias", "cânone"]
+    },
+    {
+      "id": "bk.ion",
+      "title": "Ion",
+      "author": "Liviu Rebreanu",
+      "year": 1920,
+      "level": "B2",
+      "kind": "roman",
+      "public_domain": true,
+      "why_pt": "O primeiro grande romance realista romeno: um camponês da Transilvânia que quer terra e faz o que for preciso. Dá o retrato da aldeia transilvana às vésperas da Grande União.",
+      "difficulty_pt": "Longo, mas com prosa direta e sem experimentos. É a leitura ideal para o primeiro romance inteiro em romeno.",
+      "where_pt": "Domínio público (Rebreanu morreu em 1944).",
+      "history_refs": ["hi.marea_unire"],
+      "glossary": [
+        { "ro": "pământ", "pt": "terra, chão", "register": "neutru" },
+        { "ro": "sat", "pt": "aldeia", "register": "neutru" },
+        { "ro": "avere", "pt": "bens, patrimônio", "register": "neutru" }
+      ],
+      "tags": ["romance", "primeiro romance"]
+    },
+    {
+      "id": "bk.ciuleandra",
+      "title": "Ciuleandra",
+      "author": "Liviu Rebreanu",
+      "year": 1927,
+      "level": "B1",
+      "kind": "roman",
+      "public_domain": true,
+      "why_pt": "Romance curto e tenso, com o nome da dança que acelera até a loucura — a mesma que está no Lyrics Lab. Por ser breve, é um bom teste de fôlego antes de encarar 'Ion'.",
+      "difficulty_pt": "Menos de 150 páginas e uma trama que puxa. O vocabulário psicológico é o obstáculo, não a sintaxe.",
+      "where_pt": "Domínio público.",
+      "tags": ["romance", "curto"],
+      "note_pt": "Leia depois de ouvir a Ciuleandra: a dança explica o livro melhor que qualquer prefácio."
+    },
+    {
+      "id": "bk.baltagul",
+      "title": "Baltagul",
+      "title_pt": "O machado",
+      "author": "Mihail Sadoveanu",
+      "year": 1930,
+      "level": "C1",
+      "kind": "roman",
+      "public_domain": false,
+      "why_pt": "Uma mulher atravessa as montanhas atrás do marido desaparecido. O livro é uma releitura direta da Miorița — leia a balada antes e o romance ganha outra camada.",
+      "difficulty_pt": "A prosa de Sadoveanu é a mais bonita e a mais difícil da lista: ritmo arcaizante, vocabulário de montanha e frases longas.",
+      "where_pt": "Ainda protegido por direitos autorais (o autor morreu em 1961). Nas livrarias romenas e em e-book.",
+      "tags": ["romance", "Miorița"]
+    },
+    {
+      "id": "bk.maitreyi",
+      "title": "Maitreyi",
+      "title_pt": "A noite bengali",
+      "author": "Mircea Eliade",
+      "year": 1933,
+      "level": "C1",
+      "kind": "roman",
+      "public_domain": false,
+      "why_pt": "Romance de amor ambientado em Calcutá, escrito pelo historiador das religiões que o Brasil conhece bem — Eliade é traduzido e lido por aqui. Ler o romance dele em romeno é uma ponte inesperada.",
+      "difficulty_pt": "Prosa moderna e limpa, mais fácil que Sadoveanu. O tema exótico ajuda: o contexto é familiar mesmo quando o vocabulário não é.",
+      "where_pt": "Protegido (Eliade morreu em 1986). Há tradução brasileira, útil para leitura paralela.",
+      "tags": ["romance", "conhecido no Brasil"]
+    },
+    {
+      "id": "bk.cel_mai_iubit",
+      "title": "Cel mai iubit dintre pământeni",
+      "title_pt": "O mais amado dos terráqueos",
+      "author": "Marin Preda",
+      "year": 1980,
+      "level": "C2",
+      "kind": "roman",
+      "public_domain": false,
+      "why_pt": "O grande romance sobre o que o stalinismo fez com uma vida romena. Publicado meses antes da morte do autor, em 1980, e lido como testamento. Para entender o país, é indispensável.",
+      "difficulty_pt": "Longo, denso e cheio de subtexto político que exige contexto histórico. Deixe para depois de 'dor istorie'.",
+      "where_pt": "Protegido. Amplamente disponível na Romênia.",
+      "history_refs": ["hi.comunismul"],
+      "tags": ["romance", "comunismo"]
+    },
+    {
+      "id": "bk.vara_ochii_verzi",
+      "title": "Vara în care mama a avut ochii verzi",
+      "title_pt": "O verão em que minha mãe teve os olhos verdes",
+      "author": "Tatiana Țîbuleac",
+      "year": 2017,
+      "level": "B2",
+      "kind": "roman",
+      "public_domain": false,
+      "why_pt": "Romeno contemporâneo de verdade, escrito por uma autora da Moldávia e um dos livros mais vendidos da década. Frases curtas, capítulos de duas páginas, linguagem de hoje — é o mais próximo do romeno que você vai ouvir na rua.",
+      "difficulty_pt": "O mais acessível dos romances modernos da lista: capítulos curtíssimos, sem arcaísmo. A dificuldade é emocional, não linguística.",
+      "where_pt": "Protegido. Em livrarias e e-book; há tradução para o português.",
+      "history_refs": ["hi.moldova"],
+      "tags": ["contemporâneo", "moldávia", "melhor moderno"]
+    },
+    {
+      "id": "bk.nostalgia",
+      "title": "Nostalgia",
+      "author": "Mircea Cărtărescu",
+      "year": 1989,
+      "level": "C2",
+      "kind": "roman",
+      "public_domain": false,
+      "why_pt": "O autor romeno vivo mais traduzido, eterno cotado ao Nobel. Bucareste onírica, frases que se estendem por páginas. É o topo da escada — e a prova de que valeu a pena subir.",
+      "difficulty_pt": "Muito difícil: período longo, vocabulário raro e imagens densas. Não é livro para aprender idioma; é livro para quando o idioma já não atrapalha.",
+      "where_pt": "Protegido. Tem tradução brasileira, o que ajuda na leitura paralela.",
+      "tags": ["contemporâneo", "difícil"]
+    },
+    {
+      "id": "bk.cartea_cu_apolodor",
+      "title": "Cartea cu Apolodor",
+      "title_pt": "O livro do Apolodor",
+      "author": "Gellu Naum",
+      "year": 1959,
+      "level": "A2",
+      "kind": "copii",
+      "public_domain": false,
+      "why_pt": "Um pinguim do circo de Bucareste que sai pelo mundo procurando os irmãos. Escrito em verso, com rima fácil e ritmo forte — a rima ajuda a memorizar, e a memorização ajuda a pronúncia.",
+      "difficulty_pt": "Vocabulário simples e concreto, mas em verso: a ordem das palavras se torce pela rima. Ótimo para ler em voz alta.",
+      "where_pt": "Protegido (Gellu Naum morreu em 2001). Fácil de achar em qualquer livraria romena.",
+      "tags": ["infantil", "verso", "iniciante"]
+    }
+  ]
+}

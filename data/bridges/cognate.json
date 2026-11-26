@@ -1,0 +1,318 @@
+{
+  "$schema": "../schema/bridges.schema.json",
+  "meta": {
+    "id": "punte_latina",
+    "title": "Cognate Bridge — a ponte latina entre português e romeno",
+    "version": 1,
+    "description": "A tese do projeto virada em regra operacional. Português e romeno saíram do mesmo latim e mudaram de formas diferentes, mas REGULARES. Quem conhece as correspondências não decora palavra: deriva."
+  },
+  "items": [
+    {
+      "id": "br.ct_pt",
+      "title": "-ct- vira -pt-",
+      "kind": "sunet",
+      "pt": "-it-",
+      "ro": "-pt-",
+      "latin": "-CT-",
+      "rule_pt": "O grupo latino -CT- virou -it- em português e -pt- em romeno. Onde você tem 'it', tente 'pt'.",
+      "confidence": "alto",
+      "productive": true,
+      "examples": [
+        { "pt": "noite", "ro": "noapte", "latin": "noctem" },
+        { "pt": "leite", "ro": "lapte", "latin": "lactem" },
+        { "pt": "oito", "ro": "opt", "latin": "octo" },
+        { "pt": "peito", "ro": "piept", "latin": "pectus" },
+        { "pt": "luta", "ro": "luptă", "latin": "lucta" }
+      ],
+      "tags": ["som", "clássica"]
+    },
+    {
+      "id": "br.gn_mn",
+      "title": "-gn- vira -mn-",
+      "kind": "sunet",
+      "pt": "-nh- / -gn-",
+      "ro": "-mn-",
+      "latin": "-GN-",
+      "rule_pt": "O -GN- latino foi para -nh- em português e para -mn- em romeno. É uma das correspondências mais bonitas e menos óbvias.",
+      "confidence": "alto",
+      "examples": [
+        { "pt": "lenho", "ro": "lemn", "latin": "lignum", "note": "'lemn' é a palavra corrente para madeira" },
+        { "pt": "cunhado", "ro": "cumnat", "latin": "cognatus" },
+        { "pt": "sinal / signo", "ro": "semn", "latin": "signum" },
+        { "pt": "digno", "ro": "demn", "latin": "dignus" }
+      ],
+      "tags": ["som"]
+    },
+    {
+      "id": "br.qua_pa",
+      "title": "QUA vira PA",
+      "kind": "sunet",
+      "pt": "qua-",
+      "ro": "pa- / a-",
+      "latin": "QU-",
+      "rule_pt": "O QU latino diante de A virou P em romeno. É a correspondência que mais choca de início — e a mais confiável quando funciona.",
+      "confidence": "medio",
+      "examples": [
+        { "pt": "água", "ro": "apă", "latin": "aqua" },
+        { "pt": "quatro", "ro": "patru", "latin": "quattuor" },
+        { "pt": "égua", "ro": "iapă", "latin": "equa" }
+      ],
+      "traps": [
+        {
+          "pt": "quando",
+          "wrong_ro": "pând",
+          "right_ro": "când",
+          "note": "Diante de outras vogais o QU vira C. A regra do P vale para QUA."
+        }
+      ],
+      "tags": ["som", "surpreendente"]
+    },
+    {
+      "id": "br.rotacismo",
+      "title": "O L entre vogais vira R",
+      "kind": "sunet",
+      "pt": "-l-",
+      "ro": "-r-",
+      "latin": "-L-",
+      "rule_pt": "Rotacismo: o L latino entre vogais virou R em romeno e continuou L em português. Quando uma palavra portuguesa tem L no meio, troque por R e olhe o resultado.",
+      "confidence": "alto",
+      "productive": true,
+      "examples": [
+        { "pt": "céu", "ro": "cer", "latin": "caelum" },
+        { "pt": "sol", "ro": "soare", "latin": "solem" },
+        { "pt": "sal", "ro": "sare", "latin": "salem" },
+        { "pt": "fio", "ro": "fir", "latin": "filum" },
+        { "pt": "mel", "ro": "miere", "latin": "mel" }
+      ],
+      "tags": ["som", "clássica"]
+    },
+    {
+      "id": "br.ll_l",
+      "title": "-ll- se simplifica",
+      "kind": "sunet",
+      "pt": "-l- / -v-",
+      "ro": "-l-",
+      "latin": "-LL-",
+      "rule_pt": "O -LL- duplo latino se reduziu a um L simples em romeno, muitas vezes com queda do que vinha depois. As palavras ficam bem mais curtas que as portuguesas.",
+      "confidence": "medio",
+      "examples": [
+        { "pt": "cavalo", "ro": "cal", "latin": "caballus" },
+        { "pt": "estrela", "ro": "stea", "latin": "stella" },
+        { "pt": "castelo", "ro": "castel", "latin": "castellum" }
+      ],
+      "tags": ["som"]
+    },
+    {
+      "id": "br.cl_chi",
+      "title": "CL e GL viram CHI e GHI",
+      "kind": "sunet",
+      "pt": "ch- / lh / -lh-",
+      "ro": "chi- / ghi- / -chi",
+      "latin": "CL-, GL-, -CL-",
+      "rule_pt": "Os grupos com L palatalizaram nos dois idiomas, mas para lados diferentes: o português foi para CH e LH, o romeno foi para CHI e GHI (que soam 'ki' e 'ghi').",
+      "confidence": "medio",
+      "examples": [
+        { "pt": "chamar", "ro": "a chema", "latin": "clamare" },
+        { "pt": "gelo", "ro": "gheață", "latin": "glacies" },
+        { "pt": "olho", "ro": "ochi", "latin": "oculus" },
+        { "pt": "orelha", "ro": "ureche", "latin": "auricula" }
+      ],
+      "tags": ["som"]
+    },
+    {
+      "id": "br.e_ie",
+      "title": "O E tônico vira IE",
+      "kind": "sunet",
+      "pt": "e",
+      "ro": "ie",
+      "latin": "Ĕ",
+      "rule_pt": "O E breve tônico do latim ditongou em romeno: virou 'ie'. O português, na maior parte dos casos, manteve o E.",
+      "confidence": "alto",
+      "examples": [
+        { "pt": "erva", "ro": "iarbă", "latin": "herba" },
+        { "pt": "ferro", "ro": "fier", "latin": "ferrum" },
+        { "pt": "pele", "ro": "piele", "latin": "pellem" },
+        { "pt": "pedra", "ro": "piatră", "latin": "petra" }
+      ],
+      "tags": ["som", "vogal"]
+    },
+    {
+      "id": "br.o_oa",
+      "title": "O O tônico vira OA",
+      "kind": "sunet",
+      "pt": "o",
+      "ro": "oa",
+      "latin": "Ŏ",
+      "rule_pt": "Mesma história do E: o O breve tônico ditongou para 'oa' quando a sílaba seguinte tem A ou E. É a razão de tanta palavra romena parecer 'esticada'.",
+      "confidence": "alto",
+      "productive": true,
+      "examples": [
+        { "pt": "porta", "ro": "poartă", "latin": "porta" },
+        { "pt": "morte", "ro": "moarte", "latin": "mortem" },
+        { "pt": "flor", "ro": "floare", "latin": "florem" },
+        { "pt": "noite", "ro": "noapte", "latin": "noctem", "note": "duas regras na mesma palavra: O→oa e CT→pt" }
+      ],
+      "tags": ["som", "vogal"]
+    },
+    {
+      "id": "br.cao_tie",
+      "title": "-ção vira -ție",
+      "kind": "sufix",
+      "pt": "-ção",
+      "ro": "-ție",
+      "rule_pt": "A mais rentável de todas. Praticamente todo substantivo abstrato em -ção tem um par romeno em -ție. Se você não conhece a palavra, invente: costuma existir.",
+      "confidence": "alto",
+      "productive": true,
+      "examples": [
+        { "pt": "informação", "ro": "informație" },
+        { "pt": "situação", "ro": "situație" },
+        { "pt": "atenção", "ro": "atenție" },
+        { "pt": "revolução", "ro": "revoluție" },
+        { "pt": "estação", "ro": "stație", "note": "de trem/ônibus; 'estação do ano' é 'anotimp'" }
+      ],
+      "traps": [
+        {
+          "pt": "nação",
+          "wrong_ro": "nație",
+          "right_ro": "națiune",
+          "note": "Algumas palavras seguiram o francês '-tion' e viraram '-țiune'. 'Nație' até existe, mas soa arcaico — o corrente é 'națiune'."
+        }
+      ],
+      "tags": ["sufixo", "ouro"]
+    },
+    {
+      "id": "br.dade_tate",
+      "title": "-dade vira -tate",
+      "kind": "sufix",
+      "pt": "-dade",
+      "ro": "-tate",
+      "rule_pt": "Segunda mais rentável. O -dade português corresponde a -tate em romeno, sempre feminino.",
+      "confidence": "alto",
+      "productive": true,
+      "examples": [
+        { "pt": "universidade", "ro": "universitate" },
+        { "pt": "liberdade", "ro": "libertate" },
+        { "pt": "realidade", "ro": "realitate" },
+        { "pt": "sociedade", "ro": "societate" }
+      ],
+      "traps": [
+        {
+          "pt": "cidade",
+          "wrong_ro": "citate",
+          "right_ro": "oraș",
+          "note": "'Cidade' não seguiu a regra: a palavra corrente vem do húngaro. 'Cetate' existe, mas significa fortaleza."
+        }
+      ],
+      "tags": ["sufixo", "ouro"]
+    },
+    {
+      "id": "br.avel_abil",
+      "title": "-ável e -ível viram -abil e -ibil",
+      "kind": "sufix",
+      "pt": "-ável / -ível",
+      "ro": "-abil / -ibil",
+      "rule_pt": "Adjetivos de possibilidade passam quase intactos. Basta tirar o acento e trocar a terminação.",
+      "confidence": "alto",
+      "productive": true,
+      "examples": [
+        { "pt": "possível", "ro": "posibil" },
+        { "pt": "provável", "ro": "probabil" },
+        { "pt": "terrível", "ro": "teribil" },
+        { "pt": "responsável", "ro": "responsabil" }
+      ],
+      "tags": ["sufixo", "adjetivo"]
+    },
+    {
+      "id": "br.oso_os",
+      "title": "-oso vira -os",
+      "kind": "sufix",
+      "pt": "-oso",
+      "ro": "-os",
+      "rule_pt": "Some o -o final e pronto. O feminino segue a regra do adjetivo: -oasă.",
+      "confidence": "alto",
+      "productive": true,
+      "examples": [
+        { "pt": "nervoso", "ro": "nervos" },
+        { "pt": "curioso", "ro": "curios" },
+        { "pt": "famoso", "ro": "faimos" },
+        { "pt": "perigoso", "ro": "periculos", "note": "veio pelo latim 'periculosus', não por 'perigo'" }
+      ],
+      "tags": ["sufixo", "adjetivo"]
+    },
+    {
+      "id": "br.encia_enta",
+      "title": "-ência vira -ență",
+      "kind": "sufix",
+      "pt": "-ência / -ância",
+      "ro": "-ență / -anță",
+      "rule_pt": "Mesmo mecanismo do -ție: substantivo abstrato culto, quase sempre com par direto.",
+      "confidence": "alto",
+      "productive": true,
+      "examples": [
+        { "pt": "experiência", "ro": "experiență" },
+        { "pt": "diferença", "ro": "diferență" },
+        { "pt": "importância", "ro": "importanță" },
+        { "pt": "existência", "ro": "existență" }
+      ],
+      "tags": ["sufixo"]
+    },
+    {
+      "id": "br.ismo_ist",
+      "title": "-ismo e -ista viram -ism e -ist",
+      "kind": "sufix",
+      "pt": "-ismo / -ista",
+      "ro": "-ism / -ist",
+      "rule_pt": "Vocabulário internacional: corta a vogal final e está feito. Vale para praticamente qualquer palavra deste tipo.",
+      "confidence": "alto",
+      "productive": true,
+      "examples": [
+        { "pt": "turismo", "ro": "turism" },
+        { "pt": "comunismo", "ro": "comunism" },
+        { "pt": "artista", "ro": "artist" },
+        { "pt": "jornalista", "ro": "jurnalist" }
+      ],
+      "tags": ["sufixo", "internacional"]
+    },
+    {
+      "id": "br.ario_ar",
+      "title": "-ário vira -ar",
+      "kind": "sufix",
+      "pt": "-ário",
+      "ro": "-ar",
+      "rule_pt": "A terminação encurta. Cuidado para não confundir com o -ar do infinitivo português.",
+      "confidence": "medio",
+      "productive": true,
+      "examples": [
+        { "pt": "necessário", "ro": "necesar" },
+        { "pt": "universitário", "ro": "universitar" },
+        { "pt": "voluntário", "ro": "voluntar" }
+      ],
+      "tags": ["sufixo"]
+    },
+    {
+      "id": "br.mente",
+      "title": "-mente não existe",
+      "kind": "sufix",
+      "pt": "-mente",
+      "ro": "(a forma masculina do adjetivo)",
+      "rule_pt": "A ponte que NÃO existe, e por isso é a mais importante da lista. O romeno não tem sufixo de advérbio: usa o adjetivo masculino cru. 'Ele fala rápido' é 'vorbește rapid' — nunca 'rapidamente'.",
+      "confidence": "alto",
+      "productive": true,
+      "examples": [
+        { "pt": "rapidamente", "ro": "rapid", "note": "= o próprio adjetivo" },
+        { "pt": "claramente", "ro": "clar" },
+        { "pt": "normalmente", "ro": "normal" },
+        { "pt": "frequentemente", "ro": "des", "note": "aqui nem o adjetivo serve: é outra palavra" }
+      ],
+      "traps": [
+        {
+          "pt": "rapidamente",
+          "wrong_ro": "rapidamente",
+          "right_ro": "rapid",
+          "note": "Inventar um '-ment' romeno é o erro que mais denuncia falante de língua latina."
+        }
+      ],
+      "tags": ["sufixo", "armadilha"]
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "dor/library.schema.json",
+  "title": "Biblioteca graduada — o que ler em romeno, e em que ordem",
+  "type": "object",
+  "required": ["meta", "items"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": { "type": "string" },
+    "meta": {
+      "type": "object",
+      "required": ["id", "title", "version"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9_]+$" },
+        "title": { "type": "string" },
+        "version": { "type": "integer", "minimum": 1 },
+        "description": { "type": "string" },
+        "copyright_note": { "type": "string" }
+      }
+    },
+    "items": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "title", "author", "level", "kind", "why_pt"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string", "pattern": "^bk\\.[a-z0-9_]+$" },
+          "title": { "type": "string" },
+          "title_pt": { "type": "string", "description": "Título da edição brasileira/portuguesa, se houver" },
+          "author": { "type": "string" },
+          "year": { "type": "integer" },
+          "level": { "enum": ["A1", "A2", "B1", "B2", "C1", "C2"] },
+          "kind": {
+            "enum": ["basm", "povestire", "roman", "poezie", "teatru", "eseu", "jurnal", "copii"]
+          },
+          "why_pt": { "type": "string", "minLength": 1 },
+          "difficulty_pt": {
+            "type": "string",
+            "description": "O que torna esta leitura fácil ou difícil PARA VOCÊ"
+          },
+          "public_domain": {
+            "type": "boolean",
+            "default": false,
+            "description": "Autor morto há mais de 70 anos. Só então o trecho pode ser citado."
+          },
+          "where_pt": { "type": "string", "description": "Onde encontrar" },
+          "excerpt": {
+            "type": "object",
+            "description": "CITAÇÃO CURTA, apenas para obra em domínio público.",
+            "required": ["lines"],
+            "additionalProperties": false,
+            "properties": {
+              "lines": {
+                "type": "array",
+                "maxItems": 6,
+                "items": {
+                  "type": "object",
+                  "required": ["ro", "pt"],
+                  "additionalProperties": false,
+                  "properties": {
+                    "ro": { "type": "string" },
+                    "pt": { "type": "string" },
+                    "cloze": { "type": "string" }
+                  }
+                }
+              },
+              "public_domain": { "type": "boolean", "default": false }
+            }
+          },
+          "glossary": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["ro", "pt"],
+              "additionalProperties": false,
+              "properties": {
+                "ro": { "type": "string" },
+                "pt": { "type": "string" },
+                "register": {
+                  "enum": ["formal", "neutru", "colocvial", "argou", "vulgar"]
+                },
+                "slang_id": { "type": "string" }
+              }
+            }
+          },
+          "history_refs": {
+            "type": "array",
+            "description": "Eventos da linha do tempo que a obra ilumina",
+            "items": { "type": "string" }
+          },
+          "tags": { "type": "array", "items": { "type": "string" } },
+          "note_pt": { "type": "string" }
+        }
+      }
+    }
+  }
+}

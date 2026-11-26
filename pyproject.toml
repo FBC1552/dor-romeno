@@ -1,0 +1,55 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dor"
+version = "0.1.0"
+description = "CLI de imersão em romeno para falantes de português — vocabulário, gramática, áudio, cultura e gamificação"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "rich>=13.7",
+    "typer>=0.12",
+    "questionary>=2.0",
+    "jsonschema>=4.21",
+    "platformdirs>=4.2",
+    "fsrs>=5.0",
+]
+
+[project.optional-dependencies]
+audio = [
+    "edge-tts>=6.1",
+    "pygame>=2.6",
+    "gtts>=2.5",
+    # ffmpeg como pacote pip: monta os episódios sem exigir instalação no
+    # sistema. Não usamos pydub — ele depende de `audioop`, removido no 3.13.
+    "imageio-ffmpeg>=0.5",
+    "mutagen>=1.47",
+]
+dev = ["pytest>=8.0", "ruff>=0.5"]
+
+[project.scripts]
+dor = "dor.cli:app"
+
+[tool.setuptools.packages.find]
+include = ["dor*"]
+
+[tool.setuptools.package-data]
+dor = ["storage/migrations/*.sql"]
+
+[tool.ruff]
+# 110 e não 88/100: as strings de interface são em português e ficam ~25% mais
+# longas que o equivalente em inglês.
+line-length = 110
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.ruff.lint.per-file-ignores]
+# A trava de publicação é a mesma em todos os repositórios, com linhas longas.
+"scripts/verificar_publicacao.py" = ["E501", "E741"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,109 @@
+{
+  "$schema": "../schema/grammar.schema.json",
+  "meta": {
+    "id": "a2_adjectiv",
+    "title": "Adjetivo: concordância, posição e grau",
+    "level": "A2",
+    "version": 1,
+    "description": "A concordância é familiar ao brasileiro; a posição e o grau é que pegam. Os drills consomem o campo `forms` do deck a2_adjective."
+  },
+  "items": [
+    {
+      "id": "g.adj.acord.fem",
+      "title": "Concordância — feminino singular",
+      "level": "A2",
+      "tags": ["adjetivo", "concordância"],
+      "explanation_pt": "A forma de dicionário é o masculino singular. O feminino costuma ganhar -ă (bun → bună), mas o -o- da raiz vira -oa- quando a sílaba fica tônica: frumos → frumoasă, ușor → ușoară.",
+      "contrast_pt": "O mecanismo é o mesmo do português ('bom/boa'), inclusive na alternância vocálica ('novo/nova' vs 'frumos/frumoasă'). Aqui você já tem o reflexo certo — só precisa da terminação nova.",
+      "examples": [
+        { "ro": "un băiat bun → o fată bună", "pt": "um menino bom → uma menina boa" },
+        { "ro": "un om frumos → o casă frumoasă", "pt": "um homem bonito → uma casa bonita" }
+      ],
+      "pitfall_pt": "Adjetivos terminados em -e não mudam no feminino: 'mare' serve para os dois gêneros. Inventar 'mară' é o erro de quem generalizou a regra do -ă.",
+      "drill": {
+        "type": "transform",
+        "query": { "pos": "adj", "has_form": "forms.f_sg" },
+        "from": "ro",
+        "to": "forms.f_sg",
+        "prompt_pt": "Concorde com um substantivo feminino singular:"
+      }
+    },
+    {
+      "id": "g.adj.plural.masc",
+      "title": "Concordância — masculino plural",
+      "level": "A2",
+      "tags": ["adjetivo", "concordância", "plural"],
+      "explanation_pt": "Masculino plural em -i, que provoca alternâncias na consoante final: cald → calzi, mic → mici, tânăr → tineri.",
+      "contrast_pt": "O português resolve tudo com -s e não mexe na raiz. Aqui o -i final reescreve a consoante anterior — é o mesmo fenômeno do plural dos substantivos masculinos.",
+      "examples": [
+        { "ro": "băieți buni", "pt": "meninos bons" },
+        { "ro": "oameni tineri", "pt": "pessoas jovens" }
+      ],
+      "pitfall_pt": "Esse -i final é quase mudo: 'buni' sai como 'bunʲ'. Você vai ouvir a diferença entre 'bun' e 'buni' muito antes de conseguir produzi-la.",
+      "drill": {
+        "type": "transform",
+        "query": { "pos": "adj", "has_form": "forms.m_pl" },
+        "from": "ro",
+        "to": "forms.m_pl",
+        "prompt_pt": "Concorde com um substantivo masculino plural:"
+      }
+    },
+    {
+      "id": "g.adj.plural.fem",
+      "title": "Concordância — feminino e neutro plural",
+      "level": "A2",
+      "tags": ["adjetivo", "concordância", "plural"],
+      "explanation_pt": "Feminino plural em -e (bune, frumoase, calde). O neutro plural usa exatamente esta forma — é a segunda metade da regra do gênero neutro: masculino no singular, feminino no plural.",
+      "contrast_pt": "Aqui o neutro cobra o preço: 'un scaun mic' (como masculino) mas 'două scaune mici'... e com adjetivo em -ă, 'două mese calde' (como feminino).",
+      "examples": [
+        { "ro": "case frumoase", "pt": "casas bonitas" },
+        { "ro": "scaune noi", "pt": "cadeiras novas (neutro → forma feminina)" }
+      ],
+      "pitfall_pt": "Se você acertou o gênero do substantivo e errou o do adjetivo, o ouvinte entende — mas é justamente aí que o neutro se revela. Vale conferir o par completo: un scaun nou / două scaune noi.",
+      "drill": {
+        "type": "transform",
+        "query": { "pos": "adj", "has_form": "forms.f_pl" },
+        "from": "ro",
+        "to": "forms.f_pl",
+        "prompt_pt": "Concorde com um substantivo feminino ou neutro plural:"
+      }
+    },
+    {
+      "id": "g.adj.pozitie",
+      "title": "O adjetivo vem DEPOIS",
+      "level": "A2",
+      "tags": ["adjetivo", "ordem"],
+      "explanation_pt": "A ordem neutra é substantivo + adjetivo: 'o casă frumoasă', 'un om bun'. Colocar antes é possível, mas marca ênfase ou estilo literário — 'o frumoasă casă' soa a poema.",
+      "contrast_pt": "É a mesma intuição do português: 'uma casa bonita' é neutro, 'uma bonita casa' é literário. Aqui você acerta sozinho — basta não copiar a ordem do inglês.",
+      "examples": [
+        { "ro": "o casă frumoasă", "pt": "uma casa bonita" },
+        { "ro": "un om bătrân", "pt": "um homem velho" },
+        { "ro": "vreme proastă", "pt": "tempo ruim" }
+      ],
+      "pitfall_pt": "Quando o substantivo está articulado, o artigo continua nele, não no adjetivo: 'casa frumoasă' (a casa bonita), nunca 'casă frumoasa'."
+    },
+    {
+      "id": "g.adj.grad",
+      "title": "Comparativo e superlativo",
+      "level": "A2",
+      "tags": ["adjetivo", "grau"],
+      "explanation_pt": "Comparativo com 'mai' + adjetivo + 'decât': 'mai bun decât' = melhor que. Superlativo com 'cel/cea/cei/cele mai': 'cel mai bun' = o melhor. O 'cel' concorda em gênero e número.",
+      "contrast_pt": "O romeno é mais regular que o português: não existe 'melhor/pior' irregular. 'Bom' → 'mai bun', literalmente 'mais bom'. Nesse ponto ele é mais fácil que a nossa língua.",
+      "examples": [
+        { "ro": "Casa mea e mai mare decât a ta.", "pt": "Minha casa é maior que a sua." },
+        { "ro": "Este cel mai bun restaurant.", "pt": "É o melhor restaurante." },
+        { "ro": "E foarte frumoasă.", "pt": "Ela é muito bonita." }
+      ],
+      "table": {
+        "headers": ["grau", "forma", "exemplo"],
+        "rows": [
+          ["comparativo de superioridade", "mai ... decât", "mai mare decât"],
+          ["comparativo de igualdade", "la fel de ... ca", "la fel de mare ca"],
+          ["superlativo relativo", "cel mai / cea mai", "cel mai bun"],
+          ["superlativo absoluto", "foarte", "foarte bun"]
+        ]
+      },
+      "pitfall_pt": "'Mai' é 'mais' e também é o mês de maio — o contexto separa. E não tente formar superlativo com sufixo: 'bunissim' não existe, é 'foarte bun'."
+    }
+  ]
+}

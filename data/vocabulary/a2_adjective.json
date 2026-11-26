@@ -1,0 +1,249 @@
+{
+  "$schema": "../schema/vocabulary.schema.json",
+  "meta": {
+    "id": "a2_adjective",
+    "title": "Adjetivos essenciais",
+    "level": "A2",
+    "version": 1,
+    "description": "O adjetivo romeno concorda em gênero E número, como o português — mas com QUATRO formas e vindo DEPOIS do substantivo. O campo `forms` traz f_sg, m_pl e f_pl; a forma base (`ro`) é o masculino singular, que também serve ao neutro singular."
+  },
+  "items": [
+    {
+      "id": "ro.bun",
+      "ro": "bun",
+      "pt": ["bom", "boa"],
+      "pos": "adj",
+      "level": "A1",
+      "ipa": "bun",
+      "forms": { "f_sg": "bună", "m_pl": "buni", "f_pl": "bune" },
+      "tags": ["qualidade", "essencial"],
+      "etymology": "latin",
+      "cognate_pt": { "word": "bom", "confidence": "alto", "note": "← lat. bonus" },
+      "note_pt": "'Bună!' sozinho é 'oi' entre mulheres — a forma feminina virou saudação."
+    },
+    {
+      "id": "ro.frumos",
+      "ro": "frumos",
+      "pt": ["bonito", "belo"],
+      "accepts_pt": ["lindo", "formoso", "bonita"],
+      "pos": "adj",
+      "level": "A1",
+      "ipa": "fruˈmos",
+      "forms": { "f_sg": "frumoasă", "m_pl": "frumoși", "f_pl": "frumoase" },
+      "tags": ["qualidade", "aparência"],
+      "etymology": "latin",
+      "cognate_pt": {
+        "word": "formoso",
+        "confidence": "alto",
+        "note": "← lat. formosus, o mesmo do nosso 'formoso'"
+      },
+      "note_pt": "O -o- vira -oa- no feminino: frumos → frumoasă. Essa alternância se repete em dezenas de adjetivos."
+    },
+    {
+      "id": "ro.mare",
+      "ro": "mare",
+      "pt": ["grande"],
+      "pos": "adj",
+      "level": "A1",
+      "ipa": "ˈma.re",
+      "forms": { "f_sg": "mare", "m_pl": "mari", "f_pl": "mari" },
+      "tags": ["tamanho", "essencial"],
+      "etymology": "latin",
+      "false_friend": {
+        "looks_like": "mar",
+        "actually_means": "grande",
+        "note": "'Mare' é 'grande'. O mar é 'marea' — que por acaso também é 'a grande'."
+      },
+      "note_pt": "Adjetivo de duas formas: só muda no plural (mare → mari), como 'grande/grandes'."
+    },
+    {
+      "id": "ro.mic",
+      "ro": "mic",
+      "pt": ["pequeno"],
+      "pos": "adj",
+      "level": "A1",
+      "ipa": "mik",
+      "forms": { "f_sg": "mică", "m_pl": "mici", "f_pl": "mici" },
+      "tags": ["tamanho", "essencial"],
+      "etymology": "latin",
+      "note_pt": "'Mici' também é o prato nacional: rolinhos de carne grelhada — literalmente 'os pequenos'."
+    },
+    {
+      "id": "ro.nou",
+      "ro": "nou",
+      "pt": ["novo"],
+      "pos": "adj",
+      "level": "A1",
+      "ipa": "now",
+      "forms": { "f_sg": "nouă", "m_pl": "noi", "f_pl": "noi" },
+      "tags": ["qualidade"],
+      "etymology": "latin",
+      "cognate_pt": { "word": "novo", "confidence": "alto", "note": "← lat. novus" },
+      "note_pt": "Cuidado: 'noi' é ao mesmo tempo o plural de 'nou' e o pronome 'nós'."
+    },
+    {
+      "id": "ro.vechi",
+      "ro": "vechi",
+      "pt": ["velho", "antigo"],
+      "pos": "adj",
+      "level": "A2",
+      "ipa": "vekʲ",
+      "forms": { "f_sg": "veche", "m_pl": "vechi", "f_pl": "vechi" },
+      "tags": ["qualidade"],
+      "etymology": "latin",
+      "cognate_pt": { "word": "velho", "confidence": "alto", "note": "← lat. veclus" },
+      "note_pt": "Só para coisas. Pessoa velha é 'bătrân' — chamar alguém de 'vechi' soa a objeto usado."
+    },
+    {
+      "id": "ro.batran",
+      "ro": "bătrân",
+      "pt": ["velho", "idoso"],
+      "accepts_pt": ["ancião", "de idade"],
+      "pos": "adj",
+      "level": "A2",
+      "ipa": "bəˈtrɨn",
+      "forms": { "f_sg": "bătrână", "m_pl": "bătrâni", "f_pl": "bătrâne" },
+      "tags": ["pessoa", "idade"],
+      "etymology": "latin",
+      "note_pt": "← lat. veteranus. 'Bătrâne!' na gíria é 'e aí, velho!' entre amigos."
+    },
+    {
+      "id": "ro.tanar",
+      "ro": "tânăr",
+      "pt": ["jovem"],
+      "pos": "adj",
+      "level": "A2",
+      "ipa": "ˈtɨ.nər",
+      "forms": { "f_sg": "tânără", "m_pl": "tineri", "f_pl": "tinere" },
+      "tags": ["pessoa", "idade"],
+      "etymology": "latin",
+      "cognate_pt": { "word": "tenro", "confidence": "medio", "note": "← lat. tener" },
+      "note_pt": "O plural muda a raiz: tânăr → tineri. O 'â' vira 'i' — decore o par."
+    },
+    {
+      "id": "ro.cald",
+      "ro": "cald",
+      "pt": ["quente"],
+      "pos": "adj",
+      "level": "A1",
+      "ipa": "kald",
+      "forms": { "f_sg": "caldă", "m_pl": "calzi", "f_pl": "calde" },
+      "tags": ["temperatura"],
+      "etymology": "latin",
+      "cognate_pt": { "word": "cálido / caldo", "confidence": "alto", "note": "← lat. caldus" },
+      "note_pt": "No plural masculino o d vira z: cald → calzi. Acontece com todo -d final."
+    },
+    {
+      "id": "ro.rece",
+      "ro": "rece",
+      "pt": ["frio"],
+      "pos": "adj",
+      "level": "A1",
+      "ipa": "ˈre.tʃe",
+      "forms": { "f_sg": "rece", "m_pl": "reci", "f_pl": "reci" },
+      "tags": ["temperatura"],
+      "etymology": "latin",
+      "note_pt": "Para o clima usa-se o verbo: 'e frig' (está frio). 'Rece' é para as coisas: 'apă rece'."
+    },
+    {
+      "id": "ro.scump",
+      "ro": "scump",
+      "pt": ["caro", "querido"],
+      "accepts_pt": ["custoso", "amado", "salgado"],
+      "pos": "adj",
+      "level": "A2",
+      "ipa": "skump",
+      "forms": { "f_sg": "scumpă", "m_pl": "scumpi", "f_pl": "scumpe" },
+      "tags": ["dinheiro", "afeto"],
+      "etymology": "slav",
+      "note_pt": "Os dois sentidos do nosso 'caro' — preço e afeto — cabem na mesma palavra: 'scumpa mea' = minha querida."
+    },
+    {
+      "id": "ro.ieftin",
+      "ro": "ieftin",
+      "pt": ["barato"],
+      "accepts_pt": ["em conta", "baratinho"],
+      "pos": "adj",
+      "level": "A2",
+      "ipa": "ˈjef.tin",
+      "forms": { "f_sg": "ieftină", "m_pl": "ieftini", "f_pl": "ieftine" },
+      "tags": ["dinheiro"],
+      "etymology": "grec",
+      "note_pt": "Do grego. Sem cognato — decore junto com 'scump', que é o par."
+    },
+    {
+      "id": "ro.greu",
+      "ro": "greu",
+      "pt": ["difícil", "pesado"],
+      "accepts_pt": ["complicado", "duro"],
+      "pos": "adj",
+      "level": "A1",
+      "ipa": "ɡrew",
+      "forms": { "f_sg": "grea", "m_pl": "grei", "f_pl": "grele" },
+      "tags": ["qualidade", "essencial"],
+      "etymology": "latin",
+      "note_pt": "Uma palavra para 'difícil' e 'pesado', como o nosso 'pesado' em 'prova pesada'."
+    },
+    {
+      "id": "ro.usor",
+      "ro": "ușor",
+      "pt": ["fácil", "leve"],
+      "accepts_pt": ["simples", "levinho"],
+      "pos": "adj",
+      "level": "A1",
+      "ipa": "uˈʃor",
+      "forms": { "f_sg": "ușoară", "m_pl": "ușori", "f_pl": "ușoare" },
+      "tags": ["qualidade", "essencial"],
+      "etymology": "latin",
+      "note_pt": "Como advérbio significa 'devagar': 'mai ușor!' = calma aí."
+    },
+    {
+      "id": "ro.obosit",
+      "ro": "obosit",
+      "pt": ["cansado"],
+      "pos": "adj",
+      "level": "A2",
+      "ipa": "o.boˈsit",
+      "forms": { "f_sg": "obosită", "m_pl": "obosiți", "f_pl": "obosite" },
+      "tags": ["estado", "pessoa"],
+      "etymology": "necunoscut",
+      "note_pt": "'Sunt obosit' (homem) / 'sunt obosită' (mulher) — o adjetivo denuncia quem fala."
+    },
+    {
+      "id": "ro.fericit",
+      "ro": "fericit",
+      "pt": ["feliz"],
+      "pos": "adj",
+      "level": "A2",
+      "ipa": "fe.riˈtʃit",
+      "forms": { "f_sg": "fericită", "m_pl": "fericiți", "f_pl": "fericite" },
+      "tags": ["estado", "pessoa"],
+      "etymology": "latin",
+      "cognate_pt": {
+        "word": "feliz",
+        "confidence": "medio",
+        "note": "← lat. felix, pela mesma raiz de 'felicidade'"
+      },
+      "note_pt": "'La mulți ani și un an fericit!' — o que se diz no Ano Novo."
+    },
+    {
+      "id": "ro.prost",
+      "ro": "prost",
+      "pt": ["burro", "ruim"],
+      "accepts_pt": ["bobo", "idiota", "estúpido", "de má qualidade"],
+      "pos": "adj",
+      "level": "A2",
+      "register": "colocvial",
+      "ipa": "prost",
+      "forms": { "f_sg": "proastă", "m_pl": "proști", "f_pl": "proaste" },
+      "tags": ["pessoa", "qualidade"],
+      "etymology": "slav",
+      "false_friend": {
+        "looks_like": "prosto / posto",
+        "actually_means": "burro, de má qualidade",
+        "note": "Nada a ver com 'prosto'. Chamar alguém de 'prost' é ofensa de verdade."
+      },
+      "note_pt": "Serve para coisa também: 'vreme proastă' = tempo ruim."
+    }
+  ]
+}
